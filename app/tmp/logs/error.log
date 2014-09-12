@@ -1996,3 +1996,39 @@ Stack Trace:
 #1 C:\wamp\www\StudyWeb\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
 #2 C:\wamp\www\StudyWeb\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-09-12 14:57:57 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('foo')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('foo')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/default.ctp(31): View->__get('foo')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(542): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/PagesController.php(69): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-12 15:15:24 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'estado' doesn't have a default value
+Request URL: /studyweb-elcultural/Docentes/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(1859): DboSource->create(Object(Docente), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/DocentesController.php(31): Model->save(Array)
+#5 [internal function]: DocentesController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(DocentesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DocentesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

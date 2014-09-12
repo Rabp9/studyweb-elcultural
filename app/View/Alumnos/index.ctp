@@ -1,6 +1,6 @@
 <!-- File: /app/View/Alumnos/index.ctp -->
 
-<h2>Alumno <small>Lista</small></h2>
+<h2>Alumnos <small>Lista</small></h2>
 
 <div class="table-responsive">
     <table class="table">
