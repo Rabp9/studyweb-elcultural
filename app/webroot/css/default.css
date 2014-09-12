@@ -1,0 +1,43 @@
+div.banner {
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+div.data-nav {
+    background-color: #2B78E4;
+    color: white;
+    padding: 5px 0px 5px 0px;
+}
+
+div.footer-content {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+ol.breadcrumb {
+    border-top: red solid 2px;
+    border-bottom: black solid 2px;
+}
+
+form .formField label { 
+    display: inline-block;
+    width: 100px;
+    text-align: right; 
+}
+
+form .formField input, form .formField select {
+    margin-left: 15px;
+}
+
+.nav-tabs > li > a {
+    color: white;
+} 
+
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    color: black;
+} 

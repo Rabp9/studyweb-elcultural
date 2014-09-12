@@ -1,0 +1,72 @@
+<!-- File: /app/Controller/AlumnosController.php -->
+
+<?php
+    class AlumnosController extends AppController {
+        public function index() {
+            $this->layout = "admin";
+            $this->set("alumnos", $this->Alumno->find("all", array(
+                'conditions' => array('Alumno.estado' => '1')
+            )));
+        }
+              
+        public function view($id = null) {
+            $this->layout = "admin";
+            
+            if (!$id) {
+                throw new NotFoundException(__("Alumno inválido"));
+            }
+            $alumno = $this->Alumno->findByIdalumno($id);
+            if (!$alumno) {
+                throw new NotFoundException(__("Alumno inválido"));
+            } 
+            $this->set("alumno", $alumno);
+        }
+        
+        public function add() {
+            $this->layout = "admin";
+            
+            if ($this->request->is("post")) {
+                $this->Alumno->create();
+                $this->Alumno->set("idAlumno", $this->Alumno->getIdAlumno());
+                if ($this->Alumno->save($this->request->data)) {
+                    $this->Session->setFlash(__("El alumno ha sido registrado correctamente."), "flash_bootstrap");
+                    return $this->redirect(array("action" => "index"));
+                }
+                $this->Session->setFlash(__("No fue posible registrar el alumno."), "flash_bootstrap");
+            }
+        }
+         
+        public function edit($id = null) {
+            $this->layout = "admin";
+            
+            if (!$id) {
+                throw new NotFoundException(__("Alumno inválido"));
+            }
+            $alumno = $this->Alumno->findByIdalumno($id);
+            if (!$alumno) {
+                throw new NotFoundException(__("Alumno inválido"));
+            }
+            if ($this->request->is(array("post", "put"))) {
+                $this->Alumno->id = $id;
+                if ($this->Alumno->save($this->request->data)) {
+                    $this->Session->setFlash(__("El alumno ha sido actualizado."), "flash_bootstrap");
+                    return $this->redirect(array("action" => "index"));
+                }
+                $this->Session->setFlash(__("No es posible actualizar el alumno."), "flash_bootstrap");
+            }
+            if (!$this->request->data) {
+                $this->request->data = $alumno;
+            }
+        }     
+        
+        public function delete($id) {
+            if ($this->request->is("get")) {
+                throw new MethodNotAllowedException();
+            }
+            $this->Alumno->id = $id;
+            if ($this->Alumno->saveField("estado", 2)) {
+                $this->Session->setFlash(__("El alumno de código: %s ha sido eliminado.", h($id)), "flash_bootstrap");
+                return $this->redirect(array("action" => "index"));
+            }
+        }
+}
