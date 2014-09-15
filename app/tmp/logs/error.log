@@ -3038,3 +3038,510 @@ Stack Trace:
 #12 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
 #13 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2014-09-14 20:30:47 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render('home', NULL)
+#8 C:\wamp\www\studyweb-elcultural\app\Controller\PagesController.php(69): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-14 23:07:33 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\UsuariosController.php, line 7]
+2014-09-14 23:07:33 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 7, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 7, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-14 23:08:04 Error: [MissingTableException] Table usuarios for model Usuario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'usuarios',
+  'class' => 'Usuario',
+  'ds' => 'default',
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3534): Model->setSource('usuarios')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): Model->getDataSource()
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(1080): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\wamp\www\studyweb-elcultural\app\Controller\UsuariosController.php(12): Controller->paginate()
+#6 [internal function]: UsuariosController->index()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:08:22 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:08:42 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:08:42 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:08:43 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:09:32 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:09:33 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:09:52 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:10:35 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:10:36 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:10:36 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:10:36 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:10:36 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:10:36 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:10:50 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:12:31 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\UsuariosController.php, line 7]
+2014-09-14 23:12:31 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 7, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 7, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-14 23:15:46 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios/view/U001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:20:12 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Usuarios/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:36:59 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\UsuariosController.php, line 32]
+2014-09-14 23:36:59 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /studyweb-elcultural/Usuarios/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 32, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 32, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-14 23:43:33 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/users/login
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-14 23:44:11 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/users/login
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-14 23:46:37 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/users/login
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-14 23:48:09 Error: [MissingViewException] View file "C:\wamp\www\studyweb-elcultural\app\View\Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\studyweb-elcultural\\app\\View\\Users\\login.ctp',
+)
+Request URL: /studyweb-elcultural/users/login
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-14 23:50:58 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /studyweb-elcultural/users/login
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3534): Model->setSource('users')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1374): Model->getDataSource()
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\studyweb-elcultural\app\View\Users\login.ctp(5): FormHelper->create('User')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-14 23:51:11 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /studyweb-elcultural/Users
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3534): Model->setSource('users')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): Model->getDataSource()
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(1080): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\wamp\www\studyweb-elcultural\app\Controller\UsersController.php(15): Controller->paginate()
+#6 [internal function]: UsersController->index()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:54:00 Error: [MissingHelperException] Helper class fooHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fooHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/users/login
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('foo')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('foo')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Layouts\default.ctp(31): View->__get('foo')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-14 23:59:31 Error: [MissingViewException] View file "C:\wamp\www\studyweb-elcultural\app\View\Users\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\studyweb-elcultural\\app\\View\\Users\\edit.ctp',
+)
+Request URL: /studyweb-elcultural/Users/edit/U001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-14 23:59:43 Error: [MissingActionException] Action UsersController::Alumnos() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'Alumnos',
+)
+Request URL: /studyweb-elcultural/Users/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-15 00:00:12 Error: [MissingControllerException] Controller class UsuariosController could not be found.
+Exception Attributes: array (
+  'class' => 'UsuariosController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/Usuarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
