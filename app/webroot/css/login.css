@@ -1,5 +1,7 @@
 body {
     background: #9999ff;
+    background-image: url(../img/background-login.jpg);
+    background-size: 100%;
 }
 
 .form-signin {
@@ -7,6 +9,13 @@ body {
     padding: 15px;
     margin: 0 auto;
     background: #ffffff;
+    margin-top: 200px;
+    -webkit-box-shadow: 10px 10px 45px -7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 45px -7px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 45px -7px rgba(0,0,0,0.5);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
 }
 
 .form-signin .form-signin-heading,

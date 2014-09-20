@@ -14,25 +14,42 @@
         ?>
     </head>
     <body>
-        <?php echo $this->Session->flash(); ?>
 
         <div class="container">
-            <?php echo $this->Session->flash('auth'); ?>
-            <form class="form-signin" role="form">
-                <h2 class="form-signin-heading">Please sign in</h2>
-                <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
-                <input type="password" class="form-control" placeholder="Password" required="">
-                <label class="checkbox">
-                <input type="checkbox" value="remember-me">
-                   Remember me
-                </label>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            </form>
+            
+            <?php echo $this->Form->create('User', array(
+                "class" => "form-signin",
+                "role" => "form"
+            )); ?>
+            <?php echo $this->Session->flash(); ?>
+            <h2 class="form-signin-heading">Ingresar</h2>
+            <?php 
+                echo $this->Form->input('username', array(
+                    "label" => false,
+                    "class" => "form-control",
+                    "placeholder" => "Nombre de Usuario",
+                    "autofocus" => "autofocus"
+                ));
+                echo $this->Form->input('password', array(
+                    "label" => false,
+                    "class" => "form-control",
+                    "placeholder" => "Password"
+                ));
+            ?>
+            <label class="checkbox">
+            <input type="checkbox" value="remember-me">
+               Recuérdame
+            </label>
+            <?php
+                echo $this->Form->button("Log in", array(
+                    "class" => "btn btn-lg btn-primary btn-block"
+                ));
+                echo $this->Form->end();
+            ?>
         </div>
         <?php
             echo $this->Html->script("jquery-1.11.1.min");
             echo $this->Html->script("bootstrap.min");
         ?>
-        
     </body>
 </html>
