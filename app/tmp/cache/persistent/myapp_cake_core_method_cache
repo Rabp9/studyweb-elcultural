@@ -1,2 +1,2 @@
-1411490919
-a:2:{s:4:"name";a:8:{s:32:"ef79aad64f87a908e2267c60c0afe09c";s:13:"`studyweb-db`";s:32:"a284d4410975d0bfaac9c0843a91c507";s:8:"`grupos`";s:32:"dd432a89d2c233896f367b9b25da22a6";s:8:"`estado`";s:32:"22b8e5a95bcb19618a042442dae9bcfd";s:13:"`descripcion`";s:32:"b034cf50ad334fa436bdc7f1ab190378";s:17:"`Grupo`.`idGrupo`";s:32:"a631769e39eb6d475dcdcfc15622dcfe";s:21:"`Grupo`.`descripcion`";s:32:"19676395c095757309b26e4660b1f3cb";s:16:"`Grupo`.`estado`";s:32:"a94b3682863f6c498b893c21082aa5db";s:7:"`Grupo`";}s:6:"fields";a:1:{s:32:"f0000714c556998793ca27f4894276db";a:3:{i:0;s:17:"`Grupo`.`idGrupo`";i:1;s:21:"`Grupo`.`descripcion`";i:2;s:16:"`Grupo`.`estado`";}}}
+1411574444
+a:1:{s:4:"name";a:2:{s:32:"ef79aad64f87a908e2267c60c0afe09c";s:13:"`studyweb-db`";s:32:"f94a437fb7858e092079378f93ef2c71";s:7:"`users`";}}

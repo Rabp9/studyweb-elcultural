@@ -3569,3 +3569,566 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
 #4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-09-24 15:35:08 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'idGrupo' doesn't have a default value
+Request URL: /studyweb-elcultural/users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(1859): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/UsersController.php(33): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 15:38:41 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp',
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-24 15:52:08 Error: Fatal Error (1): Call to a member function link() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 7]
+2014-09-24 15:52:08 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 7, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 7, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 15:56:38 Error: Fatal Error (1): Class 'Helper' not found in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Helper/FckHelper.php, line 2]
+2014-09-24 15:56:38 Error: [FatalErrorException] Class 'Helper' not found
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Helper' ...', '/Applications/X...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Helper' ...', '/Applications/X...', 2, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Helper' ...', '/Applications/X...', 2, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 15:57:10 Error: Fatal Error (1): Call to a member function link() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 7]
+2014-09-24 15:57:10 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 7, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 7, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:00:50 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(886): HelperCollection->load('Ajax', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(1241): View->__construct(Object(ArticulosController))
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(940): Controller->_getViewObject()
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-09-24 16:01:13 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(886): HelperCollection->load('Javascript', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(1241): View->__construct(Object(ArticulosController))
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(940): Controller->_getViewObject()
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-09-24 16:01:36 Error: Fatal Error (1): Call to a member function link() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 7]
+2014-09-24 16:01:36 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 7, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 7, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:02:19 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:03:01 Error: Fatal Error (1): Class 'Helper' not found in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Helper/FckHelper.php, line 5]
+2014-09-24 16:03:01 Error: [FatalErrorException] Class 'Helper' not found
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Helper' ...', '/Applications/X...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Helper' ...', '/Applications/X...', 5, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Helper' ...', '/Applications/X...', 5, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:03:20 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:55 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:56 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:57 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:57 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:57 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:58 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:58 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:58 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:58 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:04:59 Error: [MissingHelperException] Helper class javascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'javascriptHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('javascript')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(837): HelperCollection->__isset('javascript')
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp(7): View->__get('javascript')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 16:05:10 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:10 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:30 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:30 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:31 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:31 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:31 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:31 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:31 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:31 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:31 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:31 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:32 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:32 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:37 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:37 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:54 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:54 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:05:56 Error: Fatal Error (1): Call to a member function load() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Articulos/add.ctp, line 18]
+2014-09-24 16:05:56 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:07:43 Error: Fatal Error (1): Call to a member function codeBlock() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Helper/FckHelper.php, line 16]
+2014-09-24 16:07:43 Error: [FatalErrorException] Call to a member function codeBlock() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 16:12:14 Error: Fatal Error (1): Call to a member function codeBlock() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Helper/FckHelper.php, line 16]
+2014-09-24 16:12:14 Error: [FatalErrorException] Call to a member function codeBlock() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 17:00:06 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'titulo' doesn't have a default value
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(1859): DboSource->create(Object(Articulo), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ArticulosController.php(31): Model->save(Array)
+#5 [internal function]: ArticulosController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticulosController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 17:01:04 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'titulo' doesn't have a default value
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(1859): DboSource->create(Object(Articulo), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ArticulosController.php(31): Model->save(Array)
+#5 [internal function]: ArticulosController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticulosController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 17:02:05 Error: Fatal Error (4): syntax error, unexpected '>', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ArticulosController.php, line 30]
+2014-09-24 17:02:05 Error: [FatalErrorException] syntax error, unexpected '>', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 17:02:26 Error: Fatal Error (1): Call to a member function set() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ArticulosController.php, line 30]
+2014-09-24 17:02:26 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-24 17:04:05 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'titulo' doesn't have a default value
+Request URL: /studyweb-elcultural/Articulos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(1859): DboSource->create(Object(Articulo), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ArticulosController.php(31): Model->save(Array)
+#5 [internal function]: ArticulosController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticulosController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-24 17:32:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Articulo.created' in 'order clause'
+Request URL: /studyweb-elcultural/users/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Articul...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Articul...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Articul...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(2930): DboSource->read(Object(Articulo), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(2902): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ArticulosController.php(79): Model->find('all', Array)
+#7 [internal function]: ArticulosController->ultimos()
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticulosController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Elements/novedades.ctp(2): Object->requestAction('/articulos/ulti...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#14 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(1213): View->_render('/Applications/X...', Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(418): View->_renderElement('/Applications/X...', Array, Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/admin.ctp(64): View->element('novedades')
+#18 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(948): include('/Applications/X...')
+#19 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(542): View->_render('/Applications/X...')
+#21 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(479): View->renderLayout('', 'admin')
+#22 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#23 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#24 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#25 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2014-09-24 17:40:41 Error: [MissingControllerException] Controller class ...Controller could not be found.
+Exception Attributes: array (
+  'class' => '...Controller',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/...
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-24 17:54:12 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/admin
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-24 18:00:26 Error: [MissingActionException] Action UsersController::logi() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logi',
+)
+Request URL: /studyweb-elcultural/users/logi
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

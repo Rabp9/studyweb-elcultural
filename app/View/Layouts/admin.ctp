@@ -45,7 +45,7 @@
                 </ul>
             </div>
             <div class="row">
-                <div class="col-xs-10">
+                <div class="col-xs-9">
                     <ol class="breadcrumb">
                         <li><a href="#">Inicio</a></li>
                         <li class="active">Asistencias</li>
@@ -58,17 +58,10 @@
                 
                     </div>
                 </div>
-                <div class="col-xs-2">
+                <div class="col-xs-3">
                     <div class="panel panel-danger">
                         <div class="panel-heading">Novedades</div>
-                        <div class="panel-body">
-                            <ul>
-                                <li>Novedad 1</li>
-                                <li>Novedad 2</li>
-                                <li>Novedad 3</li>
-                                <li>Novedad 4</li>
-                            </ul>
-                        </div>
+                        <?php echo $this->element("novedades"); ?>
                     </div>
                 </div>
             </div>
