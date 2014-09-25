@@ -4,7 +4,37 @@
     class UsersController extends AppController {
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("add", "logout", "login");
+            //$this->Auth->allow("add", "logout", "login");
+            $this->Auth->allow('initDB');
+        }
+        
+        public function initDB() {
+            $grupo = $this->User->Grupo;
+
+            // Administrador
+            $grupo->id = 1;
+            $this->Acl->allow($grupo, 'controllers');
+
+            // Alumno
+            $group->id = 2;
+            $this->Acl->deny($group, 'controllers');
+            $this->Acl->allow($group, 'controllers/Posts');
+            $this->Acl->allow($group, 'controllers/Widgets');
+
+            // Docente
+            $group->id = 3;
+            $this->Acl->deny($group, 'controllers');
+            $this->Acl->allow($group, 'controllers/Posts/add');
+            $this->Acl->allow($group, 'controllers/Posts/edit');
+            $this->Acl->allow($group, 'controllers/Widgets/add');
+            $this->Acl->allow($group, 'controllers/Widgets/edit');
+
+            // allow basic users to log out
+            $this->Acl->allow($group, 'controllers/users/logout');
+
+            // we add an exit to avoid an ugly "missing views" error message
+            echo "all done";
+            exit;
         }
         
         public function index() {
@@ -26,11 +56,14 @@
 
         public function add() {
             $this->layout = "admin";
+            $this->set("grupos", $this->User->Grupo->find("list", array(
+                "fields" => array("Grupo.idGrupo", "Grupo.descripcion")
+            )));
             
             if ($this->request->is('post')) {
                 $this->User->create();
-                $this->User->set("idUser", $this->User->getIdUser());
-                if ($this->User->save($this->request->data)) {
+                $this->request->data["User"]["idUser"] = $this->User->getIdUser();
+                if ($this->User->saveAssociated($this->request->data)) {
                     $this->Session->setFlash(__('El usuario ha sido registrado correctamente'));
                     return $this->redirect(array('action' => 'index'));
                 }
@@ -77,6 +110,18 @@
             
             if ($this->request->is('post')) {
                 if ($this->Auth->login()) {
+                    $grupo = $this->Auth->user()["Grupo"]["descripcion"];
+                    switch ($grupo) {
+                        case "Administrador":
+                            return $this->redirect("/Docentes/");
+                            break;
+                        case "Alumno":
+                            return $this->redirect("/Alumnos/");
+                            break;
+                        case "Docente":
+                            return $this->redirect("/Grados/");
+                            break;
+                    }
                     return $this->redirect($this->Auth->redirect());
                 }
                 $this->Session->setFlash(__('Invalid usuarioname or password, try again'));

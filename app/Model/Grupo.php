@@ -6,6 +6,7 @@
 
     class Grupo extends AppModel {
         public $primaryKey = "idGrupo";
+        public $actsAs = array('Acl' => array('type' => 'requester'));
        
         public $validate = array(
             'descripcion' => array(
@@ -16,5 +17,8 @@
             )
         );
         
+        public function parentNode() {
+            return null;
+        }
     }
 ?>

@@ -1,3 +1,5 @@
+<!-- File: /app/Controller/AppController.php -->
+
 <?php
 /**
  * Application level Controller
@@ -32,6 +34,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     public $components = array(
+        'Acl',
         'Session',
         'Auth' => array(
             'loginRedirect' => array(
@@ -47,11 +50,14 @@ class AppController extends Controller {
                 'Form' => array(
                     'passwordHasher' => 'Blowfish'
                 )
+            ),
+            'authorize' => array(
+                'Actions' => array('actionPath' => 'controllers')
             )
         )
     );
 
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view', "add");
+        $this->Auth->allow('index', 'view');
     }
 }

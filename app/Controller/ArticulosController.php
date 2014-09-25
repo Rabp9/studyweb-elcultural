@@ -3,8 +3,10 @@
 <?php
     class ArticulosController extends AppController {    
         public function beforeFilter() {
-            $this->Auth->allow("ultimos", "add", "index");
+            parent::beforeFilter();
+            $this->Auth->allow("ultimos");
         }
+        
         public function index() {
             $this->layout = "admin";
             $this->set("articulos", $this->Articulo->find("all", array(

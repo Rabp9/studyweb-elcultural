@@ -8,7 +8,7 @@
             <tr>
                 <th>Código</th>
                 <th>Usuario</th>
-                <th>Rol</th>
+                <th>Grupo</th>
                 <th>Creado</th>
                 <th>Acciòn</th>
             </tr>
@@ -18,7 +18,7 @@
             <tr>
                 <td><?php echo $user["User"]["idUser"]; ?></td>
                 <td><?php echo $user["User"]["username"]; ?></td>
-                <td><?php echo $user["User"]["rol"]; ?></td>
+                <td><?php echo $user["Grupo"]["descripcion"]; ?></td>
                 <td><?php echo $user["User"]["created"]; ?></td>
                 <td>
                     <div class="dropdown">

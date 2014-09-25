@@ -70,19 +70,4 @@
             $this->Session->setFlash(__('User was not deleted'));
             return $this->redirect(array('action' => 'index'));
         }
-      
-        public function login() {
-            $this->layout = false;
-            
-            if ($this->request->is('post')) {
-                if ($this->Auth->login()) {
-                    return $this->redirect($this->Auth->redirect());
-                }
-                $this->Session->setFlash(__('Invalid usuarioname or password, try again'));
-            }
-        }
-
-        public function logout() {
-            return $this->redirect($this->Auth->logout());
-        }
 }

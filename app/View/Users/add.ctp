@@ -14,10 +14,8 @@
         "label" => "Password",
         "div" => "formField"
     ));
-    echo $this->Form->input('rol', array(
-        'options' => array(
-            "admin" => "Admin", "author" => "Author"
-        ), 
+    echo $this->Form->input('idGrupo', array(
+        'options' => $grupos,
         "div" => "formField"
     ));
     echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));
