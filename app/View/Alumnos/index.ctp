@@ -1,4 +1,7 @@
 <!-- File: /app/View/Alumnos/index.ctp -->
+<?php 
+    $this->html->addCrumb('Alumnos', '/Alumnos');
+?>
 
 <h2>Alumnos <small>Lista</small></h2>
 
