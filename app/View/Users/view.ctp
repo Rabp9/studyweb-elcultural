@@ -1,4 +1,8 @@
 <!-- File: /app/View/Users/view.ctp -->
+<?php 
+    $this->html->addCrumb('Usuarios', '/Users');
+    $this->html->addCrumb('Ver', '/Users/view');
+?>
 
 <h2>Usuarios <small>Ver</small></h2>
 
@@ -7,8 +11,8 @@
   <dd><?php echo $user["User"]["idUser"]; ?></dd>
   <dt>Nombre de Usuario</dt>
   <dd><?php echo $user["User"]["username"]; ?></dd>
-  <dt>Rol</dt>
-  <dd><?php echo $user["User"]["rol"]; ?></dd>
+  <dt>Grupo</dt>
+  <dd><?php echo $user["Grupo"]["descripcion"]; ?></dd>
   <dt>Creado</dt>
   <dd><?php echo $user["User"]["created"]; ?></dd>
 </dl>

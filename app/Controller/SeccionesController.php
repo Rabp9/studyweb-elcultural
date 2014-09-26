@@ -3,7 +3,7 @@
 <?php
     class SeccionesController extends AppController {
         public $uses = array("Seccion");
-        
+           
         public function index() {
             $this->layout = "admin";
             $this->set("secciones", $this->Seccion->find("all", array(
@@ -27,7 +27,8 @@
         public function add() {
             $this->layout = "admin";
             $this->set("grados", $this->Seccion->Grado->find("list", array(
-                "fields" => array("Grado.idGrado", "Grado.descripcion_general")
+                "fields" => array("Grado.idGrado", "Grado.descripcion_general"),
+                'conditions' => array('Grado.estado' => '1')
             )));
          
             if ($this->request->is("post")) {
@@ -43,7 +44,8 @@
         public function edit($id = null) {
             $this->layout = "admin";
             $this->set("grados", $this->Seccion->Grado->find("list", array(
-                "fields" => array("Grado.idGrado", "Grado.descripcion_general")
+                "fields" => array("Grado.idGrado", "Grado.descripcion_general"),
+                'conditions' => array('Grado.estado' => '1')
             )));
             
             if (!$id) {

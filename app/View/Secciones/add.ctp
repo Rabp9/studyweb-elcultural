@@ -1,4 +1,8 @@
 <!-- File: /app/View/Secciones/add.ctp -->
+<?php 
+    $this->html->addCrumb('Secciones', '/Secciones');
+    $this->html->addCrumb('Nuevo', '/Secciones/add');
+?>
 
 <h2>Secciones <small>Nuevo</small></h2>
 

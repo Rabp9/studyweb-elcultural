@@ -1,4 +1,8 @@
 <!-- File: /app/View/Grados/edit.ctp -->
+<?php 
+    $this->html->addCrumb('Grados', '/Grados');
+    $this->html->addCrumb('Editar', '/Grados/edit');
+?>
 
 <h2>Grados <small>Editar</small></h2>
 

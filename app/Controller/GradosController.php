@@ -1,7 +1,7 @@
 <!-- File: /app/Controller/GradosController.php -->
 
 <?php
-    class GradosController extends AppController {
+    class GradosController extends AppController {              
         public function index() {
             $this->layout = "admin";
             $this->set("grados", $this->Grado->find("all", array(

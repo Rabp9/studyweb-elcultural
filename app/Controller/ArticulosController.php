@@ -18,11 +18,11 @@
             $this->layout = "admin";
             
             if (!$id) {
-                throw new NotFoundException(__("Articulo inválido"));
+                throw new NotFoundException(__("Artículo inválido"));
             }
-            $grado = $this->Articulo->findByIdarticulo($id);
-            if (!$grado) {
-                throw new NotFoundException(__("Articulo inválido"));
+            $articulo = $this->Articulo->findByIdarticulo($id);
+            if (!$articulo) {
+                throw new NotFoundException(__("Artículo inválido"));
             } 
             $this->set("articulo", $articulo);
         }
@@ -32,9 +32,12 @@
             
             if ($this->request->is("post")) {
                 $this->Articulo->create();
+                
                 $filename = $this->request->data["Articulo"]["foto"]["name"];
+                move_uploaded_file($this->request->data['Articulo']['foto']['tmp_name'], WWW_ROOT. DS . "img" . DS . "novedades" . DS . $filename);  
                 unset($this->request->data["Articulo"]["foto"]);
                 $this->request->data["Articulo"]["foto"] = $filename;
+
                 if ($this->Articulo->save($this->request->data)) {
                     debug($this->request->data);
                     $this->Session->setFlash(__("El grado ha sido registrado correctamente."), "flash_bootstrap");
@@ -73,7 +76,7 @@
             }
             $this->Articulo->id = $id;
             if ($this->Articulo->saveField("estado", 2)) {
-                $this->Session->setFlash(__("El artìxulo de código: %s ha sido eliminado.", h($id)), "flash_bootstrap");
+                $this->Session->setFlash(__("El artículo de código: %s ha sido eliminado.", h($id)), "flash_bootstrap");
                 return $this->redirect(array("action" => "index"));
             }
         }
@@ -82,6 +85,9 @@
             if(empty($this->request->params["requested"])) {
                 throw new ForbiddenException();
             }
-            return $this->Articulo->find("all", array("order" => "Articulo.created DESC", "limit" => 10));
+            return $this->Articulo->find("all", array(
+                "order" => "Articulo.created DESC", "limit" => 10,
+                'conditions' => array('Articulo.estado' => '1')
+            ));
         }
 }

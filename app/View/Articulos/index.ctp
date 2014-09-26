@@ -3,7 +3,7 @@
     $this->html->addCrumb('Artículos', '/Articulos');
 ?>
 
-<h2>Articulos <small>Lista</small></h2>
+<h2>Artículos <small>Lista</small></h2>
 
 <div class="table-responsive">
     <table class="table">

@@ -1,4 +1,8 @@
 <!-- File: /app/View/Secciones/view.ctp -->
+<?php 
+    $this->html->addCrumb('Secciones', '/Secciones');
+    $this->html->addCrumb('Ver', '/Secciones/Ver');
+?>
 
 <h2>Secciones <small>Ver</small></h2>
 

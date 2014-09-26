@@ -1,10 +1,14 @@
 <!-- File: /app/View/Secciones/edit.ctp -->
+<?php 
+    $this->html->addCrumb('Secciones', '/Secciones');
+    $this->html->addCrumb('Editar', '/Secciones/editar');
+?>
 
 <h2>Secciones <small>Editar</small></h2>
 
 <?php
     echo $this->Form->create("Seccion");
-    echo $this->Html->para("lead", "Modifique los datos del Seccion:");
+    echo $this->Html->para("lead", "Modifique los datos de la Sección:");
     echo $this->Form->input("idSeccion", array("type" => "hidden"));
     echo $this->Form->input("descripcion", array(
         "label" => "Descripción",

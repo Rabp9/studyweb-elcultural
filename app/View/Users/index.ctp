@@ -1,4 +1,7 @@
 <!-- File: /app/View/Users/index.ctp -->
+<?php 
+    $this->html->addCrumb('Usuarios', '/Users');
+?>
 
 <h2>Usuarios <small>Lista</small></h2>
 

@@ -1,4 +1,8 @@
 <!-- File: /app/View/Docente/add.ctp -->
+<?php 
+    $this->html->addCrumb('Docentes', '/Docentes');
+    $this->html->addCrumb('Nuevo', '/Docentes/Nuevo');
+?>
 
 <h2>Docentes <small>Nuevo</small></h2>
 

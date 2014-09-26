@@ -4,7 +4,6 @@
     $this->html->addCrumb('Ver', '/Alumnos/Ver');
 ?>
 
-
 <h2>Alumnos <small>Ver</small></h2>
 
 <dl class="dl-horizontal">

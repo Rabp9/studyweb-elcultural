@@ -1,4 +1,8 @@
 <!-- File: /app/View/Grados/view.ctp -->
+<?php 
+    $this->html->addCrumb('Grados', '/Grados');
+    $this->html->addCrumb('Ver', '/Grados/Ver');
+?>
 
 <h2>Grados <small>Ver</small></h2>
 

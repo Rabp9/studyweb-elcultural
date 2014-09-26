@@ -56,8 +56,9 @@
                             array(
                                 'class' => 'breadcrumb',
                                 "firstClass" => false,
-                                "lastClass" => "active"),
-                            array('text' => 'Home', )
+                                "lastClass" => "active"
+                            ),
+                            array('text' => 'Home')
                             );
                     ?>
                     <div id="content">

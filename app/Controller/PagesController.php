@@ -29,7 +29,11 @@ App::uses('AppController', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
  */
     class PagesController extends AppController {
-
+        // Luego borrar
+        public function beforeFilter() {
+            $this->Auth->allow('admin', 'alumno');
+        }
+        
 	public function admin() {
             $this->layout = "admin";
         }

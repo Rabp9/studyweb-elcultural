@@ -1,4 +1,8 @@
 <!-- File: /app/View/Users/add.ctp -->
+<?php 
+    $this->html->addCrumb('Usuarios', '/Users');
+    $this->html->addCrumb('Nuevo', '/Users/add');
+?>
 
 <h2>Usuarios <small>Nuevo</small></h2>
 

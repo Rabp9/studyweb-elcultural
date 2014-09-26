@@ -1,4 +1,8 @@
 <!-- File: /app/View/Articulos/add.ctp -->
+<?php 
+    $this->html->addCrumb('Artículos', '/Articulos');
+    $this->html->addCrumb('Nuevo', '/Articulos/Nuevo');
+?>
 
 <h2>Artìculos <small>Nuevo</small></h2>
 
