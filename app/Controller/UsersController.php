@@ -14,7 +14,8 @@
             // Administrador
             $grupo->id = 1;
             $this->Acl->allow($grupo, 'controllers');
-
+            $this->Acl->allow($grupo, 'controllers/pages/');
+/*
             // Alumno
             $group->id = 2;
             $this->Acl->deny($group, 'controllers');
@@ -31,7 +32,7 @@
 
             // allow basic users to log out
             $this->Acl->allow($group, 'controllers/users/logout');
-
+*/
             // we add an exit to avoid an ugly "missing views" error message
             echo "all done";
             exit;
@@ -113,7 +114,7 @@
                     $grupo = $this->Auth->user()["Grupo"]["descripcion"];
                     switch ($grupo) {
                         case "Administrador":
-                            return $this->redirect("/Docentes/");
+                            return $this->redirect("/Alumnos/add");
                             break;
                         case "Alumno":
                             return $this->redirect("/Alumnos/");
