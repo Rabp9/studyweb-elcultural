@@ -1,5 +1,8 @@
 <!-- File: /app/View/Alumnos/edit.ctp -->
-
+<?php 
+    $this->html->addCrumb('Alumnos', '/Alumnos');
+    $this->html->addCrumb('Editar', '/Alumnos/Editar');
+?>
 <h2>Alumnos <small>Editar</small></h2>
 
 <?php

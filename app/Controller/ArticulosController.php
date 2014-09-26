@@ -32,7 +32,11 @@
             
             if ($this->request->is("post")) {
                 $this->Articulo->create();
+                $filename = $this->request->data["Articulo"]["foto"]["name"];
+                unset($this->request->data["Articulo"]["foto"]);
+                $this->request->data["Articulo"]["foto"] = $filename;
                 if ($this->Articulo->save($this->request->data)) {
+                    debug($this->request->data);
                     $this->Session->setFlash(__("El grado ha sido registrado correctamente."), "flash_bootstrap");
                     return $this->redirect(array("action" => "index"));
                 }

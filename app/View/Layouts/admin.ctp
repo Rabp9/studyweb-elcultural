@@ -32,14 +32,20 @@
             </div>
             <div class="row data-nav">
                 <ul class="nav nav-tabs" role="tablist">
-                    <li class="active"><a href="#">Inicio</a></li>
+                    <li class="active"><?php echo $this->Html->link("Home", array("controller" => "Pages", "action" => "admin")); ?></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Mantenimiento <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Grado</a></li>
-                            <li><a href="#">Sección</a></li>
+                            <li><?php echo $this->Html->link("Alumnos", array("controller" => "Alumnos", "action" => "index")); ?></li>
+                            <li><?php echo $this->Html->link("Docentes", array("controller" => "Docentes", "action" => "index")); ?></li>
+                            <li><?php echo $this->Html->link("Artículos", array("controller" => "Articulos", "action" => "index")); ?></li>
+                            <li role="presentation" class="divider"></li>
+                            <li><?php echo $this->Html->link("Grados", array("controller" => "Grados", "action" => "index")); ?></li>
+                            <li><?php echo $this->Html->link("Secciones", array("controller" => "Secciones", "action" => "index")); ?></li>
+                            <li role="presentation" class="divider"></li>
+                            <li><?php echo $this->Html->link("Usuarios", array("controller" => "Users", "action" => "index")); ?></li>
                         </ul>
                     </li>
                 </ul>

@@ -4,7 +4,7 @@
     class UsersController extends AppController {
         public function beforeFilter() {
             parent::beforeFilter();
-            //$this->Auth->allow("add", "logout", "login");
+            // $this->Auth->allow("add", "logout", "login");
             $this->Auth->allow('initDB');
         }
         
@@ -12,16 +12,14 @@
             $grupo = $this->User->Grupo;
 
             // Administrador
-            $grupo->id = 1;
-            $this->Acl->allow($grupo, 'controllers');
-            $this->Acl->allow($grupo, 'controllers/pages/');
-/*
-            // Alumno
-            $group->id = 2;
-            $this->Acl->deny($group, 'controllers');
-            $this->Acl->allow($group, 'controllers/Posts');
-            $this->Acl->allow($group, 'controllers/Widgets');
+            //$grupo->id = 1;
+            //$this->Acl->allow($grupo, 'controllers');
+            //$this->Acl->deny($grupo, 'controllers/Pages/alumno');
 
+            // Alumno
+            $grupo->id = 2;
+            $this->Acl->allow($grupo, 'controllers/Pages/alumno');
+/*
             // Docente
             $group->id = 3;
             $this->Acl->deny($group, 'controllers');
@@ -114,16 +112,15 @@
                     $grupo = $this->Auth->user()["Grupo"]["descripcion"];
                     switch ($grupo) {
                         case "Administrador":
-                            return $this->redirect("/Alumnos/add");
+                            return $this->redirect("/Pages/admin");
                             break;
                         case "Alumno":
-                            return $this->redirect("/Alumnos/");
+                            return $this->redirect("/Pages/alumno/");
                             break;
                         case "Docente":
                             return $this->redirect("/Grados/");
                             break;
                     }
-                    return $this->redirect($this->Auth->redirect());
                 }
                 $this->Session->setFlash(__('Invalid usuarioname or password, try again'));
             }

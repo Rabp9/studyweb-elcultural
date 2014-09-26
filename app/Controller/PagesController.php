@@ -31,6 +31,10 @@ App::uses('AppController', 'Controller');
     class PagesController extends AppController {
 
 	public function admin() {
-            
+            $this->layout = "admin";
+        }
+        
+	public function alumno() {
+            $this->layout = "alumno";
         }
 }
