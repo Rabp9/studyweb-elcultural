@@ -4,21 +4,22 @@
     class UsersController extends AppController {
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("add", "logout", "login", "edit");
-            // $this->Auth->allow('initDB');
+            // $this->Auth->allow("add", "logout", "login", "edit");
+            $this->Auth->allow('initDB');
         }
         
         public function initDB() {
             $grupo = $this->User->Grupo;
 
             // Administrador
-            //$grupo->id = 1;
-            //$this->Acl->allow($grupo, 'controllers');
-            //$this->Acl->deny($grupo, 'controllers/Pages/alumno');
+            $grupo->id = 1;
+            $this->Acl->allow($grupo, 'controllers');
+            $this->Acl->deny($grupo, 'controllers/Pages/alumno');
 
             // Alumno
             $grupo->id = 2;
             $this->Acl->allow($grupo, 'controllers/Pages/alumno');
+            $this->Acl->allow($grupo, 'controllers/Mensajes/registrar');
 /*
             // Docente
             $group->id = 3;

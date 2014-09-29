@@ -85,10 +85,14 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <div class="icon icon-mensajes icon-medium"></div>
-                                Mensajes
-                            </a>
+                            <?php 
+                                echo $this->Html->link(
+                                        $this->Html->tag("div","",array("class" => "icon icon-mensajes icon-medium")) . 
+                                        "Mensajes", 
+                                        array("controller" => "Mensajes", "action" => "registrar"),
+                                        array("escape" => false)
+                                );
+                            ?>
                         </li>
                         <li>
                             <a href="#">
