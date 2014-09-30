@@ -37,8 +37,8 @@
                 ));
             ?>
             <label class="checkbox">
-            <input type="checkbox" value="remember-me">
-               Recuérdame
+                <input type="checkbox" value="remember-me">
+                Recuérdame
             </label>
             <?php
                 echo $this->Form->button("Log in", array(

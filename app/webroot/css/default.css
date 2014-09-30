@@ -21,15 +21,13 @@ ol.breadcrumb {
     border-top: red solid 2px;
     border-bottom: black solid 2px;
 }
-
-form .formField label { 
-    display: inline-block;
-    width: 100px;
-    text-align: right; 
+div.formField {
+    margin-bottom: 6px;
 }
 
-form .formField input, form .formField select {
-    margin-left: 15px;
+div.formField label {
+    display: block;
+    margin: 0;
 }
 
 .nav-tabs > li > a {

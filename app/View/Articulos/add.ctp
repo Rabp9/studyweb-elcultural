@@ -16,7 +16,7 @@
         "div" => "formField",
         "autofocus" => "autofocus"
     ));
-    echo $this->Html->para(null, "Esriba la descripciòn del artìculo:");
+    echo $this->Form->label("descripcion", "Descripción");
     echo $this->Form->textarea('descripcion', array(
         'class' => 'ckeditor'
     ));

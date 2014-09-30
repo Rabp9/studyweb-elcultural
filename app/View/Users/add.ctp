@@ -19,6 +19,7 @@
         "div" => "formField"
     ));
     echo $this->Form->input('idGrupo', array(
+        "label" => "Grupo",
         'options' => $grupos,
         "div" => "formField"
     ));
