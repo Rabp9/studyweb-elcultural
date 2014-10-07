@@ -1,7 +1,9 @@
 <!-- File: /app/Controller/PeriodosController.php -->
 
 <?php
-    class PeriodosController extends AppController {              
+    App::uses('CakeTime', 'Utility');
+        
+    class PeriodosController extends AppController {
         public function index() {
             $this->layout = "admin";
             $this->set("periodos", $this->Periodo->find("all", array(
@@ -23,14 +25,25 @@
                 if ($this->Periodo->saveAssociated($this->request->data)) {
                     $fechaInicio = $this->request->data["Periodo"]["fechaInicio"];
                     $fechaFin = $this->request->data["Periodo"]["fechaFin"];
+                    
+                    $fechaInicio = CakeTime::format(
+                        'Y-m-d',
+                        $fechaInicio["year"] . "-" . $fechaInicio["month"] . "-" . $fechaInicio["day"]
+                    );
+                    $fechaFin = CakeTime::format(
+                        'Y-m-d',
+                        $fechaFin["year"] . "-" . $fechaFin["month"] . "-" . $fechaFin["day"]
+                    );
                     while ($fechaInicio != $fechaFin) {
                         $data = array(
                             "idPeriodo" => $this->Periodo->id,
                             "inicio" => $fechaInicio,
                             "fin" => $fechaFin
                         );
-                        $this->Periodo->Clase->saveAssociated($data);
-                        // Aumentar un día a $fechaInicio
+                        $this->Periodo->Clase->saveAssociated($data); 
+                        
+                        $fechaInicio = strtotime("+1 day", strtotime($fechaInicio));
+                        $fechaInicio = date("Y-m-d", $fechaInicio);
                     }
                     $ds->commit();
                     $this->Session->setFlash(__("El periodo ha sido registrado correctamente."), "flash_bootstrap");

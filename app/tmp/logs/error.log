@@ -5927,3 +5927,208 @@ Stack Trace:
 #3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-10-01 05:47:30 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /studyweb-elcultural/
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3507): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1145): Model->setDataSource('default')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3534): Model->setSource('users')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1374): Model->getDataSource()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\studyweb-elcultural\app\View\Users\login.ctp(23): FormHelper->create('User', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-10-01 05:49:04 Error: [Exception] DateTime::__construct() expects parameter 1 to be string, array given
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\Controller\PeriodosController.php(33): DateTime->__construct(Array)
+#1 [internal function]: PeriodosController->add()
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PeriodosController), Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PeriodosController), Object(CakeRequest))
+#5 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-01 06:01:25 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-10-01 06:01:25 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 458, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\stu...', 458, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-01 06:03:23 Error: Fatal Error (1): Call to a member function format() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\PeriodosController.php, line 33]
+2014-10-01 06:03:23 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 33, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 33, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-01 06:04:42 Error: Fatal Error (1): Call to a member function format() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\PeriodosController.php, line 35]
+2014-10-01 06:04:42 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 35, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 35, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-01 06:11:05 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\wamp\www\studyweb-elcultural\lib\Cake\Utility\Debugger.php, line 554]
+2014-10-01 06:11:05 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 554)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 554, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\stu...', 554, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-01 06:12:36 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\wamp\www\studyweb-elcultural\lib\Cake\Utility\String.php, line 241]
+2014-10-01 06:12:36 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 241)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 241, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\stu...', 241, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-07 06:20:23 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /studyweb-elcultural/
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3507): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1145): Model->setDataSource('default')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3534): Model->setSource('users')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1374): Model->getDataSource()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\studyweb-elcultural\app\View\Users\login.ctp(23): FormHelper->create('User', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-10-07 06:25:01 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\wamp\www\studyweb-elcultural\lib\Cake\Utility\Debugger.php, line 821]
+2014-10-07 06:25:01 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 821)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 821, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\stu...', 821, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-07 06:38:41 Error: Fatal Error (1): Call to a member function format() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\PeriodosController.php, line 29]
+2014-10-07 06:38:41 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 29, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 29, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-07 06:40:19 Error: [MissingComponentException] Component class TimeComponent could not be found.
+Exception Attributes: array (
+  'class' => 'TimeComponent',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Time', Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(PeriodosController))
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(186): Controller->constructClasses()
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PeriodosController), Object(CakeRequest))
+#4 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-07 06:40:55 Error: Fatal Error (1): Call to a member function format() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\PeriodosController.php, line 29]
+2014-10-07 06:40:55 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 29, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 29, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-07 06:43:20 Error: Fatal Error (1): Call to a member function format() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\PeriodosController.php, line 29]
+2014-10-07 06:43:20 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 29, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 29, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-07 06:53:08 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\wamp\www\studyweb-elcultural\lib\Cake\Utility\Debugger.php, line 802]
+2014-10-07 06:53:08 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 802)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 802, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\stu...', 802, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-07 06:54:38 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\wamp\www\studyweb-elcultural\lib\Cake\Utility\Debugger.php, line 470]
+2014-10-07 06:54:38 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 470)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 470, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\stu...', 470, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-07 06:58:33 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\wamp\www\studyweb-elcultural\lib\Cake\Utility\Debugger.php, line 562]
+2014-10-07 06:58:33 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 562)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 562, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\stu...', 562, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-07 07:03:59 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\wamp\www\studyweb-elcultural\lib\Cake\Utility\Debugger.php, line 779]
+2014-10-07 07:03:59 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 779)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\stu...', 779, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\stu...', 779, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
