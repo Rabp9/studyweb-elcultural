@@ -3,7 +3,12 @@
 <?php
     class SeccionesController extends AppController {
         public $uses = array("Seccion");
-           
+        
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow('getByGrado');
+        }
+
         public function index() {
             $this->layout = "admin";
             $this->set("secciones", $this->Seccion->find("all", array(
@@ -78,4 +83,5 @@
                 return $this->redirect(array("action" => "index"));
             }
         }
+        
 }
