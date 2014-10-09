@@ -44,14 +44,103 @@
             }
         ?>    
         <tr>
-            <td><?php echo $horaInicio; ?></td>
-            <td><?php echo $periodo["Periodo"]["domingo"] ? "boton agregar" : "" ?></td>
-            <td><?php echo $periodo["Periodo"]["lunes"] ? "boton agregar" : "" ?></td>
-            <td><?php echo $periodo["Periodo"]["martes"] ? "boton agregar" : "" ?></td>
-            <td><?php echo $periodo["Periodo"]["miercoles"] ? "boton agregar" : "" ?></td>
-            <td><?php echo $periodo["Periodo"]["jueves"] ? "boton agregar" : "" ?></td>
-            <td><?php echo $periodo["Periodo"]["viernes"] ? "boton agregar" : "" ?></td>
-            <td><?php echo $periodo["Periodo"]["sabado"] ? "boton agregar" : "" ?></td>
+            <td></td>
+            <td>
+                <?php echo $periodo["Periodo"]["domingo"] ? 
+                    $this->Form->button("Agregar Curso", array(
+                        "type" => "button",
+                        "class" => "btn btn-primary",
+                        "data-toggle" => "modal",
+                        "data-target" => "#mdlDetalleCurso"
+                    )) :
+                    "" 
+                ?>
+            </td>
+            <td>
+                <?php echo $periodo["Periodo"]["lunes"] ? 
+                    $this->Form->button("Agregar Curso", array(
+                        "type" => "button",
+                        "class" => "btn btn-primary",
+                        "data-toggle" => "modal",
+                        "data-target" => "#mdlDetalleCurso"
+                    )) :
+                    "" 
+                ?>
+            </td>
+            <td>
+                <?php echo $periodo["Periodo"]["martes"] ? 
+                    $this->Form->button("Agregar Curso", array(
+                        "type" => "button",
+                        "class" => "btn btn-primary",
+                        "data-toggle" => "modal",
+                        "data-target" => "#mdlDetalleCurso"
+                    )) :
+                    "" 
+                ?>
+            </td>         
+            <td>
+                <?php echo $periodo["Periodo"]["miercoles"] ? 
+                    $this->Form->button("Agregar Curso", array(
+                        "type" => "button",
+                        "class" => "btn btn-primary",
+                        "data-toggle" => "modal",
+                        "data-target" => "#mdlDetalleCurso"
+                    )) :
+                    "" 
+                ?>
+            </td>         
+            <td>
+                <?php echo $periodo["Periodo"]["jueves"] ? 
+                    $this->Form->button("Agregar Curso", array(
+                        "type" => "button",
+                        "class" => "btn btn-primary",
+                        "data-toggle" => "modal",
+                        "data-target" => "#mdlDetalleCurso"
+                    )) :
+                    "" 
+                ?>
+            </td>        
+            <td>
+                <?php echo $periodo["Periodo"]["viernes"] ? 
+                    $this->Form->button("Agregar Curso", array(
+                        "type" => "button",
+                        "class" => "btn btn-primary",
+                        "data-toggle" => "modal",
+                        "data-target" => "#mdlDetalleCurso"
+                    )) :
+                    "" 
+                ?>
+            </td>          
+            <td>
+                <?php echo $periodo["Periodo"]["sabado"] ? 
+                    $this->Form->button("Agregar Curso", array(
+                        "type" => "button",
+                        "class" => "btn btn-primary",
+                        "data-toggle" => "modal",
+                        "data-target" => "#mdlDetalleCurso"
+                    )) :
+                    "" 
+                ?>
+            </td>
         </tr>
     </tbody>
 </table>
+
+<!-- Modal -->
+<div class="modal fade" id="mdlDetalleCurso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Seleccionar Curso</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+</div>

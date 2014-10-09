@@ -1,7 +1,7 @@
-<!-- File: /app/View/Cursoes/add.ctp -->
+<!-- File: /app/View/Cursos/add.ctp -->
 <?php 
-    $this->html->addCrumb('Cursoes', '/Cursoes');
-    $this->html->addCrumb('Nuevo', '/Cursoes/add');
+    $this->html->addCrumb('Cursos', '/Cursos');
+    $this->html->addCrumb('Nuevo', '/Cursos/add');
 ?>
 
 <h2>Cursos <small>Nuevo</small></h2>
