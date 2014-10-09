@@ -48,6 +48,8 @@
                             <li><?php echo $this->Html->link("Usuarios", array("controller" => "Users", "action" => "index")); ?></li>
                         </ul>
                     </li>
+                    <li><?php echo $this->Html->link("Registrar Periodo", array("controller" => "Periodos", "action" => "index")); ?></li>
+                    <li><?php echo $this->Html->link("Registrar Horario", array("controller" => "Horarios", "action" => "index")); ?></li>
                 </ul>
             </div>
             <div class="row">

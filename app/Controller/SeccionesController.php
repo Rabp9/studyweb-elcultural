@@ -84,4 +84,14 @@
             }
         }
         
+        public function getByGrado() {
+            $idGrado = $this->request->data['Periodo']['idGrado'];
+
+            $this->set("secciones", $this->Seccion->find("list", array(
+                "fields" => array("Seccion.idSeccion", "Seccion.descripcion"),
+                'conditions' => array('Seccion.estado' => '1', "Seccion.idGrado" => $idGrado)
+            )));
+            
+            $this->layout = 'ajax';
+	}
 }

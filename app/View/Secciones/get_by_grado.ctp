@@ -1,5 +1,9 @@
-<!-- file path View/Subcategories/get_by_category.ctp -->
+<!-- file path View/Secciones/get_by_grado.ctp -->
 
-<?php foreach ($secciones as $key => $value): ?>
-<option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-<?php endforeach; ?>
+<?php
+    echo $this->Form->input('idSeccion', array(
+        "label" => "Sección",
+        "div" => "formField",
+        "options" => $secciones
+    ));    
+?>

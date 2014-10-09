@@ -4,6 +4,11 @@
     App::uses('CakeTime', 'Utility');
         
     class PeriodosController extends AppController {
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow('getDias');
+        }
+
         public function index() {
             $this->layout = "admin";
             $this->set("periodos", $this->Periodo->find("all", array(
@@ -57,5 +62,13 @@
         }
            
         public function delete($id) {
+        }
+        
+        public function getDias() {
+            $this->Periodo->id = $this->request->data['Periodo']['idPeriodo'];
+
+            $this->set("periodo", $this->Periodo->read());
+            
+            $this->layout = 'ajax';
         }
 }
