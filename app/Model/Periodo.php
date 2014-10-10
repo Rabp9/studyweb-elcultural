@@ -9,12 +9,7 @@
                 "rule" => "notEmpty"
             )
         );
-        
-        public $hasMany = array(
-            "Clase" => array(
-                "foreignKey" => "idPeriodo"
-            )
-        );
+
         public function getIdPeriodo() {
             $cantidad = $this->query("SELECT count(*) 'cantidad' FROM Periodos");
             $cantidad = $cantidad[0][0]["cantidad"];

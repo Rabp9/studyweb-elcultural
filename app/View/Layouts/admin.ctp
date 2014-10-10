@@ -45,6 +45,7 @@
                             <li><?php echo $this->Html->link("Grados", array("controller" => "Grados", "action" => "index")); ?></li>
                             <li><?php echo $this->Html->link("Secciones", array("controller" => "Secciones", "action" => "index")); ?></li>
                             <li><?php echo $this->Html->link("Cursos", array("controller" => "Cursos", "action" => "index")); ?></li>
+                            <li><?php echo $this->Html->link("Aulas", array("controller" => "Aulas", "action" => "index")); ?></li>
                             <li role="presentation" class="divider"></li>
                             <li><?php echo $this->Html->link("Usuarios", array("controller" => "Users", "action" => "index")); ?></li>
                         </ul>

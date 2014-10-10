@@ -10,12 +10,14 @@
     echo $this->Form->input('idPeriodo', array(
         "label" => "Periodo",
         "div" => "formField",
-        "options" => $periodos
+        "options" => $periodos,
+        "empty" => "Selecciona uno"
     ));
     echo $this->Form->input('idGrado', array(
         "label" => "Grado",
         "div" => "formField",
-        "options" => $grados
+        "options" => $grados,
+        "empty" => "Selecciona uno"
     ));    
     echo $this->Form->input('idSeccion', array(
         "label" => "Sección",
@@ -24,8 +26,11 @@
         "disabled" => true
     ));
     echo $this->Html->div("formField", "", array("id" => "dvHorario"));
+    echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array(
+        "class" => "btn btn-default", 
+        "id" => "btnRegistrar"
+    ));
     echo $this->Form->end();
-    
 ?>
     
 <?php
@@ -62,5 +67,12 @@
                 'inline' => true
             ))
         ))
+    );
+?>
+
+<?php
+    $this->Js->get('#PeriodoIndexForm')->event('submit', 
+        "alert('validar');
+         return true;"
     );
 ?>
