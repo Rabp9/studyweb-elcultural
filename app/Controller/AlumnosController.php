@@ -2,6 +2,8 @@
 
 <?php
     class AlumnosController extends AppController {
+        public $uses = array("Alumno", "User");
+        
         public function index() {
             $this->layout = "admin";
             $this->set("alumnos", $this->Alumno->find("all", array(
@@ -29,10 +31,13 @@
                 $this->Alumno->create();
                 $this->Alumno->set("idAlumno", $this->Alumno->getIdAlumno());
                 if ($this->Alumno->save($this->request->data)) {
-                    $this->Session->setFlash(__("El alumno ha sido registrado correctamente."), "flash_bootstrap");
-                    return $this->redirect(array("action" => "index"));
+                    $this->request->data["User"]["idUser"] = $this->User->getIdUser();
+                    if ($this->User->saveAssociated($this->request->data)) {
+                        $this->Session->setFlash(__("El alumno ha sido registrado correctamente."), "flash_bootstrap");
+                        return $this->redirect(array('action' => 'index'));
+                    }
+                    $this->Session->setFlash(__("No fue posible registrar el alumno."), "flash_bootstrap");
                 }
-                $this->Session->setFlash(__("No fue posible registrar el alumno."), "flash_bootstrap");
             }
         }
          
