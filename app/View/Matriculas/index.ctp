@@ -33,11 +33,16 @@
     </div>
     <div class="col-xs-6">
 <?php
-    echo $this->Form->input("idAlumno", array(
+    echo $this->Form->input("Alumno.idAlumno", array(
         "label" => "Alumno",
         "div" => "formField",
         "data-toggle" => "modal",
         "data-target" => "#mdlBuscarAlumno",
+    ));
+    echo $this->Form->input("Alumno.nombreCompleto", array(
+        "label" => "Nombre Completo",
+        "div" => "formField",
+        "readonly" => true
     ));
 ?>
     </div>
@@ -73,12 +78,14 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <input type="hidden" id="dia" value=""/>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 <h4 class="modal-title">Seleccionar Alumno</h4>
             </div>
-            <div class="modal-body">
-                adadsad
+            <div class="modal-body" id="dvBuscarAlumnos">
+                <?php echo $this->requestAction(array(
+                    "controller" => "Alumnos",
+                    "action" => "getAlumnos"
+                )); ?>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" id="aceptar">Aceptar</button>
@@ -87,3 +94,35 @@
         </div>
     </div>
 </div>
+<?php
+    $this->Js->get('#busqueda')->event('keyup', 
+        $this->Js->request(array(
+            'controller'=> 'Alumnos',
+            'action'=> 'getAlumnos'
+        ), array(
+            'update'=>'#dvBuscarAlumnos',
+            'async' => true,
+            'method' => 'post',
+            'dataExpression'=>true,
+            'data'=> $this->Js->serializeForm(array(
+                'isForm' => true,
+                'inline' => true
+            ))
+        ))
+    );
+?>
+<?php
+    $this->Html->scriptStart(array('inline' => false));
+
+?>
+    $("body").on("click", ".seleccionarAlumno", function() {
+        var codigo = $(this).parent().parent().find(".tdIdAlumno").text();
+        var nombreCompleto = $(this).parent().parent().find(".tdNombreCompleto").text();
+        $("#AlumnoIdAlumno").val(codigo);      
+        $("#AlumnoNombreCompleto").val(nombreCompleto);
+        $("#mdlBuscarAlumno").modal('toggle');
+        $("#busqueda").val("");
+    });
+<?php
+    $this->Html->scriptEnd();
+?>

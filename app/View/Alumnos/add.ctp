@@ -32,8 +32,7 @@
     ));
     echo $this->Form->input("direccion", array(
         "label" => "Dirección",
-        "div" => "formField",
-        "dateFormat" => "Y-m-d"
+        "div" => "formField"
     ));
     echo $this->Form->input("User.username", array(
         "label" => "Nombre de Usuario",

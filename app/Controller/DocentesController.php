@@ -26,11 +26,18 @@
             $this->layout = "admin";
             
             if ($this->request->is("post")) {
-                $this->Docente->create();
-                $this->Docente->set("idDocente", $this->Docente->getIdDocente());
-                if ($this->Docente->save($this->request->data)) {
-                    $this->Session->setFlash(__("El docente ha sido registrado correctamente."), "flash_bootstrap");
-                    return $this->redirect(array("action" => "index"));
+                $ds = $this->Docente->getDataSource();
+                $ds->begin();
+                
+                $this->request->data["Docente"]["idDocente"] = $this->Docente->getIdDocente();
+                $this->request->data["User"]["idUser"] = $this->Docente->User->getIdUser();
+                $this->request->data["Docente"]["idUser"] = $this->Docente->User->getIdUser();
+                if($this->Docente->User->save($this->request->data)) {
+                     if($this->Docente->save($this->request->data)) {
+                        $ds->commit();
+                        $this->Session->setFlash(__("El docente ha sido registrado correctamente."), "flash_bootstrap");
+                        return $this->redirect(array("action" => "index"));
+                     }  
                 }
                 $this->Session->setFlash(__("No fue posible registrar el docente."), "flash_bootstrap");
             }

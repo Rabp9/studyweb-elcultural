@@ -7079,3 +7079,242 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-10-10 21:34:01 Error: Fatal Error (1): Call to a member function saveMany() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php, line 40]
+2014-10-10 21:34:01 Error: [FatalErrorException] Call to a member function saveMany() on a non-object
+Request URL: /studyweb-elcultural/Horarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 40, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 40, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-10 21:35:09 Error: [MissingTableException] Table horarios for model Horario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'horarios',
+  'class' => 'Horario',
+  'ds' => 'default',
+)
+Request URL: /studyweb-elcultural/Horarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3534): Model->setSource('horarios')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1374): Model->getDataSource()
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1239): Model->schema()
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1202): Model->_setAliasData(Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\ModelValidator.php(214): Model->set(Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2320): ModelValidator->validateMany(Array, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2247): Model->validateMany(Array, Array)
+#7 C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php(40): Model->saveMany(Array)
+#8 [internal function]: HorariosController->index()
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HorariosController), Array)
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
+#12 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-10 21:43:43 Error: [MissingControllerException] Controller class InitDBController could not be found.
+Exception Attributes: array (
+  'class' => 'InitDBController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/initDB
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-10 21:48:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0-C003-2-101-P01-D001' for key 'PRIMARY'
+Request URL: /studyweb-elcultural/Horarios
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(AppModel), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2267): Model->save(Array, Array)
+#5 C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php(40): Model->saveMany(Array)
+#6 [internal function]: HorariosController->index()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HorariosController), Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-10-10 23:52:01 Error: Fatal Error (1): Call to a member function getIdUser() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 32]
+2014-10-10 23:52:01 Error: [FatalErrorException] Call to a member function getIdUser() on a non-object
+Request URL: /studyweb-elcultural/Alumnos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 32, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 32, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-10 23:53:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`studyweb-db`.`alumnos`, CONSTRAINT `fk_Alumnos_Users1` FOREIGN KEY (`idUser`) REFERENCES `users` (`idUser`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /studyweb-elcultural/Alumnos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(Alumno), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2419): Model->save(Array, Array)
+#5 C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php(33): Model->saveAssociated(Array)
+#6 [internal function]: AlumnosController->add()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-10-10 23:59:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`studyweb-db`.`alumnos`, CONSTRAINT `fk_Alumnos_Users1` FOREIGN KEY (`idUser`) REFERENCES `users` (`idUser`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /studyweb-elcultural/Alumnos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(Alumno), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php(37): Model->save(Array)
+#5 [internal function]: AlumnosController->add()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-11 01:09:59 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp, line 54]
+2014-10-11 01:09:59 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 54, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\stu...', 54, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 01:18:23 Error: Fatal Error (1): Call to undefined method View::request() in [C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp, line 81]
+2014-10-11 01:18:23 Error: [FatalErrorException] Call to undefined method View::request()
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 81, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 81, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 01:20:11 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 88]
+2014-10-11 01:20:11 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 88, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 88, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 01:20:15 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 88]
+2014-10-11 01:20:15 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 88, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 88, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 02:12:31 Error: [CakeException] Method alert does not exist
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->__call('alert', Array)
+#1 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->alert('ddas')
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-11 02:12:32 Error: [CakeException] Method alert does not exist
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->__call('alert', Array)
+#1 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->alert('ddas')
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-11 02:12:45 Error: [CakeException] Method alert does not exist
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->__call('alert', Array)
+#1 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->alert('ddas')
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-11 02:12:45 Error: [CakeException] Method alert does not exist
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->__call('alert', Array)
+#1 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->alert('ddas')
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-11 02:12:45 Error: [CakeException] Method alert does not exist
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->__call('alert', Array)
+#1 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->alert('ddas')
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-11 02:12:45 Error: [CakeException] Method alert does not exist
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->__call('alert', Array)
+#1 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->alert('ddas')
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-11 02:12:46 Error: [CakeException] Method alert does not exist
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->__call('alert', Array)
+#1 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->alert('ddas')
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-11 02:12:48 Error: [CakeException] Method alert does not exist
+Request URL: /studyweb-elcultural/Matriculas
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->__call('alert', Array)
+#1 C:\wamp\www\studyweb-elcultural\app\View\Matriculas\index.ctp(121): CakeRequest->alert('ddas')
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}

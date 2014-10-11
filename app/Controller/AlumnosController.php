@@ -4,6 +4,11 @@
     class AlumnosController extends AppController {
         public $uses = array("Alumno", "User");
         
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow("getAlumnos");
+        }
+
         public function index() {
             $this->layout = "admin";
             $this->set("alumnos", $this->Alumno->find("all", array(
@@ -28,15 +33,19 @@
             $this->layout = "admin";
             
             if ($this->request->is("post")) {
-                $this->Alumno->create();
-                $this->Alumno->set("idAlumno", $this->Alumno->getIdAlumno());
-                if ($this->Alumno->save($this->request->data)) {
-                    $this->request->data["User"]["idUser"] = $this->User->getIdUser();
-                    if ($this->User->saveAssociated($this->request->data)) {
+                $ds = $this->Alumno->getDataSource();
+                $ds->begin();
+                
+                $this->request->data["Alumno"]["idAlumno"] = $this->Alumno->getIdAlumno();
+                $this->request->data["User"]["idUser"] = $this->Alumno->User->getIdUser();
+                $this->request->data["Alumno"]["idUser"] = $this->Alumno->User->getIdUser();
+                
+                if ($this->Alumno->User->save($this->request->data)) {
+                    if($this->Alumno->save($this->request->data)) {
+                        $ds->commit();
                         $this->Session->setFlash(__("El alumno ha sido registrado correctamente."), "flash_bootstrap");
                         return $this->redirect(array('action' => 'index'));
                     }
-                    $this->Session->setFlash(__("No fue posible registrar el alumno."), "flash_bootstrap");
                 }
             }
         }
@@ -73,5 +82,23 @@
                 $this->Session->setFlash(__("El alumno de código: %s ha sido eliminado.", h($id)), "flash_bootstrap");
                 return $this->redirect(array("action" => "index"));
             }
+        }
+        
+        public function getAlumnos() {
+            if(isset($this->request->data["busqueda"])) {
+                $busqueda = $this->request->data["busqueda"];
+                $this->set("alumnos", $this->Alumno->find("all", array(
+                    "conditions" => array(
+                        "OR" => array(
+                            "Alumno.nombres LIKE" => "%" . $busqueda . "%",
+                            "Alumno.apellidoPaterno LIKE" => "%" . $busqueda . "%",
+                            "Alumno.apellidoMaterno LIKE" => "%" . $busqueda . "%"
+                        )
+                    )
+                )));
+            }
+            else
+                $this->set("alumnos", $this->Alumno->find("all"));
+            $this->render();
         }
 }

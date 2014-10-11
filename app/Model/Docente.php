@@ -3,6 +3,12 @@
 <?php
     class Docente extends AppModel {
         public $primaryKey = "idDocente";
+                
+        public $hasOne = array(
+            'User' => array(
+                'foreignKey' => 'idUser'
+            )
+        );
         
         public $validate = array(
             "nombres" => array(

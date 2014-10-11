@@ -28,8 +28,21 @@
     ));
     echo $this->Form->input("direccion", array(
         "label" => "Dirección",
+        "div" => "formField"
+    ));
+    echo $this->Form->input("User.username", array(
+        "label" => "Nombre de Usuario",
+        "div" => "formField"
+    ));
+    echo $this->Form->input("User.password", array(
+        "label" => "Password",
+        "div" => "formField"
+    ));
+    echo $this->Form->input("User.idGrupo", array(
+        "label" => "Password",
         "div" => "formField",
-        "dateFormat" => "Y-m-d"
+        "type" => "hidden",
+        "value" => "3"
     ));
     echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));
     echo $this->Form->end();

@@ -3,7 +3,7 @@
 <?php
     class HorariosController extends AppController {     
         public $helpers = array('Js');
-        public $uses = array("Periodo", "Grado", "Seccion", "Curso", "Aula", "Docente");   
+        public $uses = array("Periodo", "Grado", "Seccion", "Curso", "Aula", "Docente", "Horario");   
         
         public function beforeFilter() {
             parent::beforeFilter();
@@ -26,7 +26,7 @@
             if ($this->request->is("post")) {    
                 foreach($this->request->data["idCursos"] as $key => $value) {
                     foreach ($value as $indice => $val) {
-                        $horario = array(
+                        $horarios[] = array(
                             "dia" => $key,
                             "idCurso" => $val,
                             "idSeccion" => $this->request->data["Periodo"]["idSeccion"],
@@ -35,9 +35,10 @@
                             "idDocente" => $this->request->data["idDocentes"][$key][$indice],
                             "estado" => 1
                         );
-                        debug($horario);
                     }
                 }
+                $this->Horario->saveMany($horarios);
+                $this->Session->setFlash(__("El horario ha sido registrado correctamente."), "flash_bootstrap"); 
             }
         }
         

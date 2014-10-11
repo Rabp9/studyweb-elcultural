@@ -2,6 +2,7 @@
 
 <?php
     class MatriculasController extends AppController {
+        public $helpers = array('Js');
         public $uses = array("Periodo", "Grado", "Seccion");
         
         public function index() {

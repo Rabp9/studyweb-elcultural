@@ -4,6 +4,12 @@
     class Alumno extends AppModel {
         public $primaryKey = "idAlumno";
         
+        public $hasOne = array(
+            'User' => array(
+                'foreignKey' => 'idUser'
+            )
+        );
+        
         public $validate = array(
             "nombres" => array(
                 "rule" => "notEmpty"
