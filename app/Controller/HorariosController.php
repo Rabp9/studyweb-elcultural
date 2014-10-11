@@ -3,11 +3,11 @@
 <?php
     class HorariosController extends AppController {     
         public $helpers = array('Js');
-        public $uses = array("Periodo", "Grado", "Seccion", "Curso", "Aula", "Docente", "Horario");   
+        public $uses = array("Periodo", "Grado", "Seccion", "Curso", "Aula", "Docente", "Horario", "Alumno");   
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getDetail");
+            $this->Auth->allow("getDetail", "horarioAlumno");
         }
 
         public function index() {
@@ -25,6 +25,7 @@
             
             if ($this->request->is("post")) {    
                 foreach($this->request->data["idCursos"] as $key => $value) {
+                    $hora = 0;
                     foreach ($value as $indice => $val) {
                         $horarios[] = array(
                             "dia" => $key,
@@ -33,8 +34,10 @@
                             "idPeriodo" => $this->request->data["Periodo"]["idPeriodo"],
                             "idAula" => $this->request->data["idAulas"][$key][$indice],
                             "idDocente" => $this->request->data["idDocentes"][$key][$indice],
-                            "estado" => 1
+                            "estado" => 1,
+                            "hora" => $hora
                         );
+                        $hora++;
                     }
                 }
                 $this->Horario->saveMany($horarios);
@@ -60,4 +63,26 @@
             
             $this->layout = 'ajax';
 	}
+        
+        public function horarioAlumno() {
+            $this->layout = "alumno";
+            
+            $user = $this->Auth->user();
+            $alumno = $this->Alumno->findByIduser($user["idUser"]);
+            
+            $this->Alumno->id = $alumno["Alumno"]["idAlumno"];
+            $alumno = $this->Alumno->read();
+            
+            $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
+            $matricula = $this->Alumno->Matricula->read();
+            
+            $horarios = $this->Horario->find("all", array(
+                "conditions" => array(
+                    "idSeccion" => $matricula["Seccion"]["idSeccion"],
+                    "idPeriodo" => $matricula["Matricula"]["idPeriodo"]
+                )
+            ));
+            $this->set("matricula", $matricula);
+            $this->set("horarios", $horarios);
+        }
 }

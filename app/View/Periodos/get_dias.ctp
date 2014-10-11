@@ -15,31 +15,31 @@
             <th>Hora</th>
             <th <?php echo $periodo["Periodo"]["domingo"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Domingo
-                <input type="hidden" id="rest0" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest0" value="17"/>
             </th>
             <th <?php echo $periodo["Periodo"]["lunes"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Lunes
-                <input type="hidden" id="rest1" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest1" value="17"/>
             </th>
             <th <?php echo $periodo["Periodo"]["martes"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Martes
-                <input type="hidden" id="rest2" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest2" value="17"/>
             </th>
             <th <?php echo $periodo["Periodo"]["miercoles"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Miércoles
-                <input type="hidden" id="rest3" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest3" value="17"/>
             </th>
             <th <?php echo $periodo["Periodo"]["jueves"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Jueves
-                <input type="hidden" id="rest4" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest4" value="17"/>
             </th>
             <th <?php echo $periodo["Periodo"]["viernes"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Viernes
-                <input type="hidden" id="rest5" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest5" value="17"/>
             </th>
             <th <?php echo $periodo["Periodo"]["sabado"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Sábado
-                <input type="hidden" id="rest6" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest6" value="17"/>
             </th>
         </tr>
     </thead>

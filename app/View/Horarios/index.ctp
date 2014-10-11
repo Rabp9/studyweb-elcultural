@@ -72,7 +72,12 @@
 
 <?php
     $this->Js->get('#PeriodoIndexForm')->event('submit', 
-        "alert('validar');
-         return true;"
+        "var rest = 0;
+        $('table#tblHorario').find('th.clase_si').each(function() {
+            rest += parseInt($(this).find('.hdnRest').val());
+        });
+        if(rest == 0) return true;
+        alert('Aún no ha terminado de llenar el horario');
+        return false;"
     );
 ?>

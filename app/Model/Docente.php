@@ -4,7 +4,7 @@
     class Docente extends AppModel {
         public $primaryKey = "idDocente";
                 
-        public $hasOne = array(
+        public $belongsTo = array(
             'User' => array(
                 'foreignKey' => 'idUser'
             )
@@ -20,6 +20,10 @@
             "apellidoMaterno" => array(
                 "rule" => "notEmpty"
             )
+        );
+       
+        public $virtualFields = array(
+            'nombreCompleto' => 'CONCAT(Docente.apellidoPaterno, " ", Docente.apellidoMaterno, ", ", Docente.nombres )'
         );
         
         public function getIdDocente() {

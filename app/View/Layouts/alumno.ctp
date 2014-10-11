@@ -61,7 +61,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php echo $this->Html->url(array(
+                                "controller" => "Horarios",
+                                "action" => "horarioAlumno"
+                            )); ?>">
                                 <div class="icon icon-horario icon-medium"></div>
                                 Horario
                             </a>
@@ -106,7 +109,6 @@
                         <li class="active">Asistencias</li>
                     </ol>
                     <div id="content">
-                
                         <?php echo $this->Session->flash(); ?>
 
                         <?php echo $this->fetch('content'); ?>
@@ -134,6 +136,11 @@
             echo $this->Html->script("jquery-1.11.1.min");
             echo $this->Html->script("bootstrap.min");
         ?>
-        
+        <?php echo $this->fetch('script'); ?>
+	<!-- Js writeBuffer -->
+	<?php
+            if (class_exists('JsHelper') && method_exists($this->Js, 'writeBuffer')) echo $this->Js->writeBuffer();
+            // Writes cached scripts
+	?>
     </body>
 </html>

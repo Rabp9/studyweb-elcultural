@@ -3,10 +3,17 @@
 <?php
     class Alumno extends AppModel {
         public $primaryKey = "idAlumno";
+          
+        public $belongsTo = array(
+            "User" => array(
+                "foreignKey" => "idUser"
+            )
+        );
         
         public $hasOne = array(
-            'User' => array(
-                'foreignKey' => 'idUser'
+            "Matricula" => array(
+                "foreignKey" => "idAlumno",
+                "conditions" => array("Matricula.estado" => 1)
             )
         );
         

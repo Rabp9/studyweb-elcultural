@@ -4,13 +4,15 @@
 
     App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
-    class User extends AppModel { 
+    class User extends AppModel {
+        public $primaryKey = "idUser";
+        
         public $belongsTo = array(
             "Grupo" => array(
                 "foreignKey" => "idGrupo"
             )
         );
-        public $primaryKey = "idUser";
+
         public $actsAs = array('Acl' => array('type' => 'requester', 'enabled' => false));
        
         public $validate = array(

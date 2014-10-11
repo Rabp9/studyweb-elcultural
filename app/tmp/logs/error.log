@@ -7318,3 +7318,196 @@ Stack Trace:
 #7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
 #8 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #9 {main}
+2014-10-11 10:53:58 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 45427960 bytes) in [C:\wamp\www\studyweb-elcultural\lib\Cake\Utility\Debugger.php, line 610]
+2014-10-11 10:53:58 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 45427960 bytes)
+Request URL: /studyweb-elcultural/Pages/alumno/
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\wamp\www\stu...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\wamp\www\stu...', 610, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\wamp\www\stu...', 610, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 11:02:35 Error: Fatal Error (64): Cannot redeclare Alumno::$hasOne in [C:\wamp\www\studyweb-elcultural\app\Model\Alumno.php, line 18]
+2014-10-11 11:02:35 Error: [FatalErrorException] Cannot redeclare Alumno::$hasOne
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00004
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\stu...', 18)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\stu...', 18, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\stu...', 18, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 11:12:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Seccion.Matricula.idSeccion' in 'on clause'
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00004
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1613): Model->find('first', Array)
+#7 C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php(68): Model->read()
+#8 [internal function]: HorariosController->horarioAlumno('A00004')
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HorariosController), Array)
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
+#12 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-11 11:14:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.idAlumno' in 'on clause'
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00004
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1613): Model->find('first', Array)
+#7 C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php(68): Model->read()
+#8 [internal function]: HorariosController->horarioAlumno('A00004')
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HorariosController), Array)
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
+#12 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-11 11:14:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.idAlumno' in 'on clause'
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00004
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1613): Model->find('first', Array)
+#7 C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php(68): Model->read()
+#8 [internal function]: HorariosController->horarioAlumno('A00004')
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HorariosController), Array)
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
+#12 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-11 11:15:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.idAlumno' in 'on clause'
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00004
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1613): Model->find('first', Array)
+#7 C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php(68): Model->read()
+#8 [internal function]: HorariosController->horarioAlumno('A00004')
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HorariosController), Array)
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
+#12 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-11 12:48:54 Error: Fatal Error (4): syntax error, unexpected 'while' (T_WHILE), expecting variable (T_VARIABLE) or '$' in [C:\wamp\www\studyweb-elcultural\app\View\Horarios\horario_alumno.ctp, line 57]
+2014-10-11 12:48:54 Error: [FatalErrorException] syntax error, unexpected 'while' (T_WHILE), expecting variable (T_VARIABLE) or '$'
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00004
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 57, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\stu...', 57, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 13:01:52 Error: Fatal Error (1): Call to a member function getIdUser() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 40]
+2014-10-11 13:01:52 Error: [FatalErrorException] Call to a member function getIdUser() on a non-object
+Request URL: /studyweb-elcultural/Alumnos/add
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 40, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 40, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 15:11:22 Error: [MissingActionException] Action HorariosController::A00001() could not be found.
+Exception Attributes: array (
+  'controller' => 'HorariosController',
+  'action' => 'A00001',
+)
+Request URL: /studyweb-elcultural/Horarios/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-11 15:58:42 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [C:\wamp\www\studyweb-elcultural\app\View\Horarios\horario_alumno.ctp, line 78]
+2014-10-11 15:58:42 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 78, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\stu...', 78, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 15:58:45 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [C:\wamp\www\studyweb-elcultural\app\View\Horarios\horario_alumno.ctp, line 78]
+2014-10-11 15:58:45 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 78, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\stu...', 78, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 16:19:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Alumno.id_user' in 'where clause'
+Request URL: /studyweb-elcultural/Horarios/horarioAlumno/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByIdUser', Array, Object(Alumno))
+#8 C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php(72): Model->__call('findByIdUser', Array)
+#9 C:\wamp\www\studyweb-elcultural\app\Controller\HorariosController.php(72): Alumno->findByIdUser('U002')
+#10 [internal function]: HorariosController->horarioAlumno('A00001')
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HorariosController), Array)
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
+#14 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-11 16:24:39 Error: [MissingControllerException] Controller class HorarioController could not be found.
+Exception Attributes: array (
+  'class' => 'HorarioController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/Horario/horarioAlumno
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-11 16:38:10 Error: Fatal Error (1): Call to a member function findByIduser() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\MensajesController.php, line 9]
+2014-10-11 16:38:10 Error: [FatalErrorException] Call to a member function findByIduser() on a non-object
+Request URL: /studyweb-elcultural/Mensajes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 9, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 9, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-11 16:44:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idGrado' in where clause is ambiguous
+Request URL: /studyweb-elcultural/Mensajes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Curso), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\studyweb-elcultural\app\Controller\MensajesController.php(29): Model->find('all', Array)
+#7 [internal function]: MensajesController->index()
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MensajesController), Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

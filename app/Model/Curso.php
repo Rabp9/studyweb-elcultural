@@ -10,6 +10,12 @@
             )
         );
         
+        public $hasMany = array(
+            "Horario" => array(
+                "foreignKey" => "idCurso"
+            )
+        );
+
         public $validate = array(
             "descripcion" => array(
                 "rule" => "notEmpty"

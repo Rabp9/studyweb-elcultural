@@ -11,7 +11,10 @@
         public $hasMany = array(
             "Seccion" => array(
                 "foreignKey" => "idGrado"
-            )
+            ),
+            "Curso" => array(
+                "foreignKey" => "idGrado"
+            ),
         );
         
         public $validate = array(

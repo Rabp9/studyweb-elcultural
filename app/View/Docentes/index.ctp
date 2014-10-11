@@ -9,7 +9,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Còdigo</th>
+                <th>Código</th>
                 <th>Nombre Completo</th>
                 <th>Fecha de Nac.</th>
                 <th>Dirección</th>
