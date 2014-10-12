@@ -85,6 +85,8 @@
         }
         
         public function getAlumnos() {
+            $this->layout = "ajax";
+            
             if(isset($this->request->data["busqueda"])) {
                 $busqueda = $this->request->data["busqueda"];
                 $this->set("alumnos", $this->Alumno->find("all", array(
