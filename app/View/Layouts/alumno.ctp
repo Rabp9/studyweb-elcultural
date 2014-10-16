@@ -31,11 +31,8 @@
                 <div class="col-xs-7"></div>
             </div>
             <div class="row data-nav">
+                <?php echo $this->element("datosAlumno"); ?>
                 <div class="col-xs-1"></div>
-                <div class="col-xs-2">Código</div>
-                <div class="col-xs-2">Nombre Completo</div>
-                <div class="col-xs-2">Grado</div>
-                <div class="col-xs-3"></div>
                 <div class="col-xs-2">
                     <?php echo $this->Html->link(
                             $this->Html->image("cerrar-sesion.png", array("alt" => "Cerrar Sesión", "border" => "0")),
@@ -55,7 +52,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php echo $this->Html->url(array(
+                                "controller" => "Matriculas",
+                                "action" => "info"
+                            )); ?>">
                                 <div class="icon icon-matricula icon-medium"></div>
                                 Ficha Matrícula
                             </a>
@@ -88,14 +88,13 @@
                             </a>
                         </li>
                         <li>
-                            <?php 
-                                echo $this->Html->link(
-                                        $this->Html->tag("div","",array("class" => "icon icon-mensajes icon-medium")) . 
-                                        "Mensajes", 
-                                        array("controller" => "Mensajes", "action" => "registrar"),
-                                        array("escape" => false)
-                                );
-                            ?>
+                            <a href="<?php echo $this->Html->url(array(
+                                "controller" => "Mensajes",
+                                "action" => ""
+                            )); ?>">
+                                <div class="icon icon-mensajes icon-medium"></div>
+                                Mensajes
+                            </a>
                         </li>
                         <li>
                             <a href="#">
@@ -118,14 +117,7 @@
                 <div class="col-xs-2">
                     <div class="panel panel-danger">
                         <div class="panel-heading">Novedades</div>
-                        <div class="panel-body">
-                            <ul>
-                                <li>Novedad 1</li>
-                                <li>Novedad 2</li>
-                                <li>Novedad 3</li>
-                                <li>Novedad 4</li>
-                            </ul>
-                        </div>
+                        <?php echo $this->element("novedades"); ?>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getAlumnos");
+            $this->Auth->allow("getAlumnos", "datos");
         }
 
         public function index() {
@@ -102,5 +102,23 @@
             else
                 $this->set("alumnos", $this->Alumno->find("all"));
             $this->render();
+        }
+        
+        public function datos() {
+            if(empty($this->request->params["requested"])) {
+                throw new ForbiddenException();
+            }
+            
+            $user = $this->Auth->user();
+            $alumno = $this->Alumno->findByIduser($user["idUser"]);
+            
+            $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
+            $matricula = $this->Alumno->Matricula->read();
+            
+            $this->Alumno->Matricula->Seccion->id = $matricula["Matricula"]["idSeccion"];
+            $seccion = $this->Alumno->Matricula->Seccion->read();
+            
+            $alumno["Alumno"]["grado_seccion"] = $seccion["Grado"]["descripcion_general"] . " \"" . $seccion["Seccion"]["descripcion"] ."\"";
+            return $alumno;
         }
 }

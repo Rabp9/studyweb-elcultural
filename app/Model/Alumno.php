@@ -3,7 +3,11 @@
 <?php
     class Alumno extends AppModel {
         public $primaryKey = "idAlumno";
-          
+            
+        public $virtualFields = array(
+            "nombreCompleto" => "CONCAT(Alumno.apellidoPaterno, ' ', Alumno.apellidoMaterno, ', ', Alumno.nombres )"
+        );
+        
         public $belongsTo = array(
             "User" => array(
                 "foreignKey" => "idUser"

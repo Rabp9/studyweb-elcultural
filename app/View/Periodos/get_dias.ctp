@@ -223,5 +223,6 @@
             );
         }
         $("#rest" + dia).val($("#rest" + dia).val() - horas);
+        $("#mdlDetalleCurso").modal("hide");
     });
 </script>

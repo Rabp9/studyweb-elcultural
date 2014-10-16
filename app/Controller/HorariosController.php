@@ -70,9 +70,6 @@
             $user = $this->Auth->user();
             $alumno = $this->Alumno->findByIduser($user["idUser"]);
             
-            $this->Alumno->id = $alumno["Alumno"]["idAlumno"];
-            $alumno = $this->Alumno->read();
-            
             $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
             $matricula = $this->Alumno->Matricula->read();
             

@@ -7827,3 +7827,136 @@ Stack Trace:
 #3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-10-15 01:13:27 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 01:14:10 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 01:14:22 Error: Fatal Error (1): Call to a member function findByIduser() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\MatriculasController.php, line 42]
+2014-10-15 01:14:22 Error: [FatalErrorException] Call to a member function findByIduser() on a non-object
+Request URL: /studyweb-elcultural/Matriculas/info
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 42, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 42, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 01:14:48 Error: Fatal Error (1): Call to a member function findByIduser() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\MatriculasController.php, line 42]
+2014-10-15 01:14:48 Error: [FatalErrorException] Call to a member function findByIduser() on a non-object
+Request URL: /studyweb-elcultural/Matriculas/info
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 42, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 42, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 01:32:10 Error: [MissingActionException] Action MensajesController::registrar() could not be found.
+Exception Attributes: array (
+  'controller' => 'MensajesController',
+  'action' => 'registrar',
+)
+Request URL: /studyweb-elcultural/Mensajes/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 01:32:33 Error: [MissingActionException] Action MensajesController::registrar() could not be found.
+Exception Attributes: array (
+  'controller' => 'MensajesController',
+  'action' => 'registrar',
+)
+Request URL: /studyweb-elcultural/Mensajes/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 22:10:39 Error: [MissingActionException] Action MensajesController::registrar() could not be found.
+Exception Attributes: array (
+  'controller' => 'MensajesController',
+  'action' => 'registrar',
+)
+Request URL: /studyweb-elcultural/Mensajes/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-16 00:28:12 Error: [MissingActionException] Action MensajesController::registrar() could not be found.
+Exception Attributes: array (
+  'controller' => 'MensajesController',
+  'action' => 'registrar',
+)
+Request URL: /studyweb-elcultural/Mensajes/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-16 00:35:57 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-16 00:36:02 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-16 00:36:22 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-16 00:41:41 Error: [MissingHelperException] Helper class GradoHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GradoHelper',
+  'plugin' => false,
+)
+Request URL: /studyweb-elcultural/Pages/alumno/
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Grado')
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(837): HelperCollection->__isset('Grado')
+#2 C:\wamp\www\studyweb-elcultural\app\View\Elements\datosAlumno.ctp(3): View->__get('Grado')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(1213): View->_render('C:\wamp\www\stu...', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(418): View->_renderElement('C:\wamp\www\stu...', Array, Array)
+#7 C:\wamp\www\studyweb-elcultural\app\View\Layouts\alumno.ctp(35): View->element('datosAlumno')
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(542): View->_render('C:\wamp\www\stu...')
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(479): View->renderLayout('', 'alumno')
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}

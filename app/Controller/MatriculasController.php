@@ -3,8 +3,13 @@
 <?php
     class MatriculasController extends AppController {
         public $helpers = array('Js');
-        public $uses = array("Periodo", "Grado", "Seccion", "Matricula");
+        public $uses = array("Periodo", "Grado", "Seccion", "Matricula", "User", "Alumno");
         
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow("info");
+        }
+
         public function index() {
             $this->layout = "admin";
             
@@ -29,4 +34,21 @@
         
             }
         }      
+        
+        public function info() {
+            $this->layout = "alumno";
+           
+            $user = $this->Auth->user();
+            $alumno = $this->Alumno->findByIduser($user["idUser"]);
+                        
+            $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
+            $matricula = $this->Alumno->Matricula->read();
+            
+            $this->Alumno->Matricula->Seccion->id = $matricula["Matricula"]["idSeccion"];
+            $seccion = $this->Alumno->Matricula->Seccion->read();
+            
+            $this->set("alumno", $alumno);
+            $this->set("matricula", $matricula);
+            $this->set("seccion", $seccion);
+        }
 }
