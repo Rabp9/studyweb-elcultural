@@ -1,7 +1,7 @@
-<!-- File: /app/Controller/AsistenciasController.php -->
+<!-- File: /app/Controller/NotasController.php -->
 
 <?php
-    class AsistenciasController extends AppController {
+    class NotasController extends AppController {
         public $uses = array("User", "Alumno");
         
         public function index() {

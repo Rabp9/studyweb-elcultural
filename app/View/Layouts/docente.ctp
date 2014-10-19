@@ -46,30 +46,9 @@
                 <div class="col-xs-10">
                     <ul class="nav nav-pills">
                         <li class="active">
-                            <a href="<?php echo $this->Html->url(array(
-                                "controller" => "Asistencias",
-                                "action" => "index"
-                            )); ?>">
+                            <a href="#">
                                 <div class="icon icon-asistencias icon-medium"></div>
-                                Asistencias
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php echo $this->Html->url(array(
-                                "controller" => "Matriculas",
-                                "action" => "info"
-                            )); ?>">
-                                <div class="icon icon-matricula icon-medium"></div>
-                                Ficha Matrícula
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php echo $this->Html->url(array(
-                                "controller" => "Horarios",
-                                "action" => "horarioAlumno"
-                            )); ?>">
-                                <div class="icon icon-horario icon-medium"></div>
-                                Horario
+                                Registrar Asistencia
                             </a>
                         </li>
                         <li>
@@ -79,12 +58,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo $this->Html->url(array(
-                                "controller" => "Notas",
-                                "action" => "index"
-                            )); ?>">
+                            <a href="#">
                                 <div class="icon icon-notas icon-medium"></div>
-                                Notas
+                                Registrar Nota
                             </a>
                         </li>
                         <li>
@@ -105,7 +81,13 @@
                         <li>
                             <a href="#">
                                 <div class="icon icon-cuenta icon-medium"></div>
-                                Estado Cuenta
+                                Reporte Estadísticas Cursos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon icon-cuenta icon-medium"></div>
+                                Reporte Notas
                             </a>
                         </li>
                     </ul>

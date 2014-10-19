@@ -20,15 +20,12 @@
             $grupo->id = 2;
             $this->Acl->allow($grupo, 'controllers/Pages/alumno');
             $this->Acl->allow($grupo, 'controllers/Mensajes/registrar');
-/*
+
             // Docente
             $group->id = 3;
-            $this->Acl->deny($group, 'controllers');
-            $this->Acl->allow($group, 'controllers/Posts/add');
-            $this->Acl->allow($group, 'controllers/Posts/edit');
-            $this->Acl->allow($group, 'controllers/Widgets/add');
-            $this->Acl->allow($group, 'controllers/Widgets/edit');
-
+            $this->Acl->deny($grupo, 'controllers');
+            $this->Acl->allow($grupo, 'controllers/Pages/docente');
+/*
             // allow basic users to log out
             $this->Acl->allow($group, 'controllers/users/logout');
 */
@@ -119,7 +116,7 @@
                             return $this->redirect("/Pages/alumno/");
                             break;
                         case "Docente":
-                            return $this->redirect("/Grados/");
+                            return $this->redirect("/Pages/docente");
                             break;
                     }
                 }

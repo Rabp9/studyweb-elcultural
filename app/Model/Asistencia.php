@@ -1,4 +1,4 @@
-<!-- File: /app/Model/Alumno.php -->
+<!-- File: /app/Model/Asistencia.php -->
 
 <?php
     class Asistencia extends AppModel {

@@ -41,4 +41,8 @@ App::uses('AppController', 'Controller');
 	public function alumno() {
             $this->layout = "alumno";
         }
+        
+	public function docente() {
+            $this->layout = "docente";
+        }
 }
