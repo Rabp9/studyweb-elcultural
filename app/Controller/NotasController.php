@@ -2,7 +2,12 @@
 
 <?php
     class NotasController extends AppController {
-        public $uses = array("User", "Alumno");
+        public $uses = array("User", "Alumno", "Nota");
+        
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow("getNotasByCurso");
+        }
         
         public function index() {
             $this->layout = "alumno";
@@ -23,6 +28,29 @@
                 "fields" => array("Curso.idCurso", "Curso.descripcion"),
                 "conditions" => array("Curso.idGrado" => $grado["Grado"]["idGrado"])
             )));
+        }      
+        
+        public function getNotasByCurso() {
+            $this->layout = "ajax";
+            
+            $idCurso = $this->request->data['idCurso'];
+            
+            $user = $this->Auth->user();
+            $alumno = $this->Alumno->findByIduser($user["idUser"]);
+     
+            $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
+            $matricula = $this->Alumno->Matricula->read();
+           
+            $this->set("notas", $this->Nota->find("all", array(
+                "conditions" => array(
+                    "Nota.idMatricula" => $matricula["Matricula"]["idMatricula"],
+                    "Nota.idCurso" => $idCurso
+                )
+            )));
+        }
+        
+        public function registrar() {
+            $this->layout = "docente";
         }
     }
 ?>

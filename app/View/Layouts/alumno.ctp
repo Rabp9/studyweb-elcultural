@@ -73,7 +73,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php echo $this->Html->url(array(
+                                "controller" => "Recursos",
+                                "action" => "index"
+                            )); ?>">
                                 <div class="icon icon-cursos icon-medium"></div>
                                 Cursos
                             </a>
