@@ -2,6 +2,11 @@
 
 <?php
     class DocentesController extends AppController {
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow("datos");
+        }
+        
         public function index() {
             $this->layout = "admin";
             $this->set("docentes", $this->Docente->find("all", array(
@@ -75,5 +80,16 @@
                 $this->Session->setFlash(__("El docente de código: %s ha sido eliminado.", h($id)), "flash_bootstrap");
                 return $this->redirect(array("action" => "index"));
             }
+        }
+        
+        public function datos() {
+            if(empty($this->request->params["requested"])) {
+                throw new ForbiddenException();
+            }
+            
+            $user = $this->Auth->user();
+            $docente = $this->Docente->findByIduser($user["idUser"]);
+            
+            return $docente;
         }
 }

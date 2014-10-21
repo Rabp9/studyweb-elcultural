@@ -31,8 +31,9 @@
                 <div class="col-xs-7"></div>
             </div>
             <div class="row data-nav">
-                <?php echo $this->element("datosAlumno"); ?>
-                <div class="col-xs-1"></div>
+                <div class="col-xs-2"></div>
+                <?php echo $this->element("datosDocente"); ?>
+                <div class="col-xs-2"></div>
                 <div class="col-xs-2">
                     <?php echo $this->Html->link(
                             $this->Html->image("cerrar-sesion.png", array("alt" => "Cerrar Sesión", "border" => "0")),
@@ -46,7 +47,10 @@
                 <div class="col-xs-10">
                     <ul class="nav nav-pills">
                         <li class="active">
-                            <a href="#">
+                            <a href="<?php echo $this->Html->url(array(
+                                "controller" => "Asistencias",
+                                "action" => "registrar"
+                            )); ?>">
                                 <div class="icon icon-asistencias icon-medium"></div>
                                 Registrar Asistencia
                             </a>
@@ -58,7 +62,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php echo $this->Html->url(array(
+                                "controller" => "Notas",
+                                "action" => "registrar"
+                            )); ?>">
                                 <div class="icon icon-notas icon-medium"></div>
                                 Registrar Nota
                             </a>

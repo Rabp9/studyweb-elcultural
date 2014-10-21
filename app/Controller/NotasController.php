@@ -2,11 +2,11 @@
 
 <?php
     class NotasController extends AppController {
-        public $uses = array("User", "Alumno", "Nota");
+        public $uses = array("User", "Alumno", "Nota", "Docente");
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getNotasByCurso");
+            $this->Auth->allow("getNotasByCurso", "registrar", "getAlumnosByCurso");
         }
         
         public function index() {
@@ -29,6 +29,12 @@
                 "conditions" => array("Curso.idGrado" => $grado["Grado"]["idGrado"])
             )));
         }      
+                
+        public function getAlumnosByCurso() {
+            $this->layout = "ajax";
+            
+            
+        }
         
         public function getNotasByCurso() {
             $this->layout = "ajax";
@@ -51,6 +57,24 @@
         
         public function registrar() {
             $this->layout = "docente";
+            
+            $user = $this->Auth->user();
+            $docente = $this->Docente->findByIduser($user["idUser"]);
+            
+            $horarios = $this->Docente->Horario->find("all", array(
+                "fields" => array("DISTINCT Horario.idCurso"),
+                "conditions" => array("Horario.idDocente" => $docente["Docente"]["idDocente"])
+            ));
+            
+            foreach ($horarios as $horario) {
+                $curso = $this->Docente->Horario->Curso->find("first", array(
+                    "fields" => array("Curso.idCurso", "Curso.descripcion"),
+                    "conditions" => array("Curso.idCurso" => $horario["Horario"]["idCurso"])
+                ));
+                $cursos[$curso["Curso"]["idCurso"]] = $curso["Curso"]["descripcion"];
+            }
+            
+            $this->set("cursos", $cursos);
         }
     }
 ?>
