@@ -15,8 +15,8 @@
 <?php
     $this->Js->get('#idCurso')->event('change', 
         $this->Js->request(array(
-            'controller' => 'Asistencias',
-            'action' => 'getAlumnosByCurso'
+            'controller' => 'Secciones',
+            'action' => 'getSeccionesByCurso'
         ), array(
             'update'=>'#dvAsistencias',
             'async' => true,

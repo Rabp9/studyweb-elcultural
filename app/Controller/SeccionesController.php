@@ -2,11 +2,11 @@
 
 <?php
     class SeccionesController extends AppController {
-        public $uses = array("Seccion");
+        public $uses = array("Seccion", "Curso");
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow('getByGrado');
+            $this->Auth->allow('getByGrado', "getSeccionesByCurso");
         }
 
         public function index() {
@@ -94,4 +94,20 @@
             
             $this->layout = 'ajax';
 	}
+        
+        public function getSeccionesByCurso() {
+            $this->layout = "ajax";
+            
+            $idCurso = $this->request->data["idCurso"];
+            
+            $curso = $this->Curso->findByIdcurso($idCurso);
+            $grado = $this->Curso->Grado->findByidgrado($curso["Grado"]["idGrado"]);
+            
+            $secciones = $this->Curso->Grado->Seccion->find("list", array(
+                "fields" => array("Seccion.idSeccion", "Seccion.descripcion"),
+                "conditions" => array("Seccion.idGrado" => $grado["Grado"]["idGrado"])
+            ));
+            
+            $this->set("secciones", $secciones); 
+        }
 }

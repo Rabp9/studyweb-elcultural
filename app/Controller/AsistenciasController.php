@@ -2,11 +2,11 @@
 
 <?php
     class AsistenciasController extends AppController {
-        public $uses = array("User", "Alumno", "Asistencia", "Docente");
+        public $uses = array("User", "Alumno", "Asistencia", "Docente", "Curso");
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getAsistenciasByCurso", "registrar", "getAlumnosByCurso");
+            $this->Auth->allow("getAsistenciasByCurso", "registrar", "getFormAsistencias");
         }
 
         public function index() {
@@ -48,12 +48,6 @@
                 )
             )));
         }
-        
-        public function getAlumnosByCurso() {
-            $this->layout = "ajax";
-            
-            
-        }
 
         public function registrar() {
             $this->layout = "docente";
@@ -75,6 +69,24 @@
             }
             
             $this->set("cursos", $cursos);
+        }
+        
+        public function getFormAsistencias() {
+            $this->layout = "ajax";
+            
+            $idSeccion = $this->request->data["idSeccion"];
+            
+            $matriculas = $this->Alumno->Matricula->find("all", array(
+                "conditions" => array("Matricula.idSeccion" => $idSeccion)
+            ));
+            
+            foreach ($matriculas as $matricula) {
+                $alumnos[] = $this->Alumno->find("first", array(
+                    "conditions" => array("Alumno.idAlumno" => $matricula["Matricula"]["idAlumno"])
+                ));
+            }
+            
+            $this->set("alumnos", $alumnos);
         }
     }
 ?>

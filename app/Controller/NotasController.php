@@ -30,12 +30,6 @@
             )));
         }      
                 
-        public function getAlumnosByCurso() {
-            $this->layout = "ajax";
-            
-            
-        }
-        
         public function getNotasByCurso() {
             $this->layout = "ajax";
             

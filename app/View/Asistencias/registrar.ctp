@@ -8,16 +8,17 @@
         "options" => $cursos,
         "empty" => "Selecciona uno"
     ));
+    echo $this->Html->div(null, "", array("id" => "dvSecciones"));
     echo $this->Html->div(null, "", array("id" => "dvAsistencias"));
 ?>
 
 <?php
     $this->Js->get('#idCurso')->event('change', 
         $this->Js->request(array(
-            'controller' => 'Asistencias',
-            'action' => 'getAlumnosByCurso'
+            'controller' => 'Secciones',
+            'action' => 'getSeccionesByCurso'
         ), array(
-            'update'=>'#dvAsistencias',
+            'update'=>'#dvSecciones',
             'async' => true,
             'method' => 'post',
             'dataExpression'=>true,
@@ -27,4 +28,24 @@
             ))
         ))
     );
+?>
+
+
+<?php
+    $this->Html->scriptStart(array('inline' => false));
+?>
+    $('body').on('click', '#idSeccion', function() {
+        $.ajax({
+            async:true, 
+            data: $("#idSeccion").serialize(), 
+            dataType:"html", 
+            success:function (data, textStatus) {
+                $("#dvAsistencias").html(data);
+            }, 
+            type:"post", 
+            url:"\/studyweb-elcultural\/Asistencias\/getFormAsistencias"
+        });
+    });
+<?php
+    $this->Html->scriptEnd();
 ?>
