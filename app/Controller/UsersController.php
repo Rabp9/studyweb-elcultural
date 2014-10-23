@@ -22,7 +22,7 @@
             $this->Acl->allow($grupo, 'controllers/Mensajes/registrar');
 
             // Docente
-            $group->id = 3;
+            $grupo->id = 3;
             $this->Acl->deny($grupo, 'controllers');
             $this->Acl->allow($grupo, 'controllers/Pages/docente');
 /*
