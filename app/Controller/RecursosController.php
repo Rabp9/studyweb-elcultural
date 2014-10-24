@@ -2,8 +2,13 @@
 
 <?php
     class RecursosController extends AppController {
-        public $uses = array("User", "Alumno");
+        public $uses = array("User", "Alumno", "Recurso", "Curso");
         
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow("getRecursos");
+        }
+
         public function index() {
             $this->layout = "alumno";
        
@@ -23,6 +28,17 @@
                 "fields" => array("Curso.idCurso", "Curso.descripcion"),
                 "conditions" => array("Curso.idGrado" => $grado["Grado"]["idGrado"])
             )));
+        }
+        
+        public function getRecursos() {
+            $this->layout = "ajax";
+            
+            $idCurso = $this->request->data["idCurso"];
+            $recursos = $this->Recurso->find("all", array(
+                "conditions" => array("Recurso.idCurso" => $idCurso)
+            ));
+            
+            $this->set("recursos", $recursos);
         }
     }
 ?>

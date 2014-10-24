@@ -8573,3 +8573,25 @@ Stack Trace:
 #1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
 #2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-10-24 00:48:28 Error: [MissingActionException] Action RecursosController::getRecursos() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecursosController',
+  'action' => 'getRecursos',
+)
+Request URL: /studyweb-elcultural/Recursos/getRecursos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-24 00:49:06 Error: [MissingActionException] Action RecursosController::getRecursos() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecursosController',
+  'action' => 'getRecursos',
+)
+Request URL: /studyweb-elcultural/Recursos/getRecursos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
