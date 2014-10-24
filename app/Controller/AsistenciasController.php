@@ -69,6 +69,19 @@
             }
             
             $this->set("cursos", $cursos);
+            if($this->request->is("post")) {
+                foreach($this->request->data["Matriculas"]["idMatricula"] as $key => $value) {
+                    $asistencias[] = array(
+                        "idMatricula" => $value,
+                        "idCurso" => $this->request->data["idCurso"],
+                        "fecha" => $this->request->data["fecha"],
+                        "clase" => 1,
+                        "descripcion" => $this->request->data["Asistencias"]["descripcion"][$key]
+                    );
+                }
+                $this->Asistencia->saveMany($asistencias);
+                $this->Session->setFlash(__("Las asistencias han sido registradas correctamente."), "flash_bootstrap"); 
+            }
         }
         
         public function getFormAsistencias() {

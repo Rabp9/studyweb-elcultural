@@ -2,6 +2,7 @@
 
 <h2>Asistencias <small>Registrar</small></h2>
 <?php
+    echo $this->Form->create(false);
     echo $this->Form->input('idCurso', array(
         "label" => "Curso",
         "div" => "formField",
@@ -30,7 +31,6 @@
     );
 ?>
 
-
 <?php
     $this->Html->scriptStart(array('inline' => false));
 ?>
@@ -48,4 +48,10 @@
     });
 <?php
     $this->Html->scriptEnd();
+?>
+
+    
+<?php
+    echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));
+    echo $this->Form->end();
 ?>

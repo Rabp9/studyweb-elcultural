@@ -1,7 +1,7 @@
 <!-- file path View/Asistencias/get_form_asistencias.ctp -->
 
 <?php
-    echo $this->Form->input(null, array(
+    echo $this->Form->input("fecha", array(
         "label" => "Fecha: ",
         "div" => "formField",
         "value" => date("Y-m-d"),
@@ -21,7 +21,12 @@
         foreach ($alumnos as $alumno) {
         ?>
         <tr>
-            <td><?php echo $alumno["Alumno"]["nombreCompleto"]; ?></td>
+            <td>
+                <input type="hidden" name="data[Matriculas][idMatricula][<?php echo $index; ?>]" value="<?php echo $alumno["Matricula"]["idMatricula"] ?>" />
+                <?php
+                    echo $alumno["Alumno"]["nombreCompleto"]; 
+                ?>
+            </td>
             <td>
                 <div class="radio">
                     <label>
@@ -61,7 +66,3 @@
         ?>
     </tbody>
 </table>
-<?php
-    echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));
-    echo $this->Form->end();
-?>

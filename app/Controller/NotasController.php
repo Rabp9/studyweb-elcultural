@@ -2,11 +2,11 @@
 
 <?php
     class NotasController extends AppController {
-        public $uses = array("User", "Alumno", "Nota", "Docente");
+        public $uses = array("User", "Alumno", "Nota", "Docente", "Curso");
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getNotasByCurso", "registrar", "getAlumnosByCurso");
+            $this->Auth->allow("getNotasByCurso", "registrar", "getFormNotas");
         }
         
         public function index() {
@@ -69,6 +69,11 @@
             }
             
             $this->set("cursos", $cursos);
+        }
+        
+        public function getFormNotas() {
+            $this->layout = "ajax";
+            
         }
     }
 ?>
