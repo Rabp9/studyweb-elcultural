@@ -9,7 +9,7 @@ body {
     padding: 15px;
     margin: 0 auto;
     background: #ffffff;
-    margin-top: 200px;
+    margin-top: 70px;
     -webkit-box-shadow: 10px 10px 45px -7px rgba(0,0,0,0.5);
     -moz-box-shadow: 10px 10px 45px -7px rgba(0,0,0,0.5);
     box-shadow: 10px 10px 45px -7px rgba(0,0,0,0.5);
@@ -25,6 +25,7 @@ body {
 
 .form-signin .checkbox {
     font-weight: normal;
+    left: 21px;
 }
 
 .form-signin .form-control {

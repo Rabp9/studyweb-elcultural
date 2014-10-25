@@ -8595,3 +8595,30 @@ Stack Trace:
 #1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest))
 #2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-10-25 01:31:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/img/algo.phb
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-25 01:31:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/img/elcultural.png
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-25 01:31:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/img/elcultural.png
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

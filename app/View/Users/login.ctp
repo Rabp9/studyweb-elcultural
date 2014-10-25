@@ -16,11 +16,16 @@
     <body>
 
         <div class="container">
-            
             <?php echo $this->Form->create('User', array(
                 "class" => "form-signin",
                 "role" => "form"
             )); ?>
+            <div class="panel-success page-header" style="text-align: center;">
+            <?php
+                echo $this->Html->image('elcultural.logo.png', array('alt' => "El Cultural", 'border' => '0'));
+            ?>
+                <h2>El Cultural<br> <small>American School</small></h2>
+            </div>
             <?php echo $this->Session->flash(); ?>
             <h2 class="form-signin-heading">Ingresar</h2>
             <?php 
