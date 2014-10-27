@@ -68,7 +68,7 @@
     </table>
     <?php
         echo $this->Html->link("Nuevo Usuario", array(
-            "controller" => "Users", "action" => "add"
+            "controller" => "Users", "action" => "preAdd"
         ));
     ?>
 </div>

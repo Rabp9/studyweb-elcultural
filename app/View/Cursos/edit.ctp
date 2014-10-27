@@ -1,10 +1,10 @@
-<!-- File: /app/View/CUrsos/edit.ctp -->
+<!-- File: /app/View/Cursos/edit.ctp -->
 <?php 
-    $this->html->addCrumb('CUrsos', '/CUrsos');
-    $this->html->addCrumb('Editar', '/CUrsos/editar');
+    $this->html->addCrumb('Cursos', '/Cursos');
+    $this->html->addCrumb('Editar', '/Cursos/editar');
 ?>
 
-<h2>CUrsos <small>Editar</small></h2>
+<h2>Cursos <small>Editar</small></h2>
 
 <?php
     echo $this->Form->create("Curso");
@@ -22,5 +22,5 @@
     ));
     echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));
     echo $this->Form->end();
-    echo $this->Html->link("Regresar a Lista CUrsos", array("controller" => "CUrsos", "action" => "index"));
+    echo $this->Html->link("Regresar a Lista Artículos", array("controller" => "Articulos", "action" => "index"));
 ?>

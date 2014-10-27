@@ -20,7 +20,8 @@
     ));
     echo $this->Form->input('idGrupo', array(
         "label" => "Grupo",
-        'options' => $grupos,
+        "type" => "hidden",
+        "value" => 1,
         "div" => "formField"
     ));
     echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));

@@ -60,11 +60,19 @@
             if (!$alumno) {
                 throw new NotFoundException(__("Alumno inválido"));
             }
-            if ($this->request->is(array("post", "put"))) {
+            if ($this->request->is(array("post", "put"))) {  
+                
+                $ds = $this->Alumno->getDataSource();
+                $ds->begin();
+             
+                $this->Alumno->User->id = $alumno["User"]["idUser"];
                 $this->Alumno->id = $id;
-                if ($this->Alumno->save($this->request->data)) {
-                    $this->Session->setFlash(__("El alumno ha sido actualizado."), "flash_bootstrap");
-                    return $this->redirect(array("action" => "index"));
+                if ($this->Alumno->User->save($this->request->data)) {
+                    if($this->Alumno->save($this->request->data)) {
+                        $ds->commit();
+                        $this->Session->setFlash(__("El alumno ha sido actualizado."), "flash_bootstrap");
+                        return $this->redirect(array("action" => "index"));
+                    }
                 }
                 $this->Session->setFlash(__("No es posible actualizar el alumno."), "flash_bootstrap");
             }

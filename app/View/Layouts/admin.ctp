@@ -32,8 +32,17 @@
             </div>
             <div class="row data-nav">
                 <ul class="nav nav-tabs" role="tablist">
-                    <li class="active"><?php echo $this->Html->link("Home", array("controller" => "Pages", "action" => "admin")); ?></li>
-                    <li class="dropdown">
+                    <li class="<?php echo $this->request->params['controller'] == 'Pages' ? 'active' : ''; ?>"><?php echo $this->Html->link("Home", array("controller" => "Pages", "action" => "admin")); ?></li>
+                    <li class="dropdown 
+                        <?php echo $this->request->params['controller'] == 'Alumnos' ? 'active' : ''; ?>
+                        <?php echo $this->request->params['controller'] == 'Docentes' ? 'active' : ''; ?>
+                        <?php echo $this->request->params['controller'] == 'Articulos' ? 'active' : ''; ?>
+                        <?php echo $this->request->params['controller'] == 'Grados' ? 'active' : ''; ?>
+                        <?php echo $this->request->params['controller'] == 'Secciones' ? 'active' : ''; ?>
+                        <?php echo $this->request->params['controller'] == 'Cursos' ? 'active' : ''; ?>
+                        <?php echo $this->request->params['controller'] == 'Aulas' ? 'active' : ''; ?>
+                        <?php echo $this->request->params['controller'] == 'Users' ? 'active' : ''; ?>
+                    ">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Mantenimiento <span class="caret"></span>
                         </a>
@@ -50,9 +59,9 @@
                             <li><?php echo $this->Html->link("Usuarios", array("controller" => "Users", "action" => "index")); ?></li>
                         </ul>
                     </li>
-                    <li><?php echo $this->Html->link("Registrar Periodo", array("controller" => "Periodos", "action" => "index")); ?></li>
-                    <li><?php echo $this->Html->link("Registrar Horario", array("controller" => "Horarios", "action" => "index")); ?></li>
-                    <li><?php echo $this->Html->link("Registrar Matrícula", array("controller" => "Matriculas", "action" => "index")); ?></li>
+                    <li class="<?php echo $this->request->params['controller'] == 'Periodos' ? 'active' : ''; ?>"><?php echo $this->Html->link("Registrar Periodo", array("controller" => "Periodos", "action" => "index")); ?></li>
+                    <li class="<?php echo $this->request->params['controller'] == 'Horarios' ? 'active' : ''; ?>"><?php echo $this->Html->link("Registrar Horario", array("controller" => "Horarios", "action" => "index")); ?></li>
+                    <li class="<?php echo $this->request->params['controller'] == 'Matriculas' ? 'active' : ''; ?>"><?php echo $this->Html->link("Registrar Matrícula", array("controller" => "Matriculas", "action" => "index")); ?></li>
                 </ul>
             </div>
             <div class="row">

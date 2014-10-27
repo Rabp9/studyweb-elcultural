@@ -8622,3 +8622,157 @@ Request URL: /studyweb-elcultural/img/elcultural.png
 Stack Trace:
 #0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-10-26 22:30:38 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /studyweb-elcultural/
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3507): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1145): Model->setDataSource('default')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3534): Model->setSource('users')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1374): Model->getDataSource()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\studyweb-elcultural\app\View\Users\login.ctp(22): FormHelper->create('User', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-10-26 22:56:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Articulo.idgrado' in 'where clause'
+Request URL: /studyweb-elcultural/Articulos/edit/1
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Articul...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Articul...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Articul...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Articulo), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByIdgrado', Array, Object(Articulo))
+#8 C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php(56): Model->__call('findByIdgrado', Array)
+#9 C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php(56): Articulo->findByIdgrado('1')
+#10 [internal function]: ArticulosController->edit('1')
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticulosController), Array)
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#14 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-26 22:56:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Articulo.idgrado' in 'where clause'
+Request URL: /studyweb-elcultural/Articulos/edit/1
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Articul...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Articul...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Articul...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Articulo), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByIdgrado', Array, Object(Articulo))
+#8 C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php(56): Model->__call('findByIdgrado', Array)
+#9 C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php(56): Articulo->findByIdgrado('1')
+#10 [internal function]: ArticulosController->edit('1')
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticulosController), Array)
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#14 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-26 22:58:26 Error: [MissingViewException] View file "C:\wamp\www\studyweb-elcultural\app\View\Articulos\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\studyweb-elcultural\\app\\View\\Articulos\\edit.ctp',
+)
+Request URL: /studyweb-elcultural/Articulos/edit/1
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#4 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-26 22:58:35 Error: [MissingViewException] View file "C:\wamp\www\studyweb-elcultural\app\View\Articulos\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\studyweb-elcultural\\app\\View\\Articulos\\edit.ctp',
+)
+Request URL: /studyweb-elcultural/Articulos/edit/1
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#4 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-26 23:17:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /studyweb-elcultural/Articulos/edit/1
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `studywe...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `studywe...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1843): Mysql->update(Object(Articulo), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php(62): Model->save(Array)
+#5 [internal function]: ArticulosController->edit('1')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticulosController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ArticulosController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-26 23:38:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`studyweb-db`.`users`, CONSTRAINT `fk_Users_Grupos1` FOREIGN KEY (`idGrupo`) REFERENCES `grupos` (`idGrupo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /studyweb-elcultural/Alumnos/edit/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php(65): Model->save(Array)
+#5 [internal function]: AlumnosController->edit('A00001')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-26 23:39:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`studyweb-db`.`users`, CONSTRAINT `fk_Users_Grupos1` FOREIGN KEY (`idGrupo`) REFERENCES `grupos` (`idGrupo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /studyweb-elcultural/Alumnos/edit/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php(69): Model->save(Array)
+#5 [internal function]: AlumnosController->edit('A00001')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-26 23:44:34 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\DocentesController.php, line 63]
+2014-10-26 23:44:34 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /studyweb-elcultural/Docentes/edit/D001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 63, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 63, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-26 23:44:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`studyweb-db`.`users`, CONSTRAINT `fk_Users_Grupos1` FOREIGN KEY (`idGrupo`) REFERENCES `grupos` (`idGrupo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /studyweb-elcultural/Docentes/edit/D001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\DocentesController.php(68): Model->save(Array)
+#5 [internal function]: DocentesController->edit('D001')
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocentesController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(DocentesController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

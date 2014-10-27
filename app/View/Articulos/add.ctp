@@ -4,7 +4,7 @@
     $this->html->addCrumb('Nuevo', '/Articulos/Nuevo');
 ?>
 
-<h2>Artìculos <small>Nuevo</small></h2>
+<h2>Artículos <small>Nuevo</small></h2>
 
 <?php
     echo $this->Html->script('ckeditor/ckeditor');
@@ -27,5 +27,5 @@
     ));
     echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));
     echo $this->Form->end();
-    echo $this->Html->link("Regresar a Lista Articulos", array("controller" => "Articulos", "action" => "index"));
+    echo $this->Html->link("Regresar a Lista Artículos", array("controller" => "Articulos", "action" => "index"));
 ?>

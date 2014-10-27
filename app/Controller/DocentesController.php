@@ -59,10 +59,18 @@
                 throw new NotFoundException(__("Docente inválido"));
             }
             if ($this->request->is(array("post", "put"))) {
+                
+                $ds = $this->Docente->getDataSource();
+                $ds->begin();
+             
+                $this->Docente->User->id = $docente["User"]["idUser"];
                 $this->Docente->id = $id;
-                if ($this->Docente->save($this->request->data)) {
-                    $this->Session->setFlash(__("El docente ha sido actualizado."), "flash_bootstrap");
-                    return $this->redirect(array("action" => "index"));
+                if ($this->Docente->User->save($this->request->data)) {
+                    if($this->Docente->save($this->request->data)) {
+                        $ds->commit();
+                        $this->Session->setFlash(__("El docente ha sido actualizado."), "flash_bootstrap");
+                        return $this->redirect(array("action" => "index"));
+                    }
                 }
                 $this->Session->setFlash(__("No es posible actualizar el docente."), "flash_bootstrap");
             }

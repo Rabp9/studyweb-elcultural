@@ -1,0 +1,36 @@
+#tblHorario {
+    width: 100%;
+    border: 1px solid;
+}
+
+#tblHorario tr, #tblHorario td, #tblHorario th {
+    border: 1px solid;
+} 
+
+#tblHorario tr:last-child,
+#tblHorario tr:first-child th {
+    text-align: center;
+} 
+
+#tblHorario tr td:first-child,
+#tblHorario thead tr th:first-child {
+    background-color: #F5F5F5;
+} 
+
+#tblHorario .clase_si {
+    background-color: #2B78E4;
+    color: #ffffff;
+}
+#tblHorario .clase_no {
+    background-color: #F5F5F5;
+    color: #FF0000;
+}
+
+#tblHorario h5 {
+    text-align: center;
+    margin: 5px;
+}
+
+#tblHorario hr {
+    margin: 1px;
+}

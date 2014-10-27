@@ -15,7 +15,7 @@
     <dt>Descripción</dt>
     <dd><?php echo $articulo["Articulo"]["descripcion"]; ?></dd>  
     <dt>Foto</dt>
-    <dd><?php echo $this->Html->image("novedades" . DS . $articulo["Articulo"]["foto"], array(
+    <dd><?php echo $this->Html->image("novedades/" . $articulo["Articulo"]["foto"], array(
         "width" => "300px"
     )); ?></dd>
     <dt>Fecha de Publicación</dt>

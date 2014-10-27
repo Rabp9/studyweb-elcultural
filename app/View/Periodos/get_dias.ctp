@@ -1,14 +1,9 @@
 <!-- file path View/Periodos/get_dias.ctp -->
-<style>
-    .clase_si {
-        background-color: #18C0DF;
-        color: #0066cc;
-    }
-    .clase_no {
-        background-color: red;
-        color: white;
-    }
-</style>
+<?php
+    echo $this->Html->css("horario");
+?>
+
+
 <table id="tblHorario">
     <thead>
         <tr>
@@ -215,7 +210,7 @@
         }
         for(var i = 0; i < horas; i++) {
             $("#tblHorario tbody tr:eq(" + (i + 17 - rest) + ") td:eq(" + (parseInt(dia)+1) + ")").html(
-                "<h5>" + curso.descripcion + " <small>Aula:" + aula.descripcion+ "</small></h5>" +
+                "<h5>" + curso.descripcion + " <small>" + aula.descripcion+ "</small></h5>" +
                 "<hr/><h5>" + docente.descripcion + "</5>" +
                 "<input type='hidden' name=data[idCursos][" + dia + "][] value='" + curso.idCurso + "' />" + 
                 "<input type='hidden' name=data[idAulas][" + dia + "][] value='" + aula.idAula + "' />"  +

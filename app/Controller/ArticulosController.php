@@ -39,7 +39,6 @@
                 $this->request->data["Articulo"]["foto"] = $filename;
 
                 if ($this->Articulo->save($this->request->data)) {
-                    debug($this->request->data);
                     $this->Session->setFlash(__("El grado ha sido registrado correctamente."), "flash_bootstrap");
                     return $this->redirect(array("action" => "index"));
                 }
@@ -51,22 +50,31 @@
             $this->layout = "admin";
             
             if (!$id) {
-                throw new NotFoundException(__("Articulo inválido"));
+                throw new NotFoundException(__("Artículo inválido"));
             }
-            $grado = $this->Articulo->findByIdgrado($id);
-            if (!$grado) {
-                throw new NotFoundException(__("Articulo inválido"));
+            $articulo = $this->Articulo->findByIdarticulo($id);
+            if (!$articulo) {
+                throw new NotFoundException(__("Artículo inválido"));
             }
-            if ($this->request->is(array("post", "put"))) {
+            
+      
+            if ($this->request->is(array("post", "put"))) {      
+                
+                $filename = $this->request->data["Articulo"]["foto"]["name"];
+                unlink(WWW_ROOT . DS . "img" . DS . "novedades" . DS . $articulo["Articulo"]["foto"]);
+                move_uploaded_file($this->request->data['Articulo']['foto']['tmp_name'], WWW_ROOT. DS . "img" . DS . "novedades" . DS . $filename);  
+                unset($this->request->data["Articulo"]["foto"]);
+                $this->request->data["Articulo"]["foto"] = $filename;
+
                 $this->Articulo->id = $id;
                 if ($this->Articulo->save($this->request->data)) {
-                    $this->Session->setFlash(__("El artìculo ha sido actualizado."), "flash_bootstrap");
+                    $this->Session->setFlash(__("El artículo ha sido actualizado."), "flash_bootstrap");
                     return $this->redirect(array("action" => "index"));
                 }
                 $this->Session->setFlash(__("No es posible actualizar el artìculo."), "flash_bootstrap");
             }
             if (!$this->request->data) {
-                $this->request->data = $grado;
+                $this->request->data = $articulo;
             }
         }
            

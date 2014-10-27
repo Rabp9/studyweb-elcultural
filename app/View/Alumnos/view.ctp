@@ -17,5 +17,7 @@
   <dd><?php echo $alumno["Alumno"]["fechaNac"]; ?></dd>
   <dt>Dirección</dt>
   <dd><?php echo $alumno["Alumno"]["direccion"]; ?></dd>
+  <dt>Nombre de Usuario</dt>
+  <dd><?php echo $alumno["User"]["username"]; ?></dd>
 </dl>
 <?php echo $this->Html->link("Regresar a Lista Alumnos", array("controller" => "Alumnos", "action" => "index")); ?>

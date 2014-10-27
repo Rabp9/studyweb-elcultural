@@ -5,7 +5,7 @@
         public function beforeFilter() {
             parent::beforeFilter();
             // $this->Auth->allow("add", "logout", "login", "edit");
-            $this->Auth->allow('initDB');
+            $this->Auth->allow("initDB", "preAdd");
         }
         
         public function initDB() {
@@ -126,5 +126,9 @@
 
         public function logout() {
             return $this->redirect($this->Auth->logout());
+        }
+        
+        public function preAdd() {
+            $this->layout = "admin";
         }
 }
