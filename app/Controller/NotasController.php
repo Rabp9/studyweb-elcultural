@@ -69,11 +69,37 @@
             }
             
             $this->set("cursos", $cursos);
+            if($this->request->is("post")) {
+                foreach($this->request->data["Matriculas"]["idMatricula"] as $key => $value) {
+                    $notas[] = array(
+                        "idMatricula" => $value,
+                        "idCurso" => $this->request->data["idCurso"],
+                        "unidad" => $this->request->data["unidad"],
+                        "descripcion" => $this->request->data["descripcion"],
+                        "valor" => $this->request->data["Notas"]["valor"][$key]
+                    );
+                }
+                $this->Nota->saveMany($notas);
+                $this->Session->setFlash(__("Las notas han sido registradas correctamente."), "flash_bootstrap"); 
+            }
         }
         
         public function getFormNotas() {
             $this->layout = "ajax";
             
+            $idSeccion = $this->request->data["idSeccion"];
+            
+            $matriculas = $this->Alumno->Matricula->find("all", array(
+                "conditions" => array("Matricula.idSeccion" => $idSeccion)
+            ));
+            
+            foreach ($matriculas as $matricula) {
+                $alumnos[] = $this->Alumno->find("first", array(
+                    "conditions" => array("Alumno.idAlumno" => $matricula["Matricula"]["idAlumno"])
+                ));
+            }
+            
+            $this->set("alumnos", $alumnos);
         }
     }
 ?>
