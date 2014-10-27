@@ -2,7 +2,7 @@
 
 <?php
     class RecursosController extends AppController {
-        public $uses = array("User", "Alumno", "Recurso", "Curso");
+        public $uses = array("User", "Alumno", "Recurso", "Curso", "Carpeta");
         
         public function beforeFilter() {
             parent::beforeFilter();
@@ -30,15 +30,15 @@
             )));
         }
         
-        public function getRecursos() {
+        public function getCarpetas() {
             $this->layout = "ajax";
             
             $idCurso = $this->request->data["idCurso"];
-            $recursos = $this->Recurso->find("all", array(
-                "conditions" => array("Recurso.idCurso" => $idCurso)
+            $carpetas = $this->Carpeta->find("all", array(
+                "conditions" => array("Carpeta.idCurso" => $idCurso)
             ));
             
-            $this->set("recursos", $recursos);
+            $this->set("carpetas", $carpetas);
         }
     }
 ?>
