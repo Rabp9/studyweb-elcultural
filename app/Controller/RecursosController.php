@@ -28,6 +28,22 @@
                 "fields" => array("Curso.idCurso", "Curso.descripcion"),
                 "conditions" => array("Curso.idGrado" => $grado["Grado"]["idGrado"])
             )));
+            
+            if($this->request->is("post")) {  
+                $this->Recurso->create();
+                
+                $this->Carpeta->id = $this->request->data["Recurso"]["idCarpeta"];
+                $carpeta = $this->Carpeta->read();
+                $filename = $this->request->data["Recurso"]["ubicacion"]["name"];
+                move_uploaded_file($this->request->data['Recurso']["ubicacion"]["tmp_name"], WWW_ROOT. DS . "files" . DS . "drive" . DS . $carpeta["Carpeta"]["descripcion"] . DS . $filename);  
+                unset($this->request->data["Recurso"]["ubicacion"]);
+                $this->request->data["Recurso"]["ubicacion"] = $filename;
+                if ($this->Recurso->save($this->request->data)) {
+                    $this->Session->setFlash(__("El recurso ha sido registrado correctamente."), "flash_bootstrap");
+                    return $this->redirect(array("action" => "index"));
+                }
+                $this->Session->setFlash(__("No fue posible registrar el recurso."), "flash_bootstrap");
+            }
         }
         
         public function getCarpetas() {
@@ -37,7 +53,13 @@
             $carpetas = $this->Carpeta->find("all", array(
                 "conditions" => array("Carpeta.idCurso" => $idCurso)
             ));
+                      
+            $listaCarpetas = $this->Carpeta->find("list", array(
+                "fields" => array("Carpeta.idCarpeta", "Carpeta.descripcion"),
+                "conditions" => array("Carpeta.idCurso" => $idCurso, "Carpeta.tipo" => "escritura")
+            ));
             
+            $this->set("listaCarpetas", $listaCarpetas);
             $this->set("carpetas", $carpetas);
         }
     }

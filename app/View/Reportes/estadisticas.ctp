@@ -22,3 +22,24 @@
      * Nro de clases
      */
 ?>
+
+<?php
+    $this->Js->get('#idCurso')->event('change', 
+        $this->Js->alert("dasda")
+        /*$this->Js->request(array(
+            'controller' => 'Periodos',
+            'action' => 'getDias'
+        ), array(
+            'update'=>'#dvHorario',
+            'async' => true,
+            'method' => 'post',
+            'dataExpression'=>true,
+            'data'=> $this->Js->serializeForm(array(
+                'isForm' => true,
+                'inline' => true
+            ))
+        ))
+         *
+         */
+    );
+?>

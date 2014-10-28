@@ -2,6 +2,8 @@
 
 <?php
     class ReportesController extends AppController {
+        public $uses = array("Alumno");
+        
         public function beforeFilter() {
             parent::beforeFilter();
             $this->Auth->allow("estadisticas");
