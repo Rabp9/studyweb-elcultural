@@ -62,6 +62,14 @@
                     <li class="<?php echo $this->request->params['controller'] == 'Periodos' ? 'active' : ''; ?>"><?php echo $this->Html->link("Registrar Periodo", array("controller" => "Periodos", "action" => "index")); ?></li>
                     <li class="<?php echo $this->request->params['controller'] == 'Horarios' ? 'active' : ''; ?>"><?php echo $this->Html->link("Registrar Horario", array("controller" => "Horarios", "action" => "index")); ?></li>
                     <li class="<?php echo $this->request->params['controller'] == 'Matriculas' ? 'active' : ''; ?>"><?php echo $this->Html->link("Registrar Matrícula", array("controller" => "Matriculas", "action" => "index")); ?></li>
+                    <li style="left: 40%;">
+                        <?php echo $this->Html->link(
+                            $this->Html->image("cerrar-sesion.png", array("alt" => "Cerrar Sesión", "border" => "0")),
+                            "/",
+                            array("escape" => false)
+                        );
+                        ?>
+                    </li>
                 </ul>
             </div>
             <div class="row">

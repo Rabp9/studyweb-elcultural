@@ -120,7 +120,7 @@
                             break;
                     }
                 }
-                $this->Session->setFlash(__('Invalid usuarioname or password, try again'));
+                $this->Session->setFlash(__('Nombre de Usuario o password incorrecto, inténtelo nuevamente'), "flash_bootstrap");
             }
         }
 

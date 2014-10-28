@@ -15,7 +15,7 @@
     $this->Js->get('#idCurso')->event('change', 
         $this->Js->request(array(
             'controller' => 'Recursos',
-            'action' => 'getRecursos'
+            'action' => "getCarpetas"
         ), array(
             'update'=>'#dvRecursos',
             'async' => true,

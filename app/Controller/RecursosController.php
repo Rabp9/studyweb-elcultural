@@ -6,7 +6,7 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getRecursos");
+            $this->Auth->allow("getCarpetas");
         }
 
         public function index() {
