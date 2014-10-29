@@ -4,6 +4,7 @@
     echo $this->Form->input('idSeccion', array(
         "label" => "Sección",
         "div" => "formField",
-        "options" => $secciones
+        "options" => $secciones,
+        "empty" => "Selecciona uno"
     ));    
 ?>

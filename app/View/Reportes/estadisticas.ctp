@@ -9,28 +9,16 @@
         "empty" => "Selecciona uno"
     ));
     echo $this->Html->div(null, "", array("id" => "dvEstadisticas"));
-    /*
-     * Nombre de Docente
-     * Grado y Secciòn
-     * Nota Promedio
-     * Numero de alumnos
-     * 3 primeros puestos
-     * Numero de alumnos aprobados
-     * Numero de alumnos desaprobados
-     * Nota minima
-     * Nota maxima
-     * Nro de clases
-     */
+    
 ?>
 
 <?php
-    $this->Js->get('#idCurso')->event('change', 
-        $this->Js->alert("dasda")
-        /*$this->Js->request(array(
-            'controller' => 'Periodos',
-            'action' => 'getDias'
+    $this->Js->get('#idCurso')->event('change',
+        $this->Js->request(array(
+            'controller' => 'Reportes',
+            'action' => 'estadisticasDetalle'
         ), array(
-            'update'=>'#dvHorario',
+            'update'=>'#dvEstadisticas',
             'async' => true,
             'method' => 'post',
             'dataExpression'=>true,
@@ -39,7 +27,5 @@
                 'inline' => true
             ))
         ))
-         *
-         */
     );
 ?>

@@ -9184,3 +9184,137 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-10-29 15:02:54 Error: [PDOException] SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'lunes' at row 1
+Request URL: /studyweb-elcultural/Periodos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(1859): DboSource->create(Object(Periodo), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Model/Model.php(2419): Model->save(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/PeriodosController.php(28): Model->saveAssociated(Array)
+#6 [internal function]: PeriodosController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PeriodosController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PeriodosController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-10-29 15:58:55 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-29 15:59:20 Error: Fatal Error (1): Call to a member function findByIduser() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/RecursosController.php, line 53]
+2014-10-29 15:59:20 Error: [FatalErrorException] Call to a member function findByIduser() on a non-object
+Request URL: /studyweb-elcultural/Recursos/registrar
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 16:21:45 Error: Fatal Error (64): Cannot redeclare Docente::$virtualFields in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Model/Docente.php, line 37]
+2014-10-29 16:21:45 Error: [FatalErrorException] Cannot redeclare Docente::$virtualFields
+Request URL: /studyweb-elcultural/Pages/docente
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/X...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 16:21:55 Error: Fatal Error (64): Cannot redeclare Docente::$virtualFields in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Model/Docente.php, line 37]
+2014-10-29 16:21:55 Error: [FatalErrorException] Cannot redeclare Docente::$virtualFields
+Request URL: /studyweb-elcultural/Horarios/getDetail
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/X...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 16:22:02 Error: Fatal Error (64): Cannot redeclare Docente::$virtualFields in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Model/Docente.php, line 37]
+2014-10-29 16:22:02 Error: [FatalErrorException] Cannot redeclare Docente::$virtualFields
+Request URL: /studyweb-elcultural/Horarios/getDetail
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/X...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 16:22:42 Error: Fatal Error (64): Cannot redeclare Docente::$virtualFields in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Model/Docente.php, line 37]
+2014-10-29 16:22:42 Error: [FatalErrorException] Cannot redeclare Docente::$virtualFields
+Request URL: /studyweb-elcultural/Horarios/getDetail
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/X...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 16:22:50 Error: Fatal Error (64): Cannot redeclare Docente::$virtualFields in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Model/Docente.php, line 37]
+2014-10-29 16:22:50 Error: [FatalErrorException] Cannot redeclare Docente::$virtualFields
+Request URL: /studyweb-elcultural/Horarios/getDetail
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/X...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 16:22:57 Error: Fatal Error (64): Cannot redeclare Docente::$virtualFields in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Model/Docente.php, line 37]
+2014-10-29 16:22:57 Error: [FatalErrorException] Cannot redeclare Docente::$virtualFields
+Request URL: /studyweb-elcultural/Horarios/getDetail
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/X...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/X...', 37, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 16:27:09 Error: Fatal Error (1): Call to a member function findByIduser() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 16]
+2014-10-29 16:27:09 Error: [FatalErrorException] Call to a member function findByIduser() on a non-object
+Request URL: /studyweb-elcultural/Reportes/estadisticas
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 18:38:17 Error: Fatal Error (1): Class 'FPDF' not found in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 51]
+2014-10-29 18:38:17 Error: [FatalErrorException] Class 'FPDF' not found
+Request URL: /studyweb-elcultural/reportes/estadisticasPdf
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'FPDF' no...', '/Applications/X...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'FPDF' no...', '/Applications/X...', 51, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'FPDF' no...', '/Applications/X...', 51, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 18:46:07 Error: Fatal Error (64): Class declarations may not be nested in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 52]
+2014-10-29 18:46:07 Error: [FatalErrorException] Class declarations may not be nested
+Request URL: /studyweb-elcultural/Reportes/estadisticas
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Class declarati...', '/Applications/X...', 52)
+#1 [internal function]: ErrorHandler::handleError(64, 'Class declarati...', '/Applications/X...', 52, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Class declarati...', '/Applications/X...', 52, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-29 18:48:55 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 56]
+2014-10-29 18:48:55 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /studyweb-elcultural/Reportes/estadisticas
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 56, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 56, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

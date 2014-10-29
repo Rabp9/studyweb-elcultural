@@ -20,6 +20,12 @@
         "empty" => "Selecciona uno"
     ));
     echo $this->Form->input("horas", array(
-        "label" => "Horas académicas"
+        "label" => "Horas académicas",
+        "div" => "formField",
+        "type" => "number",
+        "min" => 0,
+        "max" => 17,
+        "step" => 1,
+        "value" => 1
     ));
 ?>

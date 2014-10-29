@@ -2,32 +2,57 @@
 
 <?php
     class ReportesController extends AppController {
-        public $uses = array("Alumno");
+        public $uses = array("Docente");
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("estadisticas");
+            $this->Auth->allow("estadisticas", "estadisticasDetalle", "estadisticasPdf");
         }
         
         public function estadisticas() {
             $this->layout = "docente";
        
             $user = $this->Auth->user();
-            $alumno = $this->Alumno->findByIduser($user["idUser"]);
+            $docente = $this->Docente->findByIduser($user["idUser"]);
      
-            $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
-            $matricula = $this->Alumno->Matricula->read();
+            $horarios = $this->Docente->Horario->find("all", array(
+                "fields" => array("DISTINCT Horario.idCurso"),
+                "conditions" => array("Horario.idDocente" => $docente["Docente"]["idDocente"])
+            ));
             
-            $this->Alumno->Matricula->Seccion->id = $matricula["Matricula"]["idSeccion"];
-            $seccion = $this->Alumno->Matricula->Seccion->read();
+            foreach ($horarios as $horario) {
+                $curso = $this->Docente->Horario->Curso->find("first", array(
+                    "fields" => array("Curso.idCurso", "Curso.descripcion"),
+                    "conditions" => array("Curso.idCurso" => $horario["Horario"]["idCurso"])
+                ));
+                $cursos[$curso["Curso"]["idCurso"]] = $curso["Curso"]["descripcion"];
+            }
             
-            $this->Alumno->Matricula->Seccion->Grado->id = $seccion["Seccion"]["idGrado"];
-            $grado = $this->Alumno->Matricula->Seccion->Grado->read();
+            $this->set("cursos", $cursos);
+        }
+        
+        public function estadisticasDetalle() {
+            $this->layout = "ajax";
             
-            $this->set("cursos", $this->Alumno->Matricula->Seccion->Grado->Curso->find("list", array(
-                "fields" => array("Curso.idCurso", "Curso.descripcion"),
-                "conditions" => array("Curso.idGrado" => $grado["Grado"]["idGrado"])
-            )));
+            $user = $this->Auth->user();
+            $docente = $this->Docente->findByIduser($user["idUser"]);
+     
+            $estadisticas["docente"] = $docente["Docente"]["nombreCompleto"];
+            
+            $this->set("estadisticas", $estadisticas);
+        }
+          
+        public function estadisticasPdf() {
+            //Import /app/Vendor/Fpdf
+            App::import('Vendor', 'Fpdf', array('file' => 'fpdf/fpdf.php'));
+            //Assign layout to /app/View/Layout/pdf.ctp
+            $this->layout = 'pdf'; //this will use the pdf.ctp layout
+            //Set fpdf variable to use in view
+            $this->set('fpdf', new FPDF('P','mm','A4'));
+            //pass data to view
+            $this->set('data', 'Hello, PDF world');
+            //render the pdf view (app/View/[view_name]/pdf.ctp)
+            $this->render("estadisticasPdf");
         }
     }
 ?>

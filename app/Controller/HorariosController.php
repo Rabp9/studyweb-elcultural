@@ -58,7 +58,7 @@
             )));
             
             $this->set("docentes", $this->Docente->find("list", array(
-                "fields" => array("Docente.idDocente", "Docente.nombres")
+                "fields" => array("Docente.idDocente", "Docente.nombreCompleto")
             )));
             
             $this->layout = 'ajax';

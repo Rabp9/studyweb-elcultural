@@ -1,0 +1,27 @@
+<!-- file path View/Reportes/estadisticas_detalle.ctp -->
+
+<dl class="dl-horizontal">
+    <dt>Docente</dt>
+    <dd><?php echo $estadisticas["docente"]; ?></dd>
+</dl>
+
+<?php
+/*
+ * Nombre de Docente
+ * Grado y Secciòn
+ * Nota Promedio
+ * Numero de alumnos
+ * 3 primeros puestos
+ * Numero de alumnos aprobados
+ * Numero de alumnos desaprobados
+ * Nota minima
+ * Nota maxima
+ * Nro de clases
+*/
+    echo $this->Form->create("Reportes", array(
+        "controller" => "Reportes",
+        "action" => "estadisticasPdf"
+    ));
+    echo $this->Form->end("Mostrar");
+?>
+

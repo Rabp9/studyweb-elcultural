@@ -69,6 +69,10 @@
                         "data-toggle" => "modal",
                         "data-target" => "#mdlDetalleCurso",
                         "data-dia" => 0
+                    )) . 
+                    $this->Form->button("<span class='glyphicon glyphicon-remove'></span>", array(
+                        "type" => "button",
+                        "class" => "btn btn-default limpiar"
                     )) :
                     "" 
                 ?>
@@ -81,6 +85,10 @@
                         "data-toggle" => "modal",
                         "data-target" => "#mdlDetalleCurso",
                         "data-dia" => 1
+                    )) . 
+                    $this->Form->button("<span class='glyphicon glyphicon-remove'></span>", array(
+                        "type" => "button",
+                        "class" => "btn btn-default limpiar"
                     )) :
                     "" 
                 ?>
@@ -93,6 +101,10 @@
                         "data-toggle" => "modal",
                         "data-target" => "#mdlDetalleCurso",
                         "data-dia" => 2
+                    )) . 
+                    $this->Form->button("<span class='glyphicon glyphicon-remove'></span>", array(
+                        "type" => "button",
+                        "class" => "btn btn-default limpiar"
                     )) :
                     "" 
                 ?>
@@ -105,6 +117,10 @@
                         "data-toggle" => "modal",
                         "data-target" => "#mdlDetalleCurso",
                         "data-dia" => 3
+                    )) . 
+                    $this->Form->button("<span class='glyphicon glyphicon-remove'></span>", array(
+                        "type" => "button",
+                        "class" => "btn btn-default limpiar"
                     )) :
                     "" 
                 ?>
@@ -117,6 +133,10 @@
                         "data-toggle" => "modal",
                         "data-target" => "#mdlDetalleCurso",
                         "data-dia" => 4
+                    )) . 
+                    $this->Form->button("<span class='glyphicon glyphicon-remove'></span>", array(
+                        "type" => "button",
+                        "class" => "btn btn-default limpiar"
                     )) :
                     "" 
                 ?>
@@ -129,6 +149,10 @@
                         "data-toggle" => "modal",
                         "data-target" => "#mdlDetalleCurso",
                         "data-dia" => 5
+                    )) . 
+                    $this->Form->button("<span class='glyphicon glyphicon-remove'></span>", array(
+                        "type" => "button",
+                        "class" => "btn btn-default limpiar"
                     )) :
                     "" 
                 ?>
@@ -141,6 +165,10 @@
                         "data-toggle" => "modal",
                         "data-target" => "#mdlDetalleCurso",
                         "data-dia" => 6
+                    )) . 
+                    $this->Form->button("<span class='glyphicon glyphicon-remove'></span>", array(
+                        "type" => "button",
+                        "class" => "btn btn-default limpiar"
                     )) :
                     "" 
                 ?>
@@ -183,6 +211,14 @@
         });
         var dia = $(this).attr("data-dia");
         $("#dia").val(dia);
+    });
+</script>
+
+<script type="text/javascript">
+    $('body').on('click', '.limpiar', function() {
+        var col = $(this).parent().parent().children().index($(this).parent());
+        $("#tblHorario tbody tr:not(:last)").find("td:eq(" + col + ")").html("");
+        $("#tblHorario thead").find("th:eq(" + col + ")").find("input:hidden").val("17");
     });
 </script>
 
