@@ -14,6 +14,12 @@
             "Recurso" => array(
                 "foreignKey" => "idCarpeta"
             )
+        ); 
+        
+        public $belongsTo = array(
+            "Curso" => array(
+                "foreignKey" => "idCurso"
+            )
         );
     }
 ?>

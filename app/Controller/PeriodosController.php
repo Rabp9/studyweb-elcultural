@@ -26,6 +26,7 @@
                 $this->Periodo->create();
                 $this->request->data["Periodo"]["idPeriodo"] = $this->Periodo->getIdPeriodo();
                 if ($this->Periodo->saveAssociated($this->request->data)) {
+                    mkdir(WWW_ROOT . DS . "files" . DS . "drive" . DS . $this->Periodo->id ." - " . $this->request->data["Periodo"]["descripcion"]);
                     $this->Session->setFlash(__("El periodo ha sido registrado correctamente."), "flash_bootstrap");
                     return $this->redirect(array("action" => "index"));
                 }

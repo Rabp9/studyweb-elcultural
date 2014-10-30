@@ -30,16 +30,22 @@
 ?>
         <li>
             <span class="glyphicon glyphicon glyphicon-folder-close"></span> 
-            <a href="#"><?php 
+            <?php 
                 echo $carpeta["Carpeta"]["descripcion"]; 
                 if($carpeta["Carpeta"]["tipo"] == "escritura")
-                    echo " <i>(Permite Escritura)</i>";
-            ?></a>
+                    echo " <i>(Permite Escritura a los Alumnos)</i>";
+            ?>
             <ul>
-            <?php foreach ($carpeta["Recurso"] as $records) { ?>
+            <?php foreach ($carpeta["Recurso"] as $detalle) { ?>
                 <li>
                     <span class="glyphicon glyphicon glyphicon-file"></span> 
-                    <a href="#"><?php echo $records["descripcion"]; ?></a>
+                    <a href="
+                    <?php echo $this->Html->url(array(
+                        "controller" => "Recursos",
+                        "action" => "download", $detalle["idRecurso"]
+                    )); ?>">
+                        <?php echo $detalle["descripcion"]; ?>
+                    </a>
                 </li>
             <?php } ?>
             </ul>
@@ -55,7 +61,7 @@
     <div class="modal-dialog">
         <?php echo $this->Form->create("Recurso", array(
                     "type" => "file",
-                    "url" => array("controller" => "Recursos", "action" => "index")
+                    "url" => array("controller" => "Recursos", "action" => "registrar")
                 ));
         ?>
         <div class="modal-content">
@@ -97,17 +103,49 @@
 <!-- Modal -->
 <div class="modal fade" id="mdlCrearCarpeta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
+        <?php echo $this->Form->create("Carpeta", array(
+                    "url" => array("controller" => "Recursos", "action" => "crearCarpeta")
+                ));
+        ?>
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 <h4 class="modal-title">Crear Carpeta</h4>
             </div>
             <div class="modal-body">
+                <?php
+                    echo $this->Form->input("descripcion", array(
+                        "label" => "Descripción",
+                        "div" => "formField"
+                    ));
+                    ?>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="data[Carpeta][tipo]" value="lectura">
+                        Lectura
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="data[Carpeta][tipo]" value="escritura">
+                        Escritura
+                    </label>
+                </div>
+                <?php
+                    echo $this->Form->input("idCurso", array(
+                        "type" => "hidden",
+                        "div" => "formField",
+                        "value" => $idCurso
+                    ));
+                ?>
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary" id="aceptar">Aceptar</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
             </div>
+            <?php
+                echo $this->Form->end();
+            ?>
         </div>
     </div>
 </div>

@@ -21,16 +21,22 @@
 ?>
         <li>
             <span class="glyphicon glyphicon glyphicon-folder-close"></span> 
-            <a href="#"><?php 
+            <?php 
                 echo $carpeta["Carpeta"]["descripcion"]; 
                 if($carpeta["Carpeta"]["tipo"] == "escritura")
                     echo " <i>(Permite Escritura)</i>";
-            ?></a>
+            ?>
             <ul>
-            <?php foreach ($carpeta["Recurso"] as $records) { ?>
+            <?php foreach ($carpeta["Recurso"] as $detalle) { ?>
                 <li>
                     <span class="glyphicon glyphicon glyphicon-file"></span> 
-                    <a href="#"><?php echo $records["descripcion"]; ?></a>
+                    <a href="
+                    <?php echo $this->Html->url(array(
+                        "controller" => "Recursos",
+                        "action" => "download", $detalle["idRecurso"]
+                    )); ?>">
+                        <?php echo $detalle["descripcion"]; ?>
+                    </a>
                 </li>
             <?php } ?>
             </ul>
