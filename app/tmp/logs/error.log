@@ -9658,3 +9658,75 @@ Stack Trace:
 #3 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(RecursosController), Object(CakeRequest))
 #4 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-10-30 18:00:46 Error: [MissingActionException] Action ReportesController::estadisticasPdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'ReportesController',
+  'action' => 'estadisticasPdf',
+)
+Request URL: /studyweb-elcultural/reportes/estadisticasPdf
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ReportesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-30 18:01:17 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Reportes/pdf.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Reportes/pdf.ctp',
+)
+Request URL: /studyweb-elcultural/reportes/estadisticasPdf
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(468): View->_getViewFileName('pdf')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render('pdf', NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php(55): Controller->render('pdf')
+#3 [internal function]: ReportesController->estadisticasPdf()
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportesController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ReportesController), Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-10-30 18:01:46 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Reportes/pdf.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Reportes/pdf.ctp',
+)
+Request URL: /studyweb-elcultural/reportes/estadisticasPdf
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/View/View.php(468): View->_getViewFileName('pdf')
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(954): View->render('pdf', NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php(55): Controller->render('pdf')
+#3 [internal function]: ReportesController->estadisticasPdf()
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportesController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ReportesController), Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-10-30 18:07:27 Error: [CakeException] Method type does not exist
+Request URL: /studyweb-elcultural/reportes/estadisticasPdf
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php(47): CakeRequest->__call('type', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php(47): CakeRequest->type('application/pdf')
+#2 [internal function]: ReportesController->estadisticasPdf()
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportesController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ReportesController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-30 18:36:56 Error: Fatal Error (1): Call to a member function findByIdcurso() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 39]
+2014-10-30 18:36:56 Error: [FatalErrorException] Call to a member function findByIdcurso() on a non-object
+Request URL: /studyweb-elcultural/Reportes/estadisticasDetalle
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 39, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 39, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-30 18:46:15 Error: Fatal Error (1): Call to a member function findByIdcurso() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 39]
+2014-10-30 18:46:15 Error: [FatalErrorException] Call to a member function findByIdcurso() on a non-object
+Request URL: /studyweb-elcultural/Reportes/estadisticasDetalle
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 39, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 39, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

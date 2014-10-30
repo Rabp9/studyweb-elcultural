@@ -3,6 +3,8 @@
 <dl class="dl-horizontal">
     <dt>Docente</dt>
     <dd><?php echo $estadisticas["docente"]; ?></dd>
+    <dt>Grado y Seeción</dt>
+    <dd><?php echo $estadisticas["grado_seccion"]; ?></dd>
 </dl>
 
 <?php

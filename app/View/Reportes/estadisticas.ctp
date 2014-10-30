@@ -8,8 +8,27 @@
         "options" => $cursos,
         "empty" => "Selecciona uno"
     ));
+    echo $this->Html->div(null, "", array("id" => "dvSecciones"));
     echo $this->Html->div(null, "", array("id" => "dvEstadisticas"));
     
+?>
+
+<?php
+    $this->Js->get('#idCurso')->event('change', 
+        $this->Js->request(array(
+            'controller' => 'Secciones',
+            'action' => 'getSeccionesByCurso'
+        ), array(
+            'update'=>'#dvSecciones',
+            'async' => true,
+            'method' => 'post',
+            'dataExpression'=>true,
+            'data'=> $this->Js->serializeForm(array(
+                'isForm' => true,
+                'inline' => true
+            ))
+        ))
+    );
 ?>
 
 <?php

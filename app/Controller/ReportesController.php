@@ -2,7 +2,7 @@
 
 <?php
     class ReportesController extends AppController {
-        public $uses = array("Docente");
+        public $uses = array("Docente", "Curso");
         
         public function beforeFilter() {
             parent::beforeFilter();
@@ -36,23 +36,23 @@
             
             $user = $this->Auth->user();
             $docente = $this->Docente->findByIduser($user["idUser"]);
-     
-            $estadisticas["docente"] = $docente["Docente"]["nombreCompleto"];
+            $curso = $this->Curso->findByIdcurso($this->request->data["idCurso"]);
             
+            $estadisticas["docente"] = $docente["Docente"]["nombreCompleto"];
+            $estadisticas["grado_seccion"] = $curso["Curso"]["descripcion"];
+            
+            debug($this->request->data);
             $this->set("estadisticas", $estadisticas);
         }
           
         public function estadisticasPdf() {
-            //Import /app/Vendor/Fpdf
             App::import('Vendor', 'Fpdf', array('file' => 'fpdf/fpdf.php'));
-            //Assign layout to /app/View/Layout/pdf.ctp
             $this->layout = 'pdf'; //this will use the pdf.ctp layout
-            //Set fpdf variable to use in view
+            
             $this->set('fpdf', new FPDF('P','mm','A4'));
-            //pass data to view
             $this->set('data', 'Hello, PDF world');
-            //render the pdf view (app/View/[view_name]/pdf.ctp)
-            $this->render("estadisticasPdf");
+     
+            $this->response->type("application/pdf");
         }
     }
 ?>
