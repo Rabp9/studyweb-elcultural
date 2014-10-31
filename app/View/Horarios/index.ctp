@@ -81,3 +81,9 @@
         return false;"
     );
 ?>
+
+<?php
+    $this->Js->get('#PeriodoIdSeccion')->event('change', 
+        $this->Js->alert("AJAM")
+    );
+?>
