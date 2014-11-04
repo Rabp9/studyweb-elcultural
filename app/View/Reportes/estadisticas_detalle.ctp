@@ -9,8 +9,8 @@
 
 <?php
 /*
- * Nombre de Docente
- * Grado y Secciòn
+ * Nombre de Docente-------
+ * Grado y Secciòn---------
  * Nota Promedio
  * Numero de alumnos
  * 3 primeros puestos
@@ -20,10 +20,6 @@
  * Nota maxima
  * Nro de clases
 */
-    echo $this->Form->create("Reportes", array(
-        "controller" => "Reportes",
-        "action" => "estadisticasPdf"
-    ));
-    echo $this->Form->end("Mostrar");
+    echo $this->Form->end("Exportar a PDF");
 ?>
 

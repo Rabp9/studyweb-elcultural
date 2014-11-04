@@ -83,7 +83,20 @@
 ?>
 
 <?php
-    $this->Js->get('#PeriodoIdSeccion')->event('change', 
-        $this->Js->alert("AJAM")
-    );
+    $this->Html->scriptStart(array('inline' => false));
+?>
+    $('body').on('click', '#PeriodoIdSeccion', function() {
+        $.ajax({
+            async:true, 
+            data: $("#ReportesEstadisticasPdfForm").serialize(), 
+            dataType:"html", 
+            success:function (data, textStatus) {
+                $("#dvEstadisticas").html(data);
+            }, 
+            type:"post", 
+            url:"\/studyweb-elcultural\/Reportes\/estadisticasDetalle"
+        });
+    });
+<?php
+    $this->Html->scriptEnd();
 ?>

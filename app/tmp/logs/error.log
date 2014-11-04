@@ -9874,3 +9874,13 @@ Request URL: /studyweb-elcultural/Usuarios
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-11-04 15:55:46 Error: Fatal Error (1): Call to a member function SetFont() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Reportes/estadisticas_pdf.ctp, line 9]
+2014-11-04 15:55:46 Error: [FatalErrorException] Call to a member function SetFont() on a non-object
+Request URL: /studyweb-elcultural/reportes/estadisticasPdf
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 9, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 9, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

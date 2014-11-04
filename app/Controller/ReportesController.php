@@ -37,11 +37,11 @@
             $user = $this->Auth->user();
             $docente = $this->Docente->findByIduser($user["idUser"]);
             $curso = $this->Curso->findByIdcurso($this->request->data["idCurso"]);
+            $seccion = $this->Curso->Grado->Seccion->findByIdseccion($this->request->data["idSeccion"]);
             
             $estadisticas["docente"] = $docente["Docente"]["nombreCompleto"];
-            $estadisticas["grado_seccion"] = $curso["Curso"]["descripcion"];
+            $estadisticas["grado_seccion"] = $curso["Grado"]["descripcion"] . " " .  $seccion["Seccion"]["descripcion"];
             
-            debug($this->request->data);
             $this->set("estadisticas", $estadisticas);
         }
           
@@ -50,7 +50,17 @@
             $this->layout = 'pdf'; //this will use the pdf.ctp layout
             
             $this->set('fpdf', new FPDF('P','mm','A4'));
-            $this->set('data', 'Hello, PDF world');
+            $this->set('titulo', 'Reporte de Estadísticas de Curso'); 
+            
+            $user = $this->Auth->user();
+            $docente = $this->Docente->findByIduser($user["idUser"]);
+            $curso = $this->Curso->findByIdcurso($this->request->data["idCurso"]);
+            $seccion = $this->Curso->Grado->Seccion->findByIdseccion($this->request->data["idSeccion"]);
+            
+            $estadisticas["docente"] = $docente["Docente"]["nombreCompleto"];
+            $estadisticas["grado_seccion"] = $curso["Grado"]["descripcion"] . " " .  $seccion["Seccion"]["descripcion"];
+           
+            $this->set('estadisticas', $estadisticas);
      
             $this->response->type("application/pdf");
         }
