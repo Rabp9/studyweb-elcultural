@@ -2,7 +2,7 @@
 
 <?php
     class ReportesController extends AppController {
-        public $uses = array("Docente", "Curso");
+        public $uses = array("Docente", "Curso", "Matricula", "Nota");
         
         public function beforeFilter() {
             parent::beforeFilter();
@@ -39,6 +39,33 @@
             $curso = $this->Curso->findByIdcurso($this->request->data["idCurso"]);
             $seccion = $this->Curso->Grado->Seccion->findByIdseccion($this->request->data["idSeccion"]);
             
+            $suma = 0;
+            $matriculas = $this->Matricula->find("all", array(
+                "conditions" => array("Matricula.estado" => 1, "Seccion.idSeccion" => $seccion["Seccion"]["idSeccion"])
+            ));
+            
+            $aprobados = 0;
+            foreach ($matriculas as $matricula) {
+                $notas = $this->Nota->find("all", array(
+                    "conditions" => array("Nota.idMatricula" => $matricula["Matricula"]["idMatricula"], "Nota.idCurso" => $curso["Curso"]["idCurso"])
+                ));
+                $subnota = 0;
+                $factor = 0;
+                foreach ($notas as $nota) {
+                    $subnota += $nota["Nota"]["valor"] * $nota["Nota"]["peso"];
+                    $factor += $nota["Nota"]["peso"];
+                }
+                $promedio = $subnota / $factor;
+                if($promedio >= 10.5)
+                    $aprobados++;
+                $suma += $promedio;
+            }
+            $promedioFinal = $promedio / count($matriculas);
+            
+            $estadisticas["promedio"] = number_format($promedioFinal, 2);
+            $estadisticas["nro_alumnos"] = count($matriculas);           
+            $estadisticas["nro_aprobados"] = $aprobados;       
+            $estadisticas["nro_desaprobados"] = count($matriculas) - $aprobados;
             $estadisticas["docente"] = $docente["Docente"]["nombreCompleto"];
             $estadisticas["grado_seccion"] = $curso["Grado"]["descripcion"] . " " .  $seccion["Seccion"]["descripcion"];
             
