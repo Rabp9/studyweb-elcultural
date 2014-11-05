@@ -1,14 +1,13 @@
 <!-- file path View/Asistencias/get_form_notas.ctp -->
 
 <?php
-    echo $this->Form->input("unidad", array(
-        "label" => "Unidad",
+    echo $this->Form->input("trimestre", array(
+        "label" => "Trimestre",
         "div" => "formField",
         "options" => array(
             "I" => "I", 
             "II" => "II", 
-            "III" => "III", 
-            "IV" => "IV"
+            "III" => "III"
         )
     ))
 ?>
@@ -18,11 +17,23 @@
         "label" => "Descripción",
         "div" => "formField",
         "options" => array(
-            "Examen Parcial" => "Examen Parcial", 
+            "Evaluacion 1" => "Evaluación 1", 
+            "Evaluacion 2" => "Evaluación 2", 
             "Examen Final" => "Examen Final", 
-            "Comportamiento" => "Comportamiento", 
-            "etc" => "etc"
+            "Trabajo Individual" => "Trabajo Individual",
+            "Actitudinal" => "Actitudinal"
         )
+    ))
+?>
+
+<?php  
+    echo $this->Form->input("peso", array(
+        "label" => "Peso",
+        "div" => "formField",
+        "type" => "number",
+        "min" => 1,
+        "max" => 5,
+        "value" => 1
     ))
 ?>
 <table>

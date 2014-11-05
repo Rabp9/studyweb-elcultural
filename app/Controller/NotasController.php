@@ -74,13 +74,15 @@
                     $notas[] = array(
                         "idMatricula" => $value,
                         "idCurso" => $this->request->data["idCurso"],
-                        "unidad" => $this->request->data["unidad"],
+                        "trimestre" => $this->request->data["trimestre"],
                         "descripcion" => $this->request->data["descripcion"],
-                        "valor" => $this->request->data["Notas"]["valor"][$key]
+                        "valor" => $this->request->data["Notas"]["valor"][$key],
+                        "peso" => $this->request->data["peso"]
                     );
                 }
                 $this->Nota->saveMany($notas);
                 $this->Session->setFlash(__("Las notas han sido registradas correctamente."), "flash_bootstrap"); 
+                return $this->redirect(array("action" => "registrar"));
             }
         }
         
