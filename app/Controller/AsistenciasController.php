@@ -62,10 +62,10 @@
             
             foreach ($horarios as $horario) {
                 $curso = $this->Docente->Horario->Curso->find("first", array(
-                    "fields" => array("Curso.idCurso", "Curso.descripcion"),
+                    "fields" => array("Curso.idCurso", "Curso.descripcion", "Grado.descripcion"),
                     "conditions" => array("Curso.idCurso" => $horario["Horario"]["idCurso"])
                 ));
-                $cursos[$curso["Curso"]["idCurso"]] = $curso["Curso"]["descripcion"];
+                $cursos[$curso["Curso"]["idCurso"]] = $curso["Curso"]["descripcion"] . " (" . $curso["Grado"]["descripcion"] . ")";
             }
             
             $this->set("cursos", $cursos);

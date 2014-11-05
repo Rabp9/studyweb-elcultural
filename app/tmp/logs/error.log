@@ -9884,3 +9884,414 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-11-05 00:28:35 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-05 00:28:47 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-05 00:55:00 Error: [MissingControllerException] Controller class GrupopsController could not be found.
+Exception Attributes: array (
+  'class' => 'GrupopsController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/Grupops
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-05 01:33:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dasdas' in 'field list'
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Curso), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(67): Model->find('first', Array)
+#7 [internal function]: AsistenciasController->registrar()
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-11-05 01:34:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion_general' in 'field list'
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Curso), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(67): Model->find('first', Array)
+#7 [internal function]: AsistenciasController->registrar()
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-11-05 01:35:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion_general' in 'field list'
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Curso), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(67): Model->find('first', Array)
+#7 [internal function]: AsistenciasController->registrar()
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#11 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-11-05 01:36:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('2')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('2')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('2')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:36:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:37:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:38:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:39:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:39:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-11-05 01:39:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Grado.descripcion' in 'field list'
+Request URL: /studyweb-elcultural/Secciones/getSeccionesByCurso
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Curso`....', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Curso`....', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Curso`....', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Grado), 'SELECT `Curso`....', Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Grado), Object(Curso), 'hasMany', 'Curso', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Grado), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByidgrado', Array, Object(Grado))
+#10 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Model->__call('findByidgrado', Array)
+#11 C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php(104): Grado->findByidgrado('1')
+#12 [internal function]: SeccionesController->getSeccionesByCurso()
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SeccionesController), Array)
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SeccionesController), Object(CakeRequest))
+#16 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}

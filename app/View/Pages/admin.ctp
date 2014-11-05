@@ -108,7 +108,7 @@
                 <div class="caption">
                     <h3>Mantenimiento Usuarios</h3>
                 </div>
-            </a>º
+            </a>
         </div>
     </div>
     <div class="col-xs-3">

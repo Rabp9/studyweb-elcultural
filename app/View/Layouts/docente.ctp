@@ -56,7 +56,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php echo $this->Html->url(array(
+                                "controller" => "Recursos",
+                                "action" => "registrar"
+                            )); ?>">
                                 <div class="icon icon-cursos icon-medium"></div>
                                 Cursos
                             </a>
@@ -68,12 +71,6 @@
                             )); ?>">
                                 <div class="icon icon-notas icon-medium"></div>
                                 Registrar Nota
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="icon icon-agenda icon-medium"></div>
-                                Agenda
                             </a>
                         </li>
                         <li>

@@ -42,6 +42,7 @@
                 }
                 $this->Horario->saveMany($horarios);
                 $this->Session->setFlash(__("El horario ha sido registrado correctamente."), "flash_bootstrap"); 
+                return $this->redirect(array("action" => "index"));
             }
         }
         

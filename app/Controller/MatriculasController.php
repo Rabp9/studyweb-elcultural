@@ -26,6 +26,10 @@
             if ($this->request->is("post")) {    
                 $this->Matricula->create();
                 $this->request->data["Matricula"]["fecha"] = date("Y-m-d");
+                $this->Matricula->updateAll(
+                    array("estado" => 2),
+                    array("idAlumno" => $this->request->data["Matricula"]["idAlumno"])
+                );
                 if ($this->Matricula->save($this->request->data)) {
                     $this->Session->setFlash(__("La matrícula ha sido registrada correctamente."), "flash_bootstrap");
                     return $this->redirect(array("action" => "index"));

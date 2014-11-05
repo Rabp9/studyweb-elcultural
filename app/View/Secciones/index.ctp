@@ -9,7 +9,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Còdigo</th>
+                <th>Código</th>
                 <th>Seccion</th>
                 <th>Grado</th>
                 <th>Acciòn</th>
