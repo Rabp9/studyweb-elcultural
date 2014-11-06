@@ -92,7 +92,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php echo $this->Html->url(array(
+                                "controller" => "Reportes",
+                                "action" => "notas"
+                            )); ?>">
                                 <div class="icon icon-cuenta icon-medium"></div>
                                 Reporte Notas
                             </a>

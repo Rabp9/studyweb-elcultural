@@ -92,7 +92,7 @@
             $idSeccion = $this->request->data["idSeccion"];
             
             $matriculas = $this->Alumno->Matricula->find("all", array(
-                "conditions" => array("Matricula.idSeccion" => $idSeccion)
+                "conditions" => array("Matricula.idSeccion" => $idSeccion, "Matricula.estado" => 1)
             ));
             
             foreach ($matriculas as $matricula) {

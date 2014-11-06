@@ -12,30 +12,24 @@
     <dt>Primeros Puestos</dt>
     <dd>
         <ol>
-            <li>Juan</li>
-            <li>Marco</li>
-            <li>Luis</li>
+            <li><?php echo $estadisticas["primerPuesto"] ?></li>
+            <li><?php echo $estadisticas["segundoPuesto"] ?></li>
+            <li><?php echo $estadisticas["tercerPuesto"] ?></li>
         </ol>
     </dd>
     <dt>Nº Aprobados</dt>
     <dd><?php echo $estadisticas["nro_aprobados"]; ?></dd>
     <dt>Nº Desaprobados</dt>
     <dd><?php echo $estadisticas["nro_desaprobados"]; ?></dd>
+    <dt>Nota Mínima</dt>
+    <dd><?php echo $estadisticas["notaMinima"]; ?></dd>
+    <dt>Nota Máxima</dt>
+    <dd><?php echo $estadisticas["notaMaxima"]; ?></dd>
+    <dt>Nº de Clases</dt>
+    <dd><?php echo $estadisticas["nro_clases"]; ?></dd>
 </dl>
 
 <?php
-/*
- * Nombre de Docente------------------
- * Grado y Secciòn--------------------
- * Nota Promedio----------------------
- * Numero de alumnos------------------
- * 3 primeros puestos
- * Numero de alumnos aprobados--------
- * Numero de alumnos desaprobados-----
- * Nota minima
- * Nota maxima
- * Nro de clases
-*/
     echo $this->Form->end("Exportar a PDF");
 ?>
 

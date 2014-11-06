@@ -10,6 +10,15 @@
             ),
             "Periodo" => array(
                 "foreignKey" => "idPeriodo"
+            ),
+            "Alumno" => array(
+                "foreignKey" => "idAlumno"
+            )
+        );
+        
+        public $hasMany = array(
+            "Asistencia" => array(
+                "foreignKey" => "idMatricula"
             )
         );
         
