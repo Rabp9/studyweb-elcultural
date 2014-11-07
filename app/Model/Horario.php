@@ -13,6 +13,9 @@
             ),
             "Docente" => array(
                 "foreignKey" => "idDocente"
+            ),
+            "Seccion" => array(
+                "foreignKey" => "idSeccion"
             )
         );
     }

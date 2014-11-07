@@ -2,7 +2,7 @@
 
 <?php
     class SeccionesController extends AppController {
-        public $uses = array("Seccion", "Curso");
+        public $uses = array("Seccion", "Curso", "Docente");
         
         public function beforeFilter() {
             parent::beforeFilter();
@@ -100,14 +100,36 @@
             
             $idCurso = $this->request->data["idCurso"];
             
+            $user = $this->Auth->user();
+            $docente = $this->Docente->findByIduser($user["idUser"]);
+           
             $curso = $this->Curso->findByIdcurso($idCurso);
             $grado = $this->Curso->Grado->findByidgrado($curso["Grado"]["idGrado"]);
             
-            $secciones = $this->Curso->Grado->Seccion->find("list", array(
+            
+            /*$secciones = $this->Curso->Grado->Seccion->find("list", array(
                 "fields" => array("Seccion.idSeccion", "Seccion.descripcion"),
                 "conditions" => array("Seccion.idGrado" => $grado["Grado"]["idGrado"])
             ));
             
             $this->set("secciones", $secciones); 
+             * 
+             */
+            
+            $horarios = $this->Docente->Horario->find("all", array(
+                "fields" => array("DISTINCT Horario.idSeccion"),
+                "conditions" => array("Horario.idDocente" => $docente["Docente"]["idDocente"], "Horario.idCurso" => $idCurso)
+            ));
+            
+            foreach ($horarios as $horario) {
+                $seccion = $this->Docente->Horario->Seccion->find("first", array(
+                    "fields" => array("Seccion.idSeccion", "Seccion.descripcion"),
+                    "conditions" => array("Seccion.idSeccion" => $horario["Horario"]["idSeccion"])
+                ));
+                $secciones[$seccion["Seccion"]["idSeccion"]] = $seccion["Seccion"]["descripcion"];
+            }
+            
+            $this->set("secciones", $secciones);
+        
         }
 }
