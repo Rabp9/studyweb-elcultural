@@ -2,11 +2,11 @@
 
 <?php
     class MensajesController extends AppController {
-        public $uses = array("Alumno", "Curso", "DetalleMensajeAlumno", "Mensaje");   
+        public $uses = array("Alumno", "Curso", "DetalleMensajeAlumno", "Mensaje");
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getMensajes");
+            $this->Auth->allow("getMensajes", "mensajesDocente");
         }
 
         public function index() {    
@@ -67,5 +67,33 @@
             ));
 
             $this->set("mensajes", $mensajes);
+        }
+        
+        public function mensajesDocente() {
+            $this->layout = "docente";
+            
+            /*
+            $user = $this->Auth->user();
+            $alumno = $this->Alumno->findByIduser($user["idUser"]);
+            
+            $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
+            $matricula = $this->Alumno->Matricula->read();
+            
+            $this->Alumno->Matricula->Seccion->id = $matricula["Seccion"]["idSeccion"];
+            $seccion = $this->Alumno->Matricula->Seccion->read();
+            
+            $this->Alumno->Matricula->Seccion->Grado->id = $seccion["Grado"]["idGrado"];
+            $grado = $this->Alumno->Matricula->Seccion->Grado->read();
+            
+            $cursos = $this->Curso->find("list", array(
+                "fields" => array("Curso.idCurso", "Curso.descripcion"),
+                "conditions" => array(
+                    "Curso.idGrado" => $grado["Grado"]["idGrado"]
+                )
+            ));
+            $this->set("cursos", $cursos);
+             * 
+             */
+        
         }
 }

@@ -8,7 +8,12 @@
         "readonly" => true
     ))
 ?>
-<table>
+
+<?php
+    echo $this->Html->css("asistencias");
+?>
+
+<table class="asistencias">
     <thead>
         <tr>
             <th>Alumno</th>

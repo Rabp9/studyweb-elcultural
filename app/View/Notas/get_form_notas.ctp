@@ -13,6 +13,10 @@
 ?>
 
 <?php
+    echo $this->Html->css("notas");
+?>
+
+<?php
     echo $this->Form->input("descripcion", array(
         "label" => "Descripción",
         "div" => "formField",
@@ -36,7 +40,7 @@
         "value" => 1
     ))
 ?>
-<table>
+<table class="notas">
     <thead>
         <tr>
             <th>Alumno</th>
@@ -58,7 +62,7 @@
             <td>
                 <div class="radio">
                     <label>
-                        <input type="number" name="data[Notas][valor][<?php echo $index; ?>]" value="" step="0.5" min="0" max="20">
+                        <input type="number" name="data[Notas][valor][<?php echo $index; ?>]" value="0" step="0.5" min="0" max="20">
                     </label>
                 </div>
             </td>

@@ -76,7 +76,7 @@
                         <li>
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Mensajes",
-                                "action" => ""
+                                "action" => "mensajesDocente"
                             )); ?>">
                                 <div class="icon icon-mensajes icon-medium"></div>
                                 Mensajes
