@@ -2,11 +2,11 @@
 
 <?php
     class MensajesController extends AppController {
-        public $uses = array("Alumno", "Curso", "DetalleMensajeAlumno", "Mensaje");
+        public $uses = array("Alumno", "Curso", "DetalleMensajeAlumno", "Mensaje", "Docente");
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getMensajes", "mensajesDocente");
+            $this->Auth->allow("getMensajes", "mensajesDocente", "mensajesDetalle");
         }
 
         public function index() {    
@@ -71,29 +71,42 @@
         
         public function mensajesDocente() {
             $this->layout = "docente";
-            
-            /*
+              
             $user = $this->Auth->user();
-            $alumno = $this->Alumno->findByIduser($user["idUser"]);
-            
-            $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
-            $matricula = $this->Alumno->Matricula->read();
-            
-            $this->Alumno->Matricula->Seccion->id = $matricula["Seccion"]["idSeccion"];
-            $seccion = $this->Alumno->Matricula->Seccion->read();
-            
-            $this->Alumno->Matricula->Seccion->Grado->id = $seccion["Grado"]["idGrado"];
-            $grado = $this->Alumno->Matricula->Seccion->Grado->read();
-            
-            $cursos = $this->Curso->find("list", array(
-                "fields" => array("Curso.idCurso", "Curso.descripcion"),
-                "conditions" => array(
-                    "Curso.idGrado" => $grado["Grado"]["idGrado"]
-                )
+            $docente = $this->Docente->findByIduser($user["idUser"]);
+     
+            $horarios = $this->Docente->Horario->find("all", array(
+                "fields" => array("DISTINCT Horario.idCurso"),
+                "conditions" => array("Horario.idDocente" => $docente["Docente"]["idDocente"])
             ));
+            
+            foreach ($horarios as $horario) {
+                $curso = $this->Docente->Horario->Curso->find("first", array(
+                    "fields" => array("Curso.idCurso", "Curso.descripcion", "Grado.descripcion"),
+                    "conditions" => array("Curso.idCurso" => $horario["Horario"]["idCurso"])
+                ));
+                $cursos[$curso["Curso"]["idCurso"]] = $curso["Curso"]["descripcion"] . " (" . $curso["Grado"]["descripcion"] . ")";
+            }
+              
             $this->set("cursos", $cursos);
-             * 
-             */
+        }
         
+        public function mensajesDetalle() {
+            $this->layout = "ajax";
+            
+            $idSeccion = $this->request->data["idSeccion"];
+
+            $matriculas = $this->Alumno->Matricula->find("all", array(
+                "conditions" => array("Matricula.idSeccion" => $idSeccion)
+            ));
+            
+            foreach ($matriculas as $matricula) {
+                $alumno = $this->Alumno->find("first", array(
+                    "conditions" => array("Alumno.idAlumno" => $matricula["Matricula"]["idAlumno"])
+                ));
+                $alumnos[$alumno["Alumno"]["idAlumno"]] = $alumno["Alumno"]["nombreCompleto"];
+            }
+            
+            $this->set("alumnos", $alumnos);
         }
 }

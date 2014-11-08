@@ -10711,3 +10711,71 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
 #4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-11-08 00:10:12 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /studyweb-elcultural/
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3507): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1145): Model->setDataSource('default')
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(3534): Model->setSource('users')
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1374): Model->getDataSource()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\studyweb-elcultural\app\View\Users\login.ctp(22): FormHelper->create('User', Array)
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(948): include('C:\wamp\www\stu...')
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(910): View->_evaluate('C:\wamp\www\stu...', Array)
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\stu...')
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-11-08 00:14:55 Error: Fatal Error (1): Call to a member function findByIduser() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\MensajesController.php, line 76]
+2014-11-08 00:14:55 Error: [FatalErrorException] Call to a member function findByIduser() on a non-object
+Request URL: /studyweb-elcultural/Mensajes/mensajesDocente
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 76, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 76, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-08 00:15:10 Error: Fatal Error (1): Call to a member function findByIduser() on a non-object in [C:\wamp\www\studyweb-elcultural\app\Controller\MensajesController.php, line 76]
+2014-11-08 00:15:10 Error: [FatalErrorException] Call to a member function findByIduser() on a non-object
+Request URL: /studyweb-elcultural/Mensajes/mensajesDocente
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\stu...', 76, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\stu...', 76, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-08 00:25:36 Error: [MissingActionException] Action MensajesController::notasDetalle() could not be found.
+Exception Attributes: array (
+  'controller' => 'MensajesController',
+  'action' => 'notasDetalle',
+)
+Request URL: /studyweb-elcultural/Mensajes/notasDetalle
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-08 00:25:37 Error: [MissingActionException] Action MensajesController::notasDetalle() could not be found.
+Exception Attributes: array (
+  'controller' => 'MensajesController',
+  'action' => 'notasDetalle',
+)
+Request URL: /studyweb-elcultural/Mensajes/notasDetalle
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
