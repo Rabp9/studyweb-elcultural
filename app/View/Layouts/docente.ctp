@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-xs-10">
                     <ul class="nav nav-pills">
-                        <li class="active">
+                        <li class="<?php echo $this->request->params['controller'] == 'Asistencias' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Asistencias",
                                 "action" => "registrar"
@@ -55,7 +55,7 @@
                                 Registrar Asistencia
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['controller'] == 'Recursos' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Recursos",
                                 "action" => "registrar"
@@ -64,7 +64,7 @@
                                 Cursos
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['controller'] == 'Notas' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Notas",
                                 "action" => "registrar"
@@ -73,7 +73,7 @@
                                 Registrar Nota
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['controller'] == 'Mensajes' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Mensajes",
                                 "action" => "mensajesDocente"
@@ -82,7 +82,7 @@
                                 Mensajes
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['action'] == 'estadisticas' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Reportes",
                                 "action" => "estadisticas"
@@ -91,7 +91,7 @@
                                 Reporte Estadísticas Cursos
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['action'] == 'notas' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Reportes",
                                 "action" => "notas"

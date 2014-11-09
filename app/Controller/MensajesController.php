@@ -6,7 +6,7 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getMensajes", "mensajesDocente", "mensajesDetalle");
+            $this->Auth->allow("getMensajes", "mensajesDocente", "mensajesFormDocente", "getMensajesDocente");
         }
 
         public function index() {    
@@ -89,24 +89,50 @@
             }
               
             $this->set("cursos", $cursos);
+            
+            if ($this->request->is("post")) {
+            }
         }
         
-        public function mensajesDetalle() {
+        public function mensajesFormDocente() {
+            $this->layout = "ajax";
+        }
+        
+        public function getMensajesDocente() {
             $this->layout = "ajax";
             
-            $idSeccion = $this->request->data["idSeccion"];
-
-            $matriculas = $this->Alumno->Matricula->find("all", array(
-                "conditions" => array("Matricula.idSeccion" => $idSeccion)
-            ));
+            debug($this->request->data);
             
-            foreach ($matriculas as $matricula) {
-                $alumno = $this->Alumno->find("first", array(
-                    "conditions" => array("Alumno.idAlumno" => $matricula["Matricula"]["idAlumno"])
+            $alumno = $this->Alumno->findByIdalumno($this->request->data["idAlumno"]);
+            $idCurso = $this->request->data["idCurso"];
+            /*
+            $detalle = $this->DetalleMensajeAlumno->find("first", array(
+                "conditions" => array("idCurso" => $idCurso, "idAlumno" => $alumno["Alumno"]["idAlumno"])
+            ));
+            if(empty($detalle)) {
+                $registroDetalle = array(
+                    "idAlumno" => $alumno["Alumno"]["idAlumno"],
+                    "idCurso" => $idCurso,
+                );
+                $this->DetalleMensajeAlumno->save($registroDetalle);
+                $detalle = $this->DetalleMensajeAlumno->find("first", array(
+                    "conditions" => array("idCurso" => $idCurso, "idAlumno" => $alumno["Alumno"]["idAlumno"])
                 ));
-                $alumnos[$alumno["Alumno"]["idAlumno"]] = $alumno["Alumno"]["nombreCompleto"];
             }
             
-            $this->set("alumnos", $alumnos);
+            if (isset($this->request->data["Mensaje"])) {
+                $this->request->data["Mensaje"]["idDetalleMensajeAlumno"] = $detalle["DetalleMensajeAlumno"]["idDetalleMensajeAlumno"];
+                $this->request->data["Mensaje"]["remite"] = "Alumno";                
+                $this->request->data["Mensaje"]["destinatario"] = "Docente";
+                if($this->Mensaje->save($this->request->data))
+                    $this->Session->setFlash(__("El mensaje fue registrado correctamente."), "flash_bootstrap");
+            }
+            
+            $mensajes = $this->Mensaje->find("all", array(
+               "conditions" => array("idDetalleMensajeAlumno" => $detalle["DetalleMensajeAlumno"]["idDetalleMensajeAlumno"]) 
+            ));
+
+            $this->set("mensajes", $mensajes);
+ * */
         }
 }

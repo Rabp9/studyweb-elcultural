@@ -5,7 +5,7 @@
 <?php     
     echo $this->Form->create("Mensajes", array(
         "controller" => "Mensajes",
-        "action" => "index"
+        "action" => "mensajesDocente"
     ));
     echo $this->Form->input('idCurso', array(
         "label" => "Curso",
@@ -15,7 +15,9 @@
         "name" => "data[idCurso]"
     ));
     echo $this->Html->div(null, "", array("id" => "dvSecciones"));
+    echo $this->Html->div(null, "", array("id" => "dvAlumnos"));
     echo $this->Html->div(null, "", array("id" => "dvMensajes"));
+    echo $this->Html->div(null, "", array("id" => "dvFormulario"));
     echo $this->Form->end();
 ?>
 
@@ -40,16 +42,45 @@
 <?php
     $this->Html->scriptStart(array('inline' => false));
 ?>
-    $('body').on('click', '#idSeccion', function() {
+    $('body').on('change', '#idSeccion', function() {
         $.ajax({
             async:true, 
-            data: $("#MensajesIndexForm").serialize(), 
+            data: $("#MensajesMensajesDocenteForm").serialize(), 
+            dataType:"html", 
+            success:function (data, textStatus) {
+                $("#dvAlumnos").html(data);
+            }, 
+            type:"post", 
+            url:"\/studyweb-elcultural\/Alumnos\/getAlumnosBySeccion"
+        });
+    });
+<?php
+    $this->Html->scriptEnd();
+?>
+
+<?php
+    $this->Html->scriptStart(array('inline' => false));
+?>
+    $('body').on('change', '#idAlumno', function() {
+        $.ajax({
+            async:true, 
+            data: $("#MensajesMensajesDocenteForm").serialize(), 
+            dataType:"html", 
+            success:function (data, textStatus) {
+                $("#dvFormulario").html(data);
+            }, 
+            type:"post", 
+            url:"\/studyweb-elcultural\/Mensajes\/mensajesFormDocente"
+        });      
+        $.ajax({
+            async:true, 
+            data: $("#MensajesMensajesDocenteForm").serialize(), 
             dataType:"html", 
             success:function (data, textStatus) {
                 $("#dvMensajes").html(data);
             }, 
             type:"post", 
-            url:"\/studyweb-elcultural\/Mensajes\/mensajesDetalle"
+            url:"\/studyweb-elcultural\/Mensajes\/getMensajesDocente"
         });
     });
 <?php

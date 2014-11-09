@@ -6,7 +6,7 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getAlumnos", "datos");
+            $this->Auth->allow("getAlumnos", "datos", "getAlumnosBySeccion");
         }
 
         public function index() {
@@ -128,5 +128,24 @@
             
             $alumno["Alumno"]["grado_seccion"] = $seccion["Grado"]["descripcion_general"] . " \"" . $seccion["Seccion"]["descripcion"] ."\"";
             return $alumno;
+        }
+        
+        public function getAlumnosBySeccion() {
+            $this->layout = "ajax";
+            
+            $idSeccion = $this->request->data["idSeccion"];
+
+            $matriculas = $this->Alumno->Matricula->find("all", array(
+                "conditions" => array("Matricula.idSeccion" => $idSeccion)
+            ));
+            
+            foreach ($matriculas as $matricula) {
+                $alumno = $this->Alumno->find("first", array(
+                    "conditions" => array("Alumno.idAlumno" => $matricula["Matricula"]["idAlumno"])
+                ));
+                $alumnos[$alumno["Alumno"]["idAlumno"]] = $alumno["Alumno"]["nombreCompleto"];
+            }
+            
+            $this->set("alumnos", $alumnos);
         }
 }

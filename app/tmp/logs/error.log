@@ -10779,3 +10779,14 @@ Stack Trace:
 #1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
 #2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-11-09 01:18:09 Error: [MissingActionException] Action MensajesController::mensajesFormController() could not be found.
+Exception Attributes: array (
+  'controller' => 'MensajesController',
+  'action' => 'mensajesFormController',
+)
+Request URL: /studyweb-elcultural/mensajes/mensajesFormController
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
