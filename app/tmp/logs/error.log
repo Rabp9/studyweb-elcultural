@@ -10925,3 +10925,58 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
 [main] - APP\webroot\index.php, line 108
 
+2014-11-10 23:08:12 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Asistencias\get_form_asistencias.ctp, line 26]
+Trace:
+include - APP\View\Asistencias\get_form_asistencias.ctp, line 26
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-10 23:08:13 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Asistencias\get_form_asistencias.ctp, line 26]
+Trace:
+include - APP\View\Asistencias\get_form_asistencias.ctp, line 26
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-10 23:08:14 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Asistencias\get_form_asistencias.ctp, line 26]
+Trace:
+include - APP\View\Asistencias\get_form_asistencias.ctp, line 26
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-10 23:08:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Asistencias\get_form_asistencias.ctp, line 26]
+Trace:
+include - APP\View\Asistencias\get_form_asistencias.ctp, line 26
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-10 23:08:16 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Asistencias\get_form_asistencias.ctp, line 26]
+Trace:
+include - APP\View\Asistencias\get_form_asistencias.ctp, line 26
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
