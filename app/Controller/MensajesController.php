@@ -91,6 +91,31 @@
             $this->set("cursos", $cursos);
             
             if ($this->request->is("post")) {
+                $alumno = $this->Alumno->findByIdalumno($this->request->data["idAlumno"]);
+                $idCurso = $this->request->data["idCurso"];
+
+                $detalle = $this->DetalleMensajeAlumno->find("first", array(
+                    "conditions" => array("idCurso" => $idCurso, "idAlumno" => $alumno["Alumno"]["idAlumno"])
+                ));
+            
+                if(empty($detalle)) {
+                    $registroDetalle = array(
+                        "idAlumno" => $alumno["Alumno"]["idAlumno"],
+                        "idCurso" => $idCurso,
+                    );
+                    $this->DetalleMensajeAlumno->save($registroDetalle);
+                    $detalle = $this->DetalleMensajeAlumno->find("first", array(
+                        "conditions" => array("idCurso" => $idCurso, "idAlumno" => $alumno["Alumno"]["idAlumno"])
+                    ));
+                }
+                
+                if (isset($this->request->data["Mensaje"])) {
+                    $this->request->data["Mensaje"]["idDetalleMensajeAlumno"] = $detalle["DetalleMensajeAlumno"]["idDetalleMensajeAlumno"];
+                    $this->request->data["Mensaje"]["remite"] = "Docente";                
+                    $this->request->data["Mensaje"]["destinatario"] = "Alumno";
+                    if($this->Mensaje->save($this->request->data))
+                        $this->Session->setFlash(__("El mensaje fue registrado correctamente."), "flash_bootstrap");
+                }
             }
         }
         
@@ -101,14 +126,13 @@
         public function getMensajesDocente() {
             $this->layout = "ajax";
             
-            debug($this->request->data);
-            
             $alumno = $this->Alumno->findByIdalumno($this->request->data["idAlumno"]);
             $idCurso = $this->request->data["idCurso"];
-            /*
+            
             $detalle = $this->DetalleMensajeAlumno->find("first", array(
                 "conditions" => array("idCurso" => $idCurso, "idAlumno" => $alumno["Alumno"]["idAlumno"])
             ));
+            
             if(empty($detalle)) {
                 $registroDetalle = array(
                     "idAlumno" => $alumno["Alumno"]["idAlumno"],
@@ -120,19 +144,10 @@
                 ));
             }
             
-            if (isset($this->request->data["Mensaje"])) {
-                $this->request->data["Mensaje"]["idDetalleMensajeAlumno"] = $detalle["DetalleMensajeAlumno"]["idDetalleMensajeAlumno"];
-                $this->request->data["Mensaje"]["remite"] = "Alumno";                
-                $this->request->data["Mensaje"]["destinatario"] = "Docente";
-                if($this->Mensaje->save($this->request->data))
-                    $this->Session->setFlash(__("El mensaje fue registrado correctamente."), "flash_bootstrap");
-            }
-            
             $mensajes = $this->Mensaje->find("all", array(
                "conditions" => array("idDetalleMensajeAlumno" => $detalle["DetalleMensajeAlumno"]["idDetalleMensajeAlumno"]) 
             ));
 
             $this->set("mensajes", $mensajes);
- * */
         }
 }

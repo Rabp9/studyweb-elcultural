@@ -10886,3 +10886,31 @@ Stack Trace:
 #10 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HorariosController), Object(CakeRequest))
 #11 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2014-11-10 21:18:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idDetalleMensajeAlumno' cannot be null
+Request URL: /studyweb-elcultural/mensajes/mensajesDocente
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(Mensaje), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\MensajesController.php(98): Model->save(Array)
+#5 [internal function]: MensajesController->mensajesDocente()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MensajesController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-10 21:19:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idDetalleMensajeAlumno' cannot be null
+Request URL: /studyweb-elcultural/mensajes/mensajesDocente
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(Mensaje), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\MensajesController.php(99): Model->save(Array)
+#5 [internal function]: MensajesController->mensajesDocente()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MensajesController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MensajesController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

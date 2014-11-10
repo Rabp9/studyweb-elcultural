@@ -16,21 +16,3 @@
     echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));
     echo $this->Form->end();
 ?>
-
-<?php
-    $this->Js->get('#MensajeIndexForm')->event('submit',
-        $this->Js->request(array(
-            'controller'=>'Mensajes',
-            'action'=>'getMensajes'
-        ), array(
-            'update'=>'#dvMensajes',
-            'async' => true,
-            'method' => 'post',
-            'dataExpression'=>true,
-            'data'=> $this->Js->get('#MensajeIndexForm')->serializeForm(array(
-                'isForm' => true,
-                'inline' => true
-            ))
-        ))
-    );
-?>
