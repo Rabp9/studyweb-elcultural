@@ -91,24 +91,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <div class="icon icon-agenda icon-medium"></div>
-                                Agenda
-                            </a>
-                        </li>
-                        <li>
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Mensajes",
                                 "action" => ""
                             )); ?>">
                                 <div class="icon icon-mensajes icon-medium"></div>
                                 Mensajes
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="icon icon-cuenta icon-medium"></div>
-                                Estado Cuenta
                             </a>
                         </li>
                     </ul>

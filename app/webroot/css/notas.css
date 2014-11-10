@@ -4,14 +4,14 @@ table.notas {
 
 table.notas thead th {
     text-align: center;
-    background-color: #2B78E4;
+    background-color: #183E65;
     color: #ffffff;
     border: 1px solid #F5F5F5;
 }
 
 table.notas tbody td {
     background-color: #F5F5F5;
-    border: 1px solid #2B78E4;
+    border: 1px solid #183E65;
 }
 
 table.notas td {

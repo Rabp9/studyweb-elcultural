@@ -5,7 +5,8 @@
     echo $this->Form->input('idCurso', array(
         "label" => "Curso",
         "div" => "formField",
-        "options" => $cursos
+        "options" => $cursos,
+        "empty" => "Selecciona uno"
     ));
     echo $this->Html->div(null, "", array("id" => "dvAsistencias"));
 ?>

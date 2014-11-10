@@ -11,7 +11,7 @@
         color: #0066cc;
     }
     .clase_no {
-        background-color: red;
+        background-color: #EE3550;
         color: white;
     }
 </style>
