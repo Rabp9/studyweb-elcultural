@@ -1,17 +1,29 @@
 <!-- file path View/Asistencias/get_notas_by_Curso.ctp -->
 
-<table id="tblNotas">
+<?php
+    echo $this->Html->css("notas");
+?>
+
+<table class="notas">
+    <thead>
+        <tr>
+            <th>Descripción</th>
+            <th>Nota</th>
+        </tr>
+    </thead>
+    <tbody>
 <?php
     foreach ($notas as $nota) {
 ?>
     <tr>
         <td><?php echo $nota["Nota"]["descripcion"]; ?></td>
-        <td class="unidad" style="display: none;"><?php echo $nota["Nota"]["unidad"]; ?></td>
+        <td class="unidad" style="display: none;"><?php echo $nota["Nota"]["trimestre"]; ?></td>
         <td><?php echo $nota["Nota"]["valor"]; ?></td>
     </tr>
 <?php
     }
 ?>
+    </tbody>
 </table>
 
 <script>

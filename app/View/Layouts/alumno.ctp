@@ -20,7 +20,7 @@
                 <div class="col-xs-1">
                     <?php echo $this->Html->link(
                             $this->Html->image('elcultural.logo.png', array('alt' => "El Cultural", 'border' => '0')),
-                            '/',
+                            '/Pages/alumno',
                             array('escape' => false)
                         );
                     ?>
@@ -45,7 +45,7 @@
             <div class="row">
                 <div class="col-xs-10">
                     <ul class="nav nav-pills">
-                        <li class="active">
+                        <li class="<?php echo $this->request->params['controller'] == 'Asistencias' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Asistencias",
                                 "action" => "index"
@@ -54,7 +54,7 @@
                                 Asistencias
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['controller'] == 'Matriculas' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Matriculas",
                                 "action" => "info"
@@ -63,7 +63,7 @@
                                 Ficha Matrícula
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['controller'] == 'Horarios' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Horarios",
                                 "action" => "horarioAlumno"
@@ -72,7 +72,7 @@
                                 Horario
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['controller'] == 'Recursos' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Recursos",
                                 "action" => "index"
@@ -81,7 +81,7 @@
                                 Cursos
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['controller'] == 'Notas' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Notas",
                                 "action" => "index"
@@ -90,7 +90,7 @@
                                 Notas
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo $this->request->params['controller'] == 'Mensajes' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
                                 "controller" => "Mensajes",
                                 "action" => ""

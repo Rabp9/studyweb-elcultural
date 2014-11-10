@@ -20,7 +20,7 @@
                 <div class="col-xs-1">
                     <?php echo $this->Html->link(
                             $this->Html->image('elcultural.logo.png', array('alt' => "El Cultural", 'border' => '0')),
-                            '/',
+                            '/Pages/docente',
                             array('escape' => false)
                         );
                     ?>
@@ -87,7 +87,7 @@
                                 "controller" => "Reportes",
                                 "action" => "estadisticas"
                             )); ?>">
-                                <div class="icon icon-cuenta icon-medium"></div>
+                                <div class="icon icon-agenda icon-medium"></div>
                                 Reporte Estadísticas Cursos
                             </a>
                         </li>
@@ -96,7 +96,7 @@
                                 "controller" => "Reportes",
                                 "action" => "notas"
                             )); ?>">
-                                <div class="icon icon-cuenta icon-medium"></div>
+                                <div class="icon icon-notas icon-medium"></div>
                                 Reporte Notas
                             </a>
                         </li>

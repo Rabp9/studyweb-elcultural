@@ -4,6 +4,10 @@
     $this->html->addCrumb('Horarios', '/horario_Alumno');
 ?>
 
+<?php
+    echo $this->Html->css("horario");
+?>
+
 <h2>Horario <small>Consulta de Horario</small></h2>
 <style>
     .clase_si {
@@ -83,7 +87,7 @@
         ?>
         $.each( horarios, function( index, value ){
             $("#tblHorario tbody").find("tr:eq(" + value.Horario.hora + ")").find("td:eq(" + (parseInt(value.Horario.dia) + 1) + ")").html(
-                "<h5>" + value.Curso.descripcion + " <small>Aula:" + value.Aula.descripcion + "</small></h5>" + 
+                "<h5>" + value.Curso.descripcion + " <small>" + value.Aula.descripcion + "</small></h5>" + 
                 "<hr/><h5>" + value.Docente.nombreCompleto + "</5>"
             );
         });

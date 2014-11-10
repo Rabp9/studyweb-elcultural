@@ -67,7 +67,7 @@
         
         public function horarioAlumno() {
             $this->layout = "alumno";
-            
+           
             $user = $this->Auth->user();
             $alumno = $this->Alumno->findByIduser($user["idUser"]);
             
@@ -76,8 +76,9 @@
             
             $horarios = $this->Horario->find("all", array(
                 "conditions" => array(
-                    "idSeccion" => $matricula["Seccion"]["idSeccion"],
-                    "idPeriodo" => $matricula["Matricula"]["idPeriodo"]
+                    "Horario.idSeccion" => $matricula["Seccion"]["idSeccion"],
+                    "Horario.idPeriodo" => $matricula["Matricula"]["idPeriodo"],
+                    "Horario.estado" => 1
                 )
             ));
             $this->set("matricula", $matricula);

@@ -20,7 +20,7 @@
                 <div class="col-xs-1">
                     <?php echo $this->Html->link(
                             $this->Html->image('elcultural.logo.png', array('alt' => "El Cultural", 'border' => '0')),
-                            '/',
+                            '/Pages/admin',
                             array('escape' => false)
                         );
                     ?>

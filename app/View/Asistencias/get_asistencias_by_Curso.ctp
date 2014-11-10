@@ -1,6 +1,18 @@
 <!-- file path View/Asistencias/get_asistencias_by_Curso.ctp -->
 
-<table id="tblAsistencias">
+<?php
+    echo $this->Html->css("asistencias");
+?>
+
+<table class="asistencias">
+    <thead>
+        <tr>
+            <th>Clase</th>
+            <th>Fecha</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
 <?php
     foreach ($asistencias as $asistencia) {
 ?>
@@ -12,6 +24,7 @@
 <?php
     }
 ?>
+    </tbody>
 </table>
 
 <script>
