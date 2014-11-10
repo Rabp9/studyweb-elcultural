@@ -1,0 +1,27 @@
+2014-11-10 22:37:51 Debug: Notice (8): Undefined index: Grado in [C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php, line 107]
+Trace:
+SeccionesController::getSeccionesByCurso() - APP\Controller\SeccionesController.php, line 107
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-10 22:37:51 Debug: Notice (8): Undefined variable: secciones in [C:\wamp\www\studyweb-elcultural\app\Controller\SeccionesController.php, line 132]
+Trace:
+SeccionesController::getSeccionesByCurso() - APP\Controller\SeccionesController.php, line 132
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-10 22:37:52 Debug: Notice (8): Undefined variable: alumnos in [C:\wamp\www\studyweb-elcultural\app\Controller\NotasController.php, line 104]
+Trace:
+NotasController::getFormNotas() - APP\Controller\NotasController.php, line 104
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
