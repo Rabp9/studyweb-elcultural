@@ -1,4 +1,7 @@
 <!-- File: /app/View/Notas/registrar.ctp -->
+<?php 
+    $this->html->addCrumb('Notas', '/Notas');
+?>
 
 <h2>Notas <small>Registrar</small></h2>
 <?php

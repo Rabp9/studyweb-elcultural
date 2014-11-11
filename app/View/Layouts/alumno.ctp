@@ -100,10 +100,15 @@
                             </a>
                         </li>
                     </ul>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Inicio</a></li>
-                        <li class="active">Asistencias</li>
-                    </ol>
+                    <?php echo $this->html->getCrumbList(
+                        array(
+                            'class' => 'breadcrumb',
+                            "firstClass" => false,
+                            "lastClass" => "active"
+                        ),
+                        array('text' => 'Home')
+                        );
+                    ?>
                     <div id="content">
                         <?php echo $this->Session->flash(); ?>
 
@@ -124,6 +129,8 @@
         <?php
             echo $this->Html->script("jquery-1.11.1.min");
             echo $this->Html->script("bootstrap.min");
+            
+            echo $this->Html->script("default");
         ?>
         <?php echo $this->fetch('script'); ?>
 	<!-- Js writeBuffer -->

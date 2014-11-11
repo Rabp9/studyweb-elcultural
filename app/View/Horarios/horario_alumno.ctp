@@ -1,7 +1,7 @@
 <!-- file path View/Horarios/horario_Alumno.ctp -->
 
 <?php 
-    $this->html->addCrumb('Horarios', '/horario_Alumno');
+    $this->html->addCrumb('Horario', '/horario_Alumno');
 ?>
 
 <?php

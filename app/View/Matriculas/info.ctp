@@ -1,7 +1,6 @@
 <!-- File: /app/View/Matriculas/index.ctp -->
 <?php 
-    $this->html->addCrumb('Matriculas', '/Matriculas');
-    $this->html->addCrumb('Información', '/Info');
+    $this->html->addCrumb('Ficha Matricula', '/info');
 ?>
 
 <h2>Matricula <small>Información de Matrícula</small></h2>

@@ -15,7 +15,7 @@
         "div" => "formField"
     ));
     echo $this->Form->input("fechaFin", array(
-        "label" => "Fecha de Inicio",
+        "label" => "Fecha Final",
         "div" => "formField"
     ));
     echo $this->Html->para(null, "Indique los días que se ralizarán las clases");

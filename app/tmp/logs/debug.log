@@ -88,3 +88,283 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
 [main] - APP\webroot\index.php, line 108
 
+2014-11-11 05:31:58 Debug: Notice (8): Undefined index: idCurso in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 39]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:58 Debug: Notice (8): Undefined index: idSeccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 40]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 40
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:58 Debug: Notice (8): Undefined index: Seccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 44]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 44
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:58 Debug: Notice (8): Undefined index: Docente in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 79]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:58 Debug: Notice (8): Undefined index: Grado in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 80]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 80
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:58 Debug: Notice (8): Undefined index: Seccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 80]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 80
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:58 Debug: Notice (8): Undefined offset: 0 in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 81]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 81
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:59 Debug: Notice (8): Undefined index: idCurso in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 39]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:59 Debug: Notice (8): Undefined index: idSeccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 40]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 40
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:59 Debug: Notice (8): Undefined index: Seccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 44]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 44
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:59 Debug: Notice (8): Undefined index: Docente in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 79]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:59 Debug: Notice (8): Undefined index: Grado in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 80]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 80
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:59 Debug: Notice (8): Undefined index: Seccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 80]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 80
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:31:59 Debug: Notice (8): Undefined offset: 0 in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 81]
+Trace:
+ReportesController::estadisticasDetalle() - APP\Controller\ReportesController.php, line 81
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:00 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 11]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 11
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:00 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 15]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 15
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:00 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 19]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 19
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:00 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 23]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 23
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:00 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 27]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 27
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:00 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 31]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 31
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:01 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 35]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 35
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:01 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 65]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 65
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:01 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 81]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 81
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:01 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 97]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 97
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:01 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 113]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 113
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:01 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 129]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 129
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:01 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 145]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 145
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-11 05:33:01 Debug: Notice (8): Undefined index: Periodo in [C:\wamp\www\studyweb-elcultural\app\View\Periodos\get_dias.ctp, line 161]
+Trace:
+include - APP\View\Periodos\get_dias.ctp, line 161
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+

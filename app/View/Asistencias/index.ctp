@@ -1,4 +1,7 @@
 <!-- File: /app/View/Asistencias/index.ctp -->
+<?php 
+    $this->html->addCrumb('Asistencias', '/Asistencias');
+?>
 
 <h2>Asistencias <small>Verificar</small></h2>
 <?php

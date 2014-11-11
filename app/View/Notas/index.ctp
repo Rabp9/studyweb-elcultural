@@ -1,4 +1,7 @@
 <!-- File: /app/View/Notas/index.ctp -->
+<?php 
+    $this->html->addCrumb('Notas', '/Notas');
+?>
 
 <h2>Notas <small>Verificar</small></h2>
 <?php
