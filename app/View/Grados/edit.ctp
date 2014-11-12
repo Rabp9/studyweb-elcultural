@@ -2,7 +2,10 @@
 <?php 
     $this->html->addCrumb('Grados', '/Grados');
     $this->html->addCrumb('Editar', '/Grados/edit');
+    
+    $this->assign("title", "Grados - Editar");
 ?>
+
 
 <h2>Grados <small>Editar</small></h2>
 

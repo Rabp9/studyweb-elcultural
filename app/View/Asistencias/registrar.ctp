@@ -1,6 +1,8 @@
 <!-- File: /app/View/Asistencias/registrar.ctp -->
 <?php 
     $this->html->addCrumb('Asistencias', '/Asistencias');
+    
+    $this->assign("title", "Asistencias - Registrar");
 ?>
 
 <h2>Asistencias <small>Registrar</small></h2>

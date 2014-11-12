@@ -1,6 +1,8 @@
 <!-- File: /app/View/Periodo/index.ctp -->
 <?php 
     $this->html->addCrumb('Periodos', '/Periodos');
+    
+    $this->assign("title", "Periodos - Lista");
 ?>
 
 <h2>Periodos <small>Lista</small></h2>

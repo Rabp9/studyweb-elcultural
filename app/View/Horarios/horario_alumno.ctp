@@ -2,6 +2,8 @@
 
 <?php 
     $this->html->addCrumb('Horario', '/horario_Alumno');
+    
+    $this->assign("title", "Horarios - Consultar");
 ?>
 
 <?php

@@ -1,6 +1,8 @@
 <!-- File: /app/View/Recursos/index.ctp -->
 <?php 
     $this->html->addCrumb('Recursos', '/Recursos');
+    
+    $this->assign("title", "Recursos - Gestionar");
 ?>
 
 <h2>Cursos <small>Gestionar Recursos</small></h2>

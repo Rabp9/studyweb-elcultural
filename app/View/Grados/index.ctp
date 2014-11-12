@@ -1,6 +1,8 @@
 <!-- File: /app/View/Grados/index.ctp -->
 <?php 
     $this->html->addCrumb('Grados', '/Grados');
+    
+    $this->assign("title", "Grados - Lista");
 ?>
 
 <h2>Grados <small>Lista</small></h2>

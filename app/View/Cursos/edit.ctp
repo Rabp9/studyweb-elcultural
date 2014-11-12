@@ -2,6 +2,8 @@
 <?php 
     $this->html->addCrumb('Cursos', '/Cursos');
     $this->html->addCrumb('Editar', '/Cursos/editar');
+
+    $this->assign("title", "Cursos - Editar");
 ?>
 
 <h2>Cursos <small>Editar</small></h2>
@@ -22,5 +24,5 @@
     ));
     echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-ok")) . " Registrar", array("class" => "btn btn-default"));
     echo $this->Form->end();
-    echo $this->Html->link("Regresar a Lista Artículos", array("controller" => "Articulos", "action" => "index"));
+    echo $this->Html->link("Regresar a Lista Cursos", array("controller" => "Cursos", "action" => "index"));
 ?>

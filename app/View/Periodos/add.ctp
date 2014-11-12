@@ -1,4 +1,10 @@
 <!-- File: /app/View/Periodos/add.ctp -->
+<?php 
+    $this->html->addCrumb('Periodos', '/Periodos');
+    $this->html->addCrumb('Nuevo', '/Periodos/add');
+    
+    $this->assign("title", "Periodos - Nuevo");
+?>
 
 <h2>Periodos <small>Nuevo</small></h2>
 

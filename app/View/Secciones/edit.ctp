@@ -2,6 +2,8 @@
 <?php 
     $this->html->addCrumb('Secciones', '/Secciones');
     $this->html->addCrumb('Editar', '/Secciones/editar');
+   
+    $this->assign("title", "Secciones - Editar");
 ?>
 
 <h2>Secciones <small>Editar</small></h2>

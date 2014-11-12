@@ -1,6 +1,8 @@
 <!-- File: /app/View/Seccion/index.ctp -->
 <?php 
     $this->html->addCrumb('Cursos', '/Cursos');
+
+    $this->assign("title", "Cursos - Lista");
 ?>
 
 <h2>Cursos <small>Lista</small></h2>

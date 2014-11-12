@@ -1,6 +1,8 @@
 <!-- File: /app/View/Horario/index.ctp -->
 <?php 
     $this->html->addCrumb('Horarios', '/Horarios');
+    
+    $this->assign("title", "Horarios - Registrar");
 ?>
 
 <h2>Horarios <small>Registrar</small></h2>

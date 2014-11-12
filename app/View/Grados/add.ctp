@@ -2,6 +2,8 @@
 <?php 
     $this->html->addCrumb('Grados', '/Grados');
     $this->html->addCrumb('Nuevo', '/Grados/add');
+    
+    $this->assign("title", "Grados - Nuevo");
 ?>
 
 <h2>Grados <small>Nuevo</small></h2>

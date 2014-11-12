@@ -1,6 +1,8 @@
 <!-- File: /app/View/Matriculas/index.ctp -->
 <?php 
     $this->html->addCrumb('Matriculas', '/Matriculas');
+    
+    $this->assign("title", "Matriculas - Registrar");
 ?>
 
 <h2>Matricula <small>Matricula a un Alumno</small></h2>

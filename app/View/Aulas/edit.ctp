@@ -2,7 +2,10 @@
 <?php 
     $this->html->addCrumb('Aulas', '/Aulas');
     $this->html->addCrumb('Editar', '/Aulas/Editar');
+
+    $this->assign("title", "Aulas - Editar");
 ?>
+
 <h2>Aulas <small>Editar</small></h2>
 
 <?php

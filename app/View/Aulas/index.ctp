@@ -1,6 +1,8 @@
 <!-- File: /app/View/Aulas/index.ctp -->
 <?php 
     $this->html->addCrumb('Aulas', '/Aulas');
+
+    $this->assign("title", "Aulas - Lista");
 ?>
 
 <h2>Aulas <small>Lista</small></h2>

@@ -1,7 +1,10 @@
 <!-- file path View/Reportes/estadisticas.ctp -->
 <?php 
     $this->html->addCrumb('Reportes', '/Reportes');
+    
+    $this->assign("title", "Reportes - Estadìsticas");
 ?>
+
 
 <h2>Reportes <small>Estadísticas</small></h2>
 <?php 

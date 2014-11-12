@@ -509,3 +509,87 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
 [main] - APP\webroot\index.php, line 108
 
+2014-11-12 19:29:21 Notice: Notice (8): Undefined variable: title in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/alumno.ctp, line 7]
+Trace:
+include - APP/View/Layouts/alumno.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::renderLayout() - CORE/Cake/View/View.php, line 542
+View::render() - CORE/Cake/View/View.php, line 479
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-12 19:29:24 Notice: Notice (8): Undefined variable: title in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/alumno.ctp, line 7]
+Trace:
+include - APP/View/Layouts/alumno.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::renderLayout() - CORE/Cake/View/View.php, line 542
+View::render() - CORE/Cake/View/View.php, line 479
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-12 19:29:25 Notice: Notice (8): Undefined variable: title in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/alumno.ctp, line 7]
+Trace:
+include - APP/View/Layouts/alumno.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::renderLayout() - CORE/Cake/View/View.php, line 542
+View::render() - CORE/Cake/View/View.php, line 479
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-12 19:29:26 Notice: Notice (8): Undefined variable: title in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/alumno.ctp, line 7]
+Trace:
+include - APP/View/Layouts/alumno.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::renderLayout() - CORE/Cake/View/View.php, line 542
+View::render() - CORE/Cake/View/View.php, line 479
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-12 19:29:26 Notice: Notice (8): Undefined variable: title in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/alumno.ctp, line 7]
+Trace:
+include - APP/View/Layouts/alumno.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::renderLayout() - CORE/Cake/View/View.php, line 542
+View::render() - CORE/Cake/View/View.php, line 479
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-12 19:29:40 Notice: Notice (8): Undefined variable: title in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/alumno.ctp, line 7]
+Trace:
+include - APP/View/Layouts/alumno.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::renderLayout() - CORE/Cake/View/View.php, line 542
+View::render() - CORE/Cake/View/View.php, line 479
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-12 19:29:40 Notice: Notice (8): Undefined variable: title in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Layouts/alumno.ctp, line 7]
+Trace:
+include - APP/View/Layouts/alumno.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::renderLayout() - CORE/Cake/View/View.php, line 542
+View::render() - CORE/Cake/View/View.php, line 479
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+

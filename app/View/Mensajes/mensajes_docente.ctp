@@ -1,7 +1,10 @@
 <!-- File: /app/View/Mensajes/mensajes_docente.ctp -->
 <?php 
     $this->html->addCrumb('Mensajes', '/Mensajes');
+    
+    $this->assign("title", "Mensajes - Docente");
 ?>
+
 
 <h2>Mensajes <small>Seleccionar Curso</small></h2>
 

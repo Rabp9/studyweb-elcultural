@@ -1,3 +1,8 @@
+<!-- File: /app/View/Pages/docente.ctp -->
+<?php 
+    $this->assign("title", "Bienvenido Docente");
+?>
+
 <h2>Bienvenido Docente</h2>
 
 <style>
