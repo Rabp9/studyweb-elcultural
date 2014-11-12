@@ -13,7 +13,7 @@
                 "controller" => "Users",
                 "action" => "add"
             )); ?>">
-                <img data-src="" alt="Usuario Administrador">
+                <?php echo $this->Html->image("iconos/Administrador.jpg"); ?>
                 <div class="caption">
                     <h3 style="text-align: center;">Usuario Administrador</h3>
                 </div>
@@ -26,7 +26,7 @@
                 "controller" => "Alumnos",
                 "action" => "add"
             )); ?>">
-                <img data-src="" alt="Usuario Alumno">
+                <?php echo $this->Html->image("iconos/Alumnos.png"); ?>
                 <div class="caption">
                     <h3 style="text-align: center;">Usuario Alumno</h3>
                 </div>
@@ -39,7 +39,7 @@
                 "controller" => "Docentes",
                 "action" => "add"
             )); ?>">
-                <img data-src="" alt="Usuario Docente">
+                <?php echo $this->Html->image("iconos/Docentes.png"); ?>
                 <div class="caption">
                     <h3 style="text-align: center;">Usuario Docente</h3>
                 </div>

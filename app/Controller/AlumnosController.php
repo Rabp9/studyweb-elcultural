@@ -14,7 +14,7 @@
             $this->set("alumnos", $this->Alumno->find("all", array(
                 'conditions' => array('Alumno.estado' => '1')
             )));
-        }
+       }
               
         public function view($id = null) {
             $this->layout = "admin";

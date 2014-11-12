@@ -1,3 +1,7 @@
+<!-- File: /app/View/Pages/admin.ctp -->
+<?php 
+    $this->assign("title", "Bienvenido Administrador");
+?>
 <h2>Bienvenido Administrador</h2>
 
 <style>

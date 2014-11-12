@@ -2,6 +2,8 @@
 <?php 
     $this->html->addCrumb('Alumnos', '/Alumnos');
     $this->html->addCrumb('Nuevo', '/Alumnos/Nuevo');
+    
+    $this->assign("title", "Alumnos - Nuevo");
 ?>
 
 <h2>Alumnos <small>Nuevo</small></h2>

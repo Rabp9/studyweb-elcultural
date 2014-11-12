@@ -11160,3 +11160,233 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
 [main] - APP\webroot\index.php, line 108
 
+2014-11-12 01:29:07 Warning: Warning (2): move_uploaded_file(C:\wamp\www\studyweb-elcultural\app\webroot\\img\novedades\LaM.png): failed to open stream: No such file or directory in [C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php, line 37]
+Trace:
+move_uploaded_file - [internal], line ??
+ArticulosController::add() - APP\Controller\ArticulosController.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:29:07 Warning: Warning (2): move_uploaded_file() [<a href='http://php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\wamp\tmp\php899E.tmp' to 'C:\wamp\www\studyweb-elcultural\app\webroot\\img\novedades\LaM.png' in [C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php, line 37]
+Trace:
+move_uploaded_file - [internal], line ??
+ArticulosController::add() - APP\Controller\ArticulosController.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:29:15 Warning: Warning (2): move_uploaded_file(C:\wamp\www\studyweb-elcultural\app\webroot\\img\novedades\Re m.png): failed to open stream: No such file or directory in [C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php, line 37]
+Trace:
+move_uploaded_file - [internal], line ??
+ArticulosController::add() - APP\Controller\ArticulosController.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:29:15 Warning: Warning (2): move_uploaded_file() [<a href='http://php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\wamp\tmp\phpAC3B.tmp' to 'C:\wamp\www\studyweb-elcultural\app\webroot\\img\novedades\Re m.png' in [C:\wamp\www\studyweb-elcultural\app\Controller\ArticulosController.php, line 37]
+Trace:
+move_uploaded_file - [internal], line ??
+ArticulosController::add() - APP\Controller\ArticulosController.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:33:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/img/iconos/Administrador.png
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-12 01:35:21 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Asistencias\get_form_asistencias.ctp, line 26]
+Trace:
+include - APP\View\Asistencias\get_form_asistencias.ctp, line 26
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:48:39 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:48:39 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:48:48 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:48:48 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:48:58 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:48:58 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:49:21 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:49:21 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:49:55 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 13]
+2014-11-12 01:49:55 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 13, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 13, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:06 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:06 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:06 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:06 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:08 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:08 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:08 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:08 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:08 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:08 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:09 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:09 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:23 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:23 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:28 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:28 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:28 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:28 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:33 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:33 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:39 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:39 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 01:52:41 Error: Fatal Error (1): Call to undefined method AlumnosController::assign() in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 17]
+2014-11-12 01:52:41 Error: [InternalErrorException] Internal Server Error
+Request URL: /studyweb-elcultural/Alumnos
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\stu...', 17, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

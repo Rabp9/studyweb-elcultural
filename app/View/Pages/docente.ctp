@@ -11,7 +11,7 @@
         <div class="thumbnail">
             <a href="<?php echo $this->Html->url(array(
                 "controller" => "Asistencias",
-                "action" => "index"
+                "action" => "registrar"
             )); ?>">
                 <div class="icon icon-asistencias icon-medium"></div>
                 <div class="caption">

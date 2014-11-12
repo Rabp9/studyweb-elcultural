@@ -35,8 +35,8 @@
             <td>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="data[Asistencias][descripcion][<?php echo $index; ?>]" value="Temprano">
-                        Temprano
+                        <input type="radio" name="data[Asistencias][descripcion][<?php echo $index; ?>]" value="Asistió">
+                        Asistió
                     </label>
                 </div>
             </td>

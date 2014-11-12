@@ -368,3 +368,144 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
 [main] - APP\webroot\index.php, line 108
 
+2014-11-12 01:34:26 Debug: Notice (8): Undefined index: Matricula in [C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php, line 18]
+Trace:
+AsistenciasController::index() - APP\Controller\AsistenciasController.php, line 18
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:34:26 Debug: Notice (8): Undefined index: Matricula in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 131]
+Trace:
+AlumnosController::datos() - APP\Controller\AlumnosController.php, line 131
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+Object::requestAction() - CORE\Cake\Core\Object.php, line 106
+include - APP\View\Elements\datosAlumno.ctp, line 2
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::_renderElement() - CORE\Cake\View\View.php, line 1213
+View::element() - CORE\Cake\View\View.php, line 418
+include - APP\View\Layouts\alumno.ctp, line 34
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::renderLayout() - CORE\Cake\View\View.php, line 542
+View::render() - CORE\Cake\View\View.php, line 479
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:34:26 Debug: Notice (8): Undefined index: idAlumno in [C:\wamp\www\studyweb-elcultural\app\View\Elements\datosAlumno.ctp, line 5]
+Trace:
+include - APP\View\Elements\datosAlumno.ctp, line 5
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::_renderElement() - CORE\Cake\View\View.php, line 1213
+View::element() - CORE\Cake\View\View.php, line 418
+include - APP\View\Layouts\alumno.ctp, line 34
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::renderLayout() - CORE\Cake\View\View.php, line 542
+View::render() - CORE\Cake\View\View.php, line 479
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:34:26 Debug: Notice (8): Undefined index: nombreCompleto in [C:\wamp\www\studyweb-elcultural\app\View\Elements\datosAlumno.ctp, line 6]
+Trace:
+include - APP\View\Elements\datosAlumno.ctp, line 6
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::_renderElement() - CORE\Cake\View\View.php, line 1213
+View::element() - CORE\Cake\View\View.php, line 418
+include - APP\View\Layouts\alumno.ctp, line 34
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::renderLayout() - CORE\Cake\View\View.php, line 542
+View::render() - CORE\Cake\View\View.php, line 479
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:34:28 Debug: Notice (8): Undefined index: Matricula in [C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php, line 18]
+Trace:
+AsistenciasController::index() - APP\Controller\AsistenciasController.php, line 18
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:34:28 Debug: Notice (8): Undefined index: Matricula in [C:\wamp\www\studyweb-elcultural\app\Controller\AlumnosController.php, line 131]
+Trace:
+AlumnosController::datos() - APP\Controller\AlumnosController.php, line 131
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+Object::requestAction() - CORE\Cake\Core\Object.php, line 106
+include - APP\View\Elements\datosAlumno.ctp, line 2
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::_renderElement() - CORE\Cake\View\View.php, line 1213
+View::element() - CORE\Cake\View\View.php, line 418
+include - APP\View\Layouts\alumno.ctp, line 34
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::renderLayout() - CORE\Cake\View\View.php, line 542
+View::render() - CORE\Cake\View\View.php, line 479
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:34:28 Debug: Notice (8): Undefined index: idAlumno in [C:\wamp\www\studyweb-elcultural\app\View\Elements\datosAlumno.ctp, line 5]
+Trace:
+include - APP\View\Elements\datosAlumno.ctp, line 5
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::_renderElement() - CORE\Cake\View\View.php, line 1213
+View::element() - CORE\Cake\View\View.php, line 418
+include - APP\View\Layouts\alumno.ctp, line 34
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::renderLayout() - CORE\Cake\View\View.php, line 542
+View::render() - CORE\Cake\View\View.php, line 479
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:34:28 Debug: Notice (8): Undefined index: nombreCompleto in [C:\wamp\www\studyweb-elcultural\app\View\Elements\datosAlumno.ctp, line 6]
+Trace:
+include - APP\View\Elements\datosAlumno.ctp, line 6
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::_renderElement() - CORE\Cake\View\View.php, line 1213
+View::element() - CORE\Cake\View\View.php, line 418
+include - APP\View\Layouts\alumno.ctp, line 34
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::renderLayout() - CORE\Cake\View\View.php, line 542
+View::render() - CORE\Cake\View\View.php, line 479
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-12 01:35:21 Debug: Notice (8): Undefined variable: alumnos in [C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php, line 102]
+Trace:
+AsistenciasController::getFormAsistencias() - APP\Controller\AsistenciasController.php, line 102
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
