@@ -17,3 +17,7 @@ table.notas tbody td {
 table.notas td {
     padding: 5px;
 }
+
+table.notas td.numero {
+    text-align: right;
+}

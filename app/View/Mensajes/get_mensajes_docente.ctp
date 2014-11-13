@@ -6,18 +6,16 @@
         ));
     }
     else {
+        echo "<div class='list-group'>";
         foreach ($mensajes as $mensaje) {
 ?>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $mensaje["Mensaje"]["asunto"]; ?></h3>
+            <a class="list-group-item <?php echo $mensaje["Mensaje"]["remite"] == "Docente" ? "active" : "" ?>">
+                <h4 class="list-group-item-heading"><?php echo $mensaje["Mensaje"]["asunto"]; ?></h4> 
                 <small><i><?php echo $mensaje["Mensaje"]["remite"];?></i></small>
-            </div>
-            <div class="panel-body">
-                <?php echo $mensaje["Mensaje"]["cuerpo"]; ?>
-            </div>
-        </div>
+                <p class="list-group-item-text"><?php echo $mensaje["Mensaje"]["cuerpo"]; ?></p>
+            </a>
 <?php
         }
+        echo "</div>";
     }
 ?>

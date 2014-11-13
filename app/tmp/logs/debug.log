@@ -593,3 +593,115 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
 [main] - APP/webroot/index.php, line 108
 
+2014-11-13 14:52:46 Notice: Notice (8): Undefined index: idCurso in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 39]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Notice: Notice (8): Undefined index: idSeccion in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 40]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 40
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Notice: Notice (8): Undefined index: Seccion in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 44]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 44
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Notice: Notice (8): Undefined index: Docente in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 79]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Notice: Notice (8): Undefined index: Grado in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 80]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 80
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Notice: Notice (8): Undefined index: Seccion in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 80]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 80
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Notice: Notice (8): Undefined offset: 0 in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 81]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 81
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:04:23 Notice: Notice (8): Undefined index: Mensajes in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Mensajes/get_mensajes.ctp, line 12]
+Trace:
+include - APP/View/Mensajes/get_mensajes.ctp, line 12
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:04:48 Notice: Notice (8): Undefined index: Mensajes in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/View/Mensajes/get_mensajes.ctp, line 12]
+Trace:
+include - APP/View/Mensajes/get_mensajes.ctp, line 12
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Notice: Notice (8): Undefined index: Seccion in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 44]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 44
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Notice: Notice (8): Undefined index: Seccion in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 80]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 80
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Notice: Notice (8): Undefined offset: 0 in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 81]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 81
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+

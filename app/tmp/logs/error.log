@@ -11402,3 +11402,161 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PeriodosController), Object(CakeRequest))
 #4 /Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-11-13 14:52:46 Warning: Warning (2): Division by zero in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 66]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 66
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Warning: Warning (2): krsort() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 67]
+Trace:
+krsort - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Warning: Warning (2): arsort() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 68]
+Trace:
+arsort - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 70]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 70
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 71]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 71
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 72]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 72
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 73]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 14:52:46 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 74]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 74
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Warning: Warning (2): Division by zero in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 66]
+Trace:
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 66
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Warning: Warning (2): krsort() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 67]
+Trace:
+krsort - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Warning: Warning (2): arsort() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 68]
+Trace:
+arsort - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 70]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 70
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 71]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 71
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 72]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 72
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 73]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-13 15:25:20 Warning: Warning (2): array_slice() expects parameter 1 to be array, null given in [/Applications/XAMPP/xamppfiles/htdocs/studyweb-elcultural/app/Controller/ReportesController.php, line 74]
+Trace:
+array_slice - [internal], line ??
+ReportesController::estadisticasDetalle() - APP/Controller/ReportesController.php, line 74
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+

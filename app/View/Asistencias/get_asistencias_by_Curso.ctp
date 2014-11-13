@@ -4,7 +4,7 @@
     echo $this->Html->css("asistencias");
 ?>
 
-<table class="asistencias">
+<table class="asistencias" id="tblAsistencias">
     <thead>
         <tr>
             <th>Clase</th>
@@ -30,12 +30,12 @@
 <script>
     var auxMes = 0;
     var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"];
-    $("#tblAsistencias tr").each(function() {
+    $("#tblAsistencias tbody tr").each(function() {
         var fecha = $(this).find("td.fecha").text().split("-");
         var mes = fecha[1];
         if(auxMes !== mes) {
             auxMes = mes;
-            $(this).before("<tr><td colspan='3'>" + meses[mes-1] + "</td></tr>");
+            $(this).before("<tr><td colspan='3' style='text-align: center;'><b>" + meses[mes-1] + "</b></td></tr>");
         }
     })
 </script>

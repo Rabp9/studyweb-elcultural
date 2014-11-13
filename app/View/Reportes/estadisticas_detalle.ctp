@@ -1,5 +1,13 @@
 <!-- file path View/Reportes/estadisticas_detalle.ctp -->
 
+<style>
+    dl.dl-horizontal {
+        border: 1px solid;
+        padding: 0px 5% 0px 5%;
+        width: 50%;
+        margin: 0 auto;
+    }
+</style>
 <dl class="dl-horizontal">
     <dt>Docente</dt>
     <dd><?php echo $estadisticas["docente"]; ?></dd>
@@ -29,7 +37,8 @@
     <dd><?php echo $estadisticas["nro_clases"]; ?></dd>
 </dl>
 
-<?php
-    echo $this->Form->end("Exportar a PDF");
+<?php  
+    echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-list-alt")) . " Exportar a PDF", array("class" => "btn btn-default"));
+    echo $this->Form->end();
 ?>
 
