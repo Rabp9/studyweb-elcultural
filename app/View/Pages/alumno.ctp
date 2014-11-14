@@ -1,3 +1,7 @@
+<?php 
+    $this->assign("title", "Bienvenido Alumno");
+?>
+
 <h2>Bienvenido Alumno</h2>
 
 <style>

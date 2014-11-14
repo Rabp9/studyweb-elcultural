@@ -162,7 +162,38 @@
         }
         
         public function notasDetalle() {
-            $this->layout = "ajax";         
+            $this->layout = "ajax";        
+            
+            $user = $this->Auth->user();
+            $docente = $this->Docente->findByIduser($user["idUser"]);
+            $curso = $this->Curso->findByIdcurso($this->request->data["idCurso"]);
+            $seccion = $this->Curso->Grado->Seccion->findByIdseccion($this->request->data["idSeccion"]);
+            
+            $suma = 0;
+            $matriculas = $this->Matricula->find("all", array(
+                "conditions" => array("Matricula.estado" => 1, "Seccion.idSeccion" => $seccion["Seccion"]["idSeccion"])
+            ));
+            $i = 0;
+            foreach ($matriculas as $matricula) {
+                $reporteNotas[$i]["Alumno"] = $matricula["Alumno"];
+                $notas = $this->Nota->find("all", array(
+                    "conditions" => array("Nota.idMatricula" => $matricula["Matricula"]["idMatricula"], "Nota.idCurso" => $curso["Curso"]["idCurso"])
+                ));
+                $subnota = 0;
+                $factor = 0;
+                foreach ($notas as $nota) {
+                    $subnota += $nota["Nota"]["valor"] * $nota["Nota"]["peso"];
+                    $factor += $nota["Nota"]["peso"];
+                    $reporteNotas[$i]["Notas"][] = $nota["Nota"];
+                }
+                $promedio = $subnota / $factor;
+                $reporteNotas[$i]["promedio"] = number_format($promedio, 2);
+                $i++;
+            }
+            $promedioFinal = $suma / count($matriculas);
+            
+            $this->set("reporteNotas", $reporteNotas);
+            $this->set("promedioFinal", $promedioFinal);
         }
         
         public function notasPdf() {

@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Plantilla - Por Defecto</title>    
+        <title>Studyweb - El Cultural</title>    
         <!-- Bootstrap -->
         <?php
             echo $this->Html->css('bootstrap.min');

@@ -11560,3 +11560,147 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
 [main] - APP/webroot/index.php, line 108
 
+2014-11-13 23:35:20 Warning: Warning (2): Division by zero in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 193]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 193
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:47 Warning: Warning (2): Division by zero in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 193]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 193
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:48 Warning: Warning (2): Division by zero in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 193]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 193
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Warning: Warning (2): Division by zero in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 232]
+Trace:
+ReportesController::notasPdf() - APP\Controller\ReportesController.php, line 232
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_pdf.ctp, line 21]
+Trace:
+include - APP\View\Reportes\notas_pdf.ctp, line 21
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_pdf.ctp, line 35]
+Trace:
+include - APP\View\Reportes\notas_pdf.ctp, line 35
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_pdf.ctp, line 65]
+Trace:
+include - APP\View\Reportes\notas_pdf.ctp, line 65
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_pdf.ctp, line 79]
+Trace:
+include - APP\View\Reportes\notas_pdf.ctp, line 79
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_pdf.ctp, line 109]
+Trace:
+include - APP\View\Reportes\notas_pdf.ctp, line 109
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_pdf.ctp, line 123]
+Trace:
+include - APP\View\Reportes\notas_pdf.ctp, line 123
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-14 00:38:24 Error: Fatal Error (4): syntax error, unexpected '*' in [C:\wamp\www\studyweb-elcultural\app\View\Asistencias\reporte.ctp, line 36]
+2014-11-14 00:38:24 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /studyweb-elcultural/Asistencias/reporte
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 36, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\stu...', 36, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-14 00:47:58 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\studyweb-elcultural\app\View\Alumnos\get_alumnos_reporte.ctp, line 27]
+2014-11-14 00:47:58 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /studyweb-elcultural/Asistencias/reporte/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 27, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\stu...', 27, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-14 01:29:22 Error: [MissingActionException] Action AsistenciasController::Asistencias() could not be found.
+Exception Attributes: array (
+  'controller' => 'AsistenciasController',
+  'action' => 'Asistencias',
+)
+Request URL: /studyweb-elcultural/Asistencias/Asistencias/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-14 01:29:52 Error: [MissingActionException] Action AsistenciasController::resultado() could not be found.
+Exception Attributes: array (
+  'controller' => 'AsistenciasController',
+  'action' => 'resultado',
+)
+Request URL: /studyweb-elcultural/Asistencias/resultado/A00001
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

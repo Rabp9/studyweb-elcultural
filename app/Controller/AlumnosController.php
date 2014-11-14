@@ -6,7 +6,7 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getAlumnos", "datos", "getAlumnosBySeccion");
+            $this->Auth->allow("getAlumnos", "datos", "getAlumnosBySeccion", "getAlumnosReporte");
         }
 
         public function index() {
@@ -117,6 +117,34 @@
                     )
                 )));
             }
+            $this->render();
+        }
+        
+        public function getAlumnosReporte($controlador) {
+            $this->layout = "ajax";
+            if(isset($this->request->data["busqueda"])) {
+                $busqueda = $this->request->data["busqueda"];
+                $this->set("alumnos", $this->Alumno->find("all", array(
+                    "conditions" => array(
+                        "OR" => array(
+                            "Alumno.nombres LIKE" => "%" . $busqueda . "%",
+                            "Alumno.apellidoPaterno LIKE" => "%" . $busqueda . "%",
+                            "Alumno.apellidoMaterno LIKE" => "%" . $busqueda . "%"
+                        ),
+                        "AND" => array(
+                            "Matricula.estado" => 1
+                        )
+                    )
+                )));
+            }
+            else {
+                $this->set("alumnos", $this->Alumno->find("all", array(
+                    "conditions" => array(
+                        "Matricula.estado" => 1
+                    )
+                )));
+            }
+            $this->set("controlador", $controlador);
             $this->render();
         }
         

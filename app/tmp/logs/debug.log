@@ -705,3 +705,119 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
 [main] - APP/webroot/index.php, line 108
 
+2014-11-13 23:35:20 Debug: Notice (8): Undefined index: Seccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 174]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 174
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:20 Debug: Notice (8): Undefined variable: reporteNotas in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 195]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 195
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:20 Debug: Notice (8): Undefined variable: reporteNota in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_detalle.ctp, line 4]
+Trace:
+include - APP\View\Reportes\notas_detalle.ctp, line 4
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:20 Debug: Notice (8): Undefined variable: reporteNota in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_detalle.ctp, line 4]
+Trace:
+include - APP\View\Reportes\notas_detalle.ctp, line 4
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:47 Debug: Notice (8): Undefined index: Seccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 174]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 174
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:47 Debug: Notice (8): Undefined variable: reporteNotas in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 195]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 195
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:47 Debug: Notice (8): Undefined variable: reporteNota in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_detalle.ctp, line 4]
+Trace:
+include - APP\View\Reportes\notas_detalle.ctp, line 4
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:48 Debug: Notice (8): Undefined index: Seccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 174]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 174
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:48 Debug: Notice (8): Undefined variable: reporteNotas in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 195]
+Trace:
+ReportesController::notasDetalle() - APP\Controller\ReportesController.php, line 195
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:48 Debug: Notice (8): Undefined variable: reporteNota in [C:\wamp\www\studyweb-elcultural\app\View\Reportes\notas_detalle.ctp, line 4]
+Trace:
+include - APP\View\Reportes\notas_detalle.ctp, line 4
+View::_evaluate() - CORE\Cake\View\View.php, line 948
+View::_render() - CORE\Cake\View\View.php, line 910
+View::render() - CORE\Cake\View\View.php, line 471
+Controller::render() - CORE\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Debug: Notice (8): Undefined index: Seccion in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 213]
+Trace:
+ReportesController::notasPdf() - APP\Controller\ReportesController.php, line 213
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+
+2014-11-13 23:35:50 Debug: Notice (8): Undefined variable: reporteNotas in [C:\wamp\www\studyweb-elcultural\app\Controller\ReportesController.php, line 234]
+Trace:
+ReportesController::notasPdf() - APP\Controller\ReportesController.php, line 234
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 108
+

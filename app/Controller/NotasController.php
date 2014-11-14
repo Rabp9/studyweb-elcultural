@@ -6,7 +6,7 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getNotasByCurso", "registrar", "getFormNotas");
+            $this->Auth->allow("getNotasByCurso", "registrar", "getFormNotas", "reporte");
         }
         
         public function index() {
@@ -102,6 +102,34 @@
             }
             
             $this->set("alumnos", $alumnos);
+        }
+        
+        public function reporte($idAlumno = null) {
+            $this->layout = "admin";
+            
+            if ($idAlumno) { 
+                $alumno = $this->Alumno->findByIdalumno($idAlumno);
+     
+                $this->Alumno->Matricula->id = $alumno["Matricula"]["idMatricula"];
+                $matricula = $this->Alumno->Matricula->read();
+            
+                $this->Alumno->Matricula->Seccion->id = $matricula["Matricula"]["idSeccion"];
+                $seccion = $this->Alumno->Matricula->Seccion->read();
+
+                $this->Alumno->Matricula->Seccion->Grado->id = $seccion["Seccion"]["idGrado"];
+                $grado = $this->Alumno->Matricula->Seccion->Grado->read();
+
+                $this->set("cursos", $this->Alumno->Matricula->Seccion->Grado->Curso->find("all", array(
+                    "conditions" => array("Curso.idGrado" => $grado["Grado"]["idGrado"])
+                )));
+                  
+                $this->set("notas", $this->Nota->find("all", array(
+                    "conditions" => array(
+                        "Nota.idMatricula" => $matricula["Matricula"]["idMatricula"]
+                    )
+                )));
+                $this->render("resultado");
+            }
         }
     }
 ?>
