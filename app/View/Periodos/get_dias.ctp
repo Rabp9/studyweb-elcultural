@@ -3,48 +3,58 @@
     echo $this->Html->css("horario");
 ?>
 
-
 <table id="tblHorario">
     <thead>
         <tr>
             <th>Hora</th>
             <th <?php echo $periodo["Periodo"]["domingo"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Domingo
-                <input class="hdnRest" type="hidden" id="rest0" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest0" value="10"/>
             </th>
             <th <?php echo $periodo["Periodo"]["lunes"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Lunes
-                <input class="hdnRest" type="hidden" id="rest1" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest1" value="10"/>
             </th>
             <th <?php echo $periodo["Periodo"]["martes"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Martes
-                <input class="hdnRest" type="hidden" id="rest2" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest2" value="10"/>
             </th>
             <th <?php echo $periodo["Periodo"]["miercoles"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Miércoles
-                <input class="hdnRest" type="hidden" id="rest3" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest3" value="10"/>
             </th>
             <th <?php echo $periodo["Periodo"]["jueves"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Jueves
-                <input class="hdnRest" type="hidden" id="rest4" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest4" value="10"/>
             </th>
             <th <?php echo $periodo["Periodo"]["viernes"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Viernes
-                <input class="hdnRest" type="hidden" id="rest5" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest5" value="10"/>
             </th>
             <th <?php echo $periodo["Periodo"]["sabado"] ? "class='clase_si'" : "class='clase_no'"; ?>>
                 Sábado
-                <input class="hdnRest" type="hidden" id="rest6" value="17"/>
+                <input class="hdnRest" type="hidden" id="rest6" value="10"/>
             </th>
         </tr>
     </thead>
     <tbody>
         <?php
             $horaInicio = '07:00';
-            $horaFin = '15:00';
+            $horaFin = '12:30';
             while ($horaInicio <= $horaFin) {
+                if($horaInicio == "10:00") {
+                    echo "<tr>"
+                        . "<td>" . $horaInicio . "</td>"
+                        . "<td colspan='7' style='text-align: center;'><b>RECREO</b></td>"
+                    . "</tr>";
+                } else if($horaInicio == "10:30") {
+                    echo "<tr>"
+                        . "<td>" . $horaInicio . "</td>"
+                        . "<td colspan='7' style='text-align: center;'><b>RECREO</b></td>"
+                    . "</tr>";
+                } else {
         ?>
-        <tr>
+        <tr class="normal">
             <td><?php echo $horaInicio; ?></td>
             <td></td>
             <td></td>
@@ -55,6 +65,7 @@
             <td></td>
         </tr>
         <?php
+                }
                 $horaInicio = strtotime("+30 minutes", strtotime($horaInicio));
                 $horaInicio = date("H:i", $horaInicio);
             }
@@ -217,7 +228,7 @@
 <script type="text/javascript">
     $('body').on('click', '.limpiar', function() {
         var col = $(this).parent().parent().children().index($(this).parent());
-        $("#tblHorario tbody tr:not(:last)").find("td:eq(" + col + ")").html("");
+        $("#tblHorario tbody tr.normal:not(:last)").find("td:eq(" + col + ")").html("");
         $("#tblHorario thead").find("th:eq(" + col + ")").find("input:hidden").val("17");
     });
 </script>
@@ -245,9 +256,9 @@
             return true;
         }
         for(var i = 0; i < horas; i++) {
-            $("#tblHorario tbody tr:eq(" + (i + 17 - rest) + ") td:eq(" + (parseInt(dia)+1) + ")").html(
+            $("#tblHorario tbody tr.normal:eq(" + (i + 10 - rest) + ") td:eq(" + (parseInt(dia)+1) + ")").html(
                 "<h5>" + curso.descripcion + " <small>" + aula.descripcion+ "</small></h5>" +
-                "<hr/><h5>" + docente.descripcion + "</5>" +
+                "<hr/><h5>" + docente.descripcion + "</h5>" +
                 "<input type='hidden' name=data[idCursos][" + dia + "][] value='" + curso.idCurso + "' />" + 
                 "<input type='hidden' name=data[idAulas][" + dia + "][] value='" + aula.idAula + "' />"  +
                 "<input type='hidden' name=data[idDocentes][" + dia + "][] value='" + docente.idDocente + "' />"

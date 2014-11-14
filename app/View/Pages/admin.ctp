@@ -153,5 +153,31 @@
                 </div>
             </a>
         </div>
+    </div>  
+    <div class="col-xs-3">
+        <div class="thumbnail">
+            <a href="<?php echo $this->Html->url(array(
+                "controller" => "Asistencias",
+                "action" => "reporte"
+            )); ?>">
+                <?php echo $this->Html->image("iconos/Asistencias-reporte.png"); ?>
+                <div class="caption">
+                    <h3>Registrar Matricula</h3>
+                </div>
+            </a>
+        </div>
+    </div>    
+    <div class="col-xs-3">
+        <div class="thumbnail">
+            <a href="<?php echo $this->Html->url(array(
+                "controller" => "Notas",
+                "action" => "reporte"
+            )); ?>">
+                <?php echo $this->Html->image("iconos/Notas-reporte.jpg"); ?>
+                <div class="caption">
+                    <h3>Registrar Matricula</h3>
+                </div>
+            </a>
+        </div>
     </div>
 </div>

@@ -64,7 +64,7 @@
                     <li class="<?php echo $this->request->params['controller'] == 'Matriculas' ? 'active' : ''; ?>"><?php echo $this->Html->link("Registrar Matrícula", array("controller" => "Matriculas", "action" => "index")); ?></li>
                     <li class="<?php echo $this->request->params['controller'] == 'Asistencias' ? 'active' : ''; ?>"><?php echo $this->Html->link("Reporte Asistencias", array("controller" => "Asistencias", "action" => "reporte")); ?></li>
                     <li class="<?php echo $this->request->params['controller'] == 'Notas' ? 'active' : ''; ?>"><?php echo $this->Html->link("Reporte Notas", array("controller" => "Notas", "action" => "reporte")); ?></li>
-                    <li style="left: 40%;">
+                    <li style="left: 20%;">
                         <?php echo $this->Html->link(
                             $this->Html->image("cerrar-sesion.png", array("alt" => "Cerrar Sesión", "border" => "0")),
                             "/",

@@ -24,7 +24,7 @@
         "div" => "formField",
         "type" => "number",
         "min" => 0,
-        "max" => 17,
+        "max" => 10,
         "step" => 1,
         "value" => 1
     ));
