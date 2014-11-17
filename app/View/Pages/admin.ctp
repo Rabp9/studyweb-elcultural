@@ -162,7 +162,7 @@
             )); ?>">
                 <?php echo $this->Html->image("iconos/Asistencias-reporte.png"); ?>
                 <div class="caption">
-                    <h3>Registrar Matricula</h3>
+                    <h3>Reporte Asistencias</h3>
                 </div>
             </a>
         </div>
@@ -175,7 +175,7 @@
             )); ?>">
                 <?php echo $this->Html->image("iconos/Notas-reporte.jpg"); ?>
                 <div class="caption">
-                    <h3>Registrar Matricula</h3>
+                    <h3>Reporte Notas</h3>
                 </div>
             </a>
         </div>

@@ -70,24 +70,28 @@
             
             $this->set("cursos", $cursos);
             if($this->request->is("post")) {
-                foreach($this->request->data["Matriculas"]["idMatricula"] as $key => $value) {
-                    $asistencias[] = array(
-                        "idMatricula" => $value,
-                        "idCurso" => $this->request->data["idCurso"],
-                        "fecha" => $this->request->data["fecha"],
-                        "clase" => 1,
-                        "descripcion" => $this->request->data["Asistencias"]["descripcion"][$key]
-                    );
+                if(isset($this->request->data["editar"])) {
+                    foreach($this->request->data["Matriculas"]["idMatricula"] as $key => $value) {
+                        $asistencias[] = array(
+                            "idMatricula" => $value,
+                            "idCurso" => $this->request->data["idCurso"],
+                            "fecha" => $this->request->data["fecha"],
+                            "clase" => 1,
+                            "descripcion" => $this->request->data["Asistencias"]["descripcion"][$key]
+                        );
+                    }
+                    $this->Asistencia->saveMany($asistencias);
+                } else {
+                    
                 }
-                $this->Asistencia->saveMany($asistencias);
                 $this->Session->setFlash(__("Las asistencias han sido registradas correctamente."), "flash_bootstrap"); 
             }
         }
         
         public function getFormAsistencias() {
             $this->layout = "ajax";
-            
             $idSeccion = $this->request->data["idSeccion"];
+            $idCurso = $this->request->data["idCurso"];
             
             $matriculas = $this->Alumno->Matricula->find("all", array(
                 "conditions" => array("Matricula.idSeccion" => $idSeccion)
@@ -98,7 +102,26 @@
                     "conditions" => array("Alumno.idAlumno" => $matricula["Matricula"]["idAlumno"])
                 ));
             }
-            
+            $auxAlumno = $alumnos[0];
+            $auxAsistencia = $this->Asistencia->find("first", array(
+               "conditions" => array(
+                   "idCurso" => $idCurso, 
+                   "idMatricula" => $auxAlumno["Matricula"]["idMatricula"],
+                   "fecha" => date("Y-m-d")
+                )
+            ));
+            if(!empty($auxAsistencia)) {
+                foreach ($alumnos as $alumno) {
+                    $descripcion = $this->Asistencia->field("descripcion", array(
+                        "idMatricula" => $alumno["Matricula"]["idMatricula"],
+                        "idCurso" => $idCurso,
+                        "fecha" => date("Y-m-d")
+                    ));
+                    $alumno["Alumno"]["Asistencia"] = $descripcion;
+                    $alumnos_editar[] = $alumno;
+                }
+            }
+            $this->set("alumnos_editar", $alumnos_editar);
             $this->set("alumnos", $alumnos);
         }
         

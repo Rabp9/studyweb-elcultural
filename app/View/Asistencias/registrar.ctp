@@ -42,7 +42,7 @@
     $('body').on('click', '#idSeccion', function() {
         $.ajax({
             async:true, 
-            data: $("#idSeccion").serialize(), 
+            data: $("#registrarForm").serialize(), 
             dataType:"html", 
             success:function (data, textStatus) {
                 $("#dvAsistencias").html(data);
