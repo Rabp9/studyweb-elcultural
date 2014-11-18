@@ -1,15 +1,6 @@
 <!-- file path View/Asistencias/get_form_asistencias.ctp -->
 
 <?php
-    echo $this->Form->input("fecha", array(
-        "label" => "Fecha: ",
-        "div" => "formField",
-        "value" => date("Y-m-d"),
-        "readonly" => true
-    ))
-?>
-
-<?php
     echo $this->Html->css("asistencias");
 ?>
 <?php

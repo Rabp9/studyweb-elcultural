@@ -11704,3 +11704,107 @@ Stack Trace:
 #1 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
 #2 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-11-18 01:13:16 Error: Fatal Error (4): syntax error, unexpected ':' in [C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php, line 85]
+2014-11-18 01:13:16 Error: [FatalErrorException] syntax error, unexpected ':'
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\stu...', 85, Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\stu...', 85, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 01:31:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '7-1-C001' for key 'PRIMARY'
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(Asistencia), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(97): Model->save(Array)
+#5 [internal function]: AsistenciasController->registrar()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-18 01:34:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`studyweb-db`.`asistencias`, CONSTRAINT `fk_Asistencias_Matriculas1` FOREIGN KEY (`idMatricula`) REFERENCES `matriculas` (`idMatricula`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(Asistencia), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(97): Model->save()
+#5 [internal function]: AsistenciasController->registrar()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-18 01:37:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Asistencia.idasistencia' in 'where clause'
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Asisten...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Asisten...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Asisten...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Asistencia), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(817): DboSource->query('findByIdasisten...', Array, Object(Asistencia))
+#8 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(96): Model->__call('findByIdasisten...', Array)
+#9 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(96): Asistencia->findByIdasistencia(NULL)
+#10 [internal function]: AsistenciasController->registrar()
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#14 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-11-18 01:38:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '7-1-C001' for key 'PRIMARY'
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(Asistencia), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2419): Model->save(Array, Array)
+#5 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(97): Model->saveAssociated(Array)
+#6 [internal function]: AsistenciasController->registrar()
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#10 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-11-18 01:42:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Asistencia.idAsistencia' in 'where clause'
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2930): DboSource->read(Object(Asistencia), Array)
+#5 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2902): Model->_readDataSource('count', Array)
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(2812): Model->find('count', Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1752): Model->exists()
+#8 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(97): Model->save(Array)
+#9 [internal function]: AsistenciasController->registrar()
+#10 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#11 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#13 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-18 02:02:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`studyweb-db`.`asistencias`, CONSTRAINT `fk_Asistencias_Matriculas1` FOREIGN KEY (`idMatricula`) REFERENCES `matriculas` (`idMatricula`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /studyweb-elcultural/Asistencias/registrar
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `st...', Array)
+#2 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `st...')
+#3 C:\wamp\www\studyweb-elcultural\lib\Cake\Model\Model.php(1859): DboSource->create(Object(Asistencia), Array, Array)
+#4 C:\wamp\www\studyweb-elcultural\app\Controller\AsistenciasController.php(97): Model->save(Array)
+#5 [internal function]: AsistenciasController->registrar()
+#6 C:\wamp\www\studyweb-elcultural\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AsistenciasController), Array)
+#7 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AsistenciasController), Object(CakeRequest))
+#9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

@@ -55,6 +55,9 @@
             $user = $this->Auth->user();
             $docente = $this->Docente->findByIduser($user["idUser"]);
             
+            $fecha = $this->request->data["fecha"];
+            $fecha = $fecha["year"] . "-" . $fecha["month"] . "-" . $fecha["day"];
+            
             $horarios = $this->Docente->Horario->find("all", array(
                 "fields" => array("DISTINCT Horario.idCurso"),
                 "conditions" => array("Horario.idDocente" => $docente["Docente"]["idDocente"])
@@ -70,19 +73,32 @@
             
             $this->set("cursos", $cursos);
             if($this->request->is("post")) {
-                if(isset($this->request->data["editar"])) {
+                if(!isset($this->request->data["editar"])) {
                     foreach($this->request->data["Matriculas"]["idMatricula"] as $key => $value) {
                         $asistencias[] = array(
                             "idMatricula" => $value,
                             "idCurso" => $this->request->data["idCurso"],
-                            "fecha" => $this->request->data["fecha"],
+                            "fecha" => $fecha,
                             "clase" => 1,
                             "descripcion" => $this->request->data["Asistencias"]["descripcion"][$key]
                         );
                     }
                     $this->Asistencia->saveMany($asistencias);
                 } else {
-                    
+                    $matriculas = $this->request->data["Matriculas"]["idMatricula"];
+                    $asistencias = $this->request->data["Asistencias"]["descripcion"];
+                    foreach ($matriculas as $indice => $matricula) {
+                        $asistencia = $this->Asistencia->find("first", array(
+                            "conditions" => array(
+                                "Asistencia.idMatricula" => $matricula,
+                                "Asistencia.idCurso" => $this->request->data["idCurso"],
+                                "Asistencia.fecha" => $fecha,
+                            )
+                        ));
+                        $asistencia["Asistencia"]["descripcion"] = $asistencias[$indice];
+                        $this->Asistencia->id = $asistencia["Asistencia"]["idAsistencia"];
+                        $this->Asistencia->save($asistencia);
+                    }
                 }
                 $this->Session->setFlash(__("Las asistencias han sido registradas correctamente."), "flash_bootstrap"); 
             }
@@ -102,12 +118,14 @@
                     "conditions" => array("Alumno.idAlumno" => $matricula["Matricula"]["idAlumno"])
                 ));
             }
+            $fecha = $this->request->data["fecha"];
+            $fecha = $fecha["year"] . "-" . $fecha["month"] . "-" . $fecha["day"];
             $auxAlumno = $alumnos[0];
             $auxAsistencia = $this->Asistencia->find("first", array(
                "conditions" => array(
                    "idCurso" => $idCurso, 
                    "idMatricula" => $auxAlumno["Matricula"]["idMatricula"],
-                   "fecha" => date("Y-m-d")
+                   "fecha" => $fecha
                 )
             ));
             if(!empty($auxAsistencia)) {
@@ -115,7 +133,7 @@
                     $descripcion = $this->Asistencia->field("descripcion", array(
                         "idMatricula" => $alumno["Matricula"]["idMatricula"],
                         "idCurso" => $idCurso,
-                        "fecha" => date("Y-m-d")
+                        "fecha" => $fecha
                     ));
                     $alumno["Alumno"]["Asistencia"] = $descripcion;
                     $alumnos_editar[] = $alumno;

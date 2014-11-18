@@ -15,6 +15,13 @@
         "empty" => "Selecciona uno"
     ));
     echo $this->Html->div(null, "", array("id" => "dvSecciones"));
+    echo $this->Form->input("fecha", array(
+        "label" => "Fecha: ",
+        "div" => "formField",
+        "value" => date("Y-m-d"),
+        "type" => "date",
+        "readonly" => true
+    ));
     echo $this->Html->div(null, "", array("id" => "dvAsistencias"));
 ?>
 
@@ -39,7 +46,8 @@
 <?php
     $this->Html->scriptStart(array('inline' => false));
 ?>
-    $('body').on('click', '#idSeccion', function() {
+
+    var form_asistencias = function() {
         $.ajax({
             async:true, 
             data: $("#registrarForm").serialize(), 
@@ -50,7 +58,9 @@
             type:"post", 
             url:"\/studyweb-elcultural\/Asistencias\/getFormAsistencias"
         });
-    });
+    };
+    $('body').on('change', '#idSeccion', form_asistencias);
+    $('body').on('change', 'div.formField select', form_asistencias);
 <?php
     $this->Html->scriptEnd();
 ?>
