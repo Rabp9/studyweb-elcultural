@@ -5,7 +5,7 @@
         public function beforeFilter() {
             parent::beforeFilter();
             // $this->Auth->allow("add", "logout", "login", "edit");
-            $this->Auth->allow("initDB", "preAdd");
+            $this->Auth->allow("index", "initDB", "preAdd", "add");
         }
         
         public function initDB() {
@@ -13,9 +13,21 @@
 
             // Administrador
             $grupo->id = 1;
-            $this->Acl->allow($grupo, 'controllers');
-            $this->Acl->deny($grupo, 'controllers/Pages/alumno');
-
+            $this->Acl->deny($grupo, 'controllers');
+            $this->Acl->allow($grupo, 'controllers/Pages/admin');
+            $this->Acl->allow($grupo, 'controllers/Alumnos');
+            $this->Acl->allow($grupo, 'controllers/Docentes');
+            $this->Acl->allow($grupo, 'controllers/Articulos');
+            $this->Acl->allow($grupo, 'controllers/Grados');
+            $this->Acl->allow($grupo, 'controllers/Secciones');
+            $this->Acl->allow($grupo, 'controllers/Cursos');
+            $this->Acl->allow($grupo, 'controllers/Aulas');
+            $this->Acl->allow($grupo, 'controllers/Users');
+            $this->Acl->allow($grupo, 'controllers/Periodos');
+            $this->Acl->allow($grupo, 'controllers/Horarios');
+            $this->Acl->deny($grupo, 'controllers/Horarios/horarioAlumno');
+            $this->Acl->allow($grupo, 'controllers/Matriculas/index');
+            
             // Alumno
             $grupo->id = 2;
             $this->Acl->allow($grupo, 'controllers/Pages/alumno');

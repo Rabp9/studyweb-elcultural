@@ -6,7 +6,6 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("getAlumnos", "datos", "getAlumnosBySeccion", "getAlumnosReporte");
         }
 
         public function index() {

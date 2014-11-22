@@ -7,7 +7,6 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow("info");
         }
 
         public function index() {

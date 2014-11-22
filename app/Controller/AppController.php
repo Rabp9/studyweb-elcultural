@@ -58,6 +58,19 @@ class AppController extends Controller {
     );
 
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view', "add", "edit", "delete", "prueba");
+/*        if (!is_null($this->Auth->User()) && $this->name != 'CakeError') {
+
+            // Optionally log an ACL deny message in auth.log
+            CakeLog::write('auth', 'ACL DENY: ' . AuthComponent::user('username') .
+                ' tried to access ' . $this->name . '/' .
+                $this->request->params['action'] . '.'
+            );
+
+            // Render the forbidden page instead of the current requested page
+            echo $this->render('/Pages/prohibido');
+
+            exit;
+        }*/
+        // $this->Auth->allow('index', 'view', "add", "edit", "delete", "prueba");
     }
 }

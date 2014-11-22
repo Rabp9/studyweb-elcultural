@@ -6,7 +6,6 @@
     class PeriodosController extends AppController {
         public function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow('getDias');
         }
 
         public function index() {
