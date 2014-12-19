@@ -39,7 +39,6 @@ class AppModel extends Model {
         ),
         'Session'
     );
-    public $helpers = array('Html', 'Form', 'Session');
 
     public function beforeFilter() {
         //Configure AuthComponent

@@ -6,6 +6,7 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
+            $this->Auth->allow("getAlumnos", "datos", "getAlumnosBySeccion", "getAlumnosReporte");
         }
 
         public function index() {
@@ -13,8 +14,8 @@
             $this->set("alumnos", $this->Alumno->find("all", array(
                 'conditions' => array('Alumno.estado' => '1')
             )));
-       }
-              
+        }
+        
         public function view($id = null) {
             $this->layout = "admin";
             
@@ -102,20 +103,12 @@
                             "Alumno.nombres LIKE" => "%" . $busqueda . "%",
                             "Alumno.apellidoPaterno LIKE" => "%" . $busqueda . "%",
                             "Alumno.apellidoMaterno LIKE" => "%" . $busqueda . "%"
-                        ),
-                        "AND" => array(
-                            "Matricula.estado" => null
                         )
                     )
                 )));
             }
-            else {
-                $this->set("alumnos", $this->Alumno->find("all", array(
-                    "conditions" => array(
-                        "Matricula.estado" => null
-                    )
-                )));
-            }
+            else
+                $this->set("alumnos", $this->Alumno->find("all"));
             $this->render();
         }
         

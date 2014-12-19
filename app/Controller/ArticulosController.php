@@ -4,6 +4,7 @@
     class ArticulosController extends AppController {    
         public function beforeFilter() {
             parent::beforeFilter();
+            $this->Auth->allow("ultimos");
         }
         
         public function index() {

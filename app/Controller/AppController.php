@@ -33,6 +33,7 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    public $helpers = array('Html', 'Form', 'Session');
     public $components = array(
         'Acl',
         'Session',
@@ -42,9 +43,8 @@ class AppController extends Controller {
                 'action' => 'index'
             ),
             'logoutRedirect' => array(
-                'controller' => 'pages',
-                'action' => 'display',
-                'home'
+                'controller' => 'users',
+                'action' => 'login'
             ),
             'authenticate' => array(
                 'Form' => array(

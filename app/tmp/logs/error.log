@@ -12162,3 +12162,30 @@ Stack Trace:
 #8 C:\wamp\www\studyweb-elcultural\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
 #9 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-12-19 01:21:57 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-19 01:22:03 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-19 01:22:11 Error: [MissingControllerException] Controller class Studyweb-elculturalController could not be found.
+Exception Attributes: array (
+  'class' => 'Studyweb-elculturalController',
+  'plugin' => NULL,
+)
+Request URL: /studyweb-elcultural/studyweb-elcultural/docentes
+Stack Trace:
+#0 C:\wamp\www\studyweb-elcultural\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

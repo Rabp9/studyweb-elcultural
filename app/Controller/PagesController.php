@@ -31,7 +31,7 @@ App::uses('AppController', 'Controller');
     class PagesController extends AppController {
         // Luego borrar
         public function beforeFilter() {
-            $this->Auth->allow('alumno');
+            $this->Auth->allow('admin', 'alumno');
         }
         
 	public function admin() {

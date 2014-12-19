@@ -37,14 +37,14 @@
                 <div class="col-xs-2">
                     <?php echo $this->Html->link(
                             $this->Html->image("cerrar-sesion.png", array("alt" => "Cerrar Sesión", "border" => "0")),
-                            "/",
+                            array("controller" => "users", "action" => "login"),
                             array("escape" => false)
                         );
                     ?>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-10">
+                <div class="col-xs-9">
                     <ul class="nav nav-pills">
                         <li class="<?php echo $this->request->params['controller'] == 'Asistencias' ? 'active' : ''; ?>">
                             <a href="<?php echo $this->Html->url(array(
@@ -117,7 +117,7 @@
                 
                     </div>
                 </div>
-                <div class="col-xs-2">
+                <div class="col-xs-3">
                     <div class="panel panel-danger">
                         <div class="panel-heading">Novedades</div>
                         <?php echo $this->element("novedades"); ?>

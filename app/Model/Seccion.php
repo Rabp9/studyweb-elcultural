@@ -2,7 +2,7 @@
 
 <?php
     class Seccion extends AppModel {
-        public $useTable = "Secciones";
+        public $useTable = "secciones";
         public $primaryKey = "idSeccion";
        
         public $belongsTo = array(

@@ -7,6 +7,7 @@
         
         public function beforeFilter() {
             parent::beforeFilter();
+            $this->Auth->allow("getDetail", "horarioAlumno");
         }
 
         public function index() {

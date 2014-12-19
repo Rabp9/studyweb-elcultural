@@ -67,7 +67,7 @@
                     <li style="left: 20%;">
                         <?php echo $this->Html->link(
                             $this->Html->image("cerrar-sesion.png", array("alt" => "Cerrar Sesión", "border" => "0")),
-                            "/",
+                            array("controller" => "users", "action" => "login"),
                             array("escape" => false)
                         );
                         ?>
